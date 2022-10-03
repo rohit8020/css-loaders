@@ -223,6 +223,45 @@ let codes = [
         }
       }    
 `,
+    },
+    {
+        id : 5,
+        code : `/* Loader-4 */
+        #HTML
+        <div class="loader_4">
+  <div class="loader4_int"></div>
+</div>
+#CSS
+.loader_4 {
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .loader4_int {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid #009ed2;
+    border-right-color: transparent;
+    transform-origin: center;
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`
     }
 ];
 
