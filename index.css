@@ -128,17 +128,16 @@ footer .footer{
 
 /* ............loader-1........... */
 .loader-1 {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
     background-color: rgb(42, 119, 163);
 }
 
 .loader-1 div {
-    display: inline-block;
-    position: absolute;
-    left: 8px;
+    margin-left: 8px;
     width: 16px;
     background: #fff;
     animation: loader-1 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
@@ -199,10 +198,6 @@ footer .footer{
 
 
 /* ...............Loader-3...................... */
-.black
-{
-    background: #000;
-}
 .white{
     border: 2px solid rgb(255, 255, 255);
     color: white;
@@ -210,8 +205,8 @@ footer .footer{
 .loader
 {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
     animation: animate 2s linear infinite;
@@ -237,7 +232,6 @@ footer .footer{
     left: 6px;
     right: 6px;
     bottom: 6px;
-    background: #000;
     border-radius: 50%;
     z-index: 1000;
 }
@@ -302,8 +296,92 @@ footer .footer{
               transform: scale(1);
     }
   }
+/* .............Loader-7............... */
+.loader-7 {
+    height: 120px;
+    width: 120px;
+    position: relative;
+  }
   
+  .loader-7 .circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    margin: -12.5px;
+    -webkit-animation: mesh 3s ease-in-out infinite;
+    animation: mesh 3s ease-in-out infinite -1.5s;
+  }
   
+  .loader-7 > div .circle:last-child {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  
+  .loader-7 > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .loader-7 > div:last-child {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  @-webkit-keyframes mesh {
+  0% {
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  50.00001% {
+    -webkit-transform-origin: 50% 200%;
+            transform-origin: 50% 200%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 200%;
+            transform-origin: 50% 200%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  }
+  @keyframes mesh {
+  0% {
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform-origin: 50% -100%;
+            transform-origin: 50% -100%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  50.00001% {
+    -webkit-transform-origin: 50% 200%;
+            transform-origin: 50% 200%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform-origin: 50% 200%;
+            transform-origin: 50% 200%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  }
+    
 
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */

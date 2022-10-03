@@ -223,7 +223,107 @@ let codes = [
         }
       }    
 `,
-    }
+    },
+    {
+        id : 7,
+        code : `/*Loader - 7*/
+        #HTML
+        <div class="loader-7">
+            <div class="set-one">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="set-two">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>        #CSS
+        .loader-7 {
+            height: 120px;
+            width: 120px;
+            position: relative;
+          }
+          
+          .loader-7 .circle {
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 50%;
+            margin: -12.5px;
+            -webkit-animation: mesh 3s ease-in-out infinite;
+            animation: mesh 3s ease-in-out infinite -1.5s;
+          }
+          
+          .loader-7 > div .circle:last-child {
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+          }
+          
+          .loader-7 > div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+          }
+          
+          .loader-7 > div:last-child {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+          }
+          
+          @-webkit-keyframes mesh {
+          0% {
+            -webkit-transform-origin: 50% -100%;
+                    transform-origin: 50% -100%;
+            -webkit-transform: rotate(0);
+                    transform: rotate(0);
+          }
+          50% {
+            -webkit-transform-origin: 50% -100%;
+                    transform-origin: 50% -100%;
+            -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+          }
+          50.00001% {
+            -webkit-transform-origin: 50% 200%;
+                    transform-origin: 50% 200%;
+            -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform-origin: 50% 200%;
+                    transform-origin: 50% 200%;
+            -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+          }
+          }
+          @keyframes mesh {
+          0% {
+            -webkit-transform-origin: 50% -100%;
+                    transform-origin: 50% -100%;
+            -webkit-transform: rotate(0);
+                    transform: rotate(0);
+          }
+          50% {
+            -webkit-transform-origin: 50% -100%;
+                    transform-origin: 50% -100%;
+            -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+          }
+          50.00001% {
+            -webkit-transform-origin: 50% 200%;
+                    transform-origin: 50% 200%;
+            -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform-origin: 50% 200%;
+                    transform-origin: 50% 200%;
+            -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+          }
+          }
+            
+        `
+    },
 ];
 
 
@@ -232,6 +332,6 @@ let showcode = document.querySelectorAll('.show-code-btn')
 let code_para = document.querySelector('#code-paragraph')
 showcode.forEach(btn => {
     btn.addEventListener('click', () => {
-        code_para.innerText = codes[Number(btn.id) - 1].code
+        code_para.innerText = codes.find(c => c.id == btn.id).code
     })
 })
