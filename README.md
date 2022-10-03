@@ -1,5 +1,8 @@
 # Simple CSS-LOADERS
+
 Hacktober Fest 2022, This is the website from which you can copy  the  code for the css-loaders and use as a template in your website.
+
+## [Project Website Link](https://rohitgangwar.me/css-loaders/)
 
 ![Alt text](./website.png)
 
@@ -63,5 +66,8 @@ Now submit the pull request.
 ### Star this repository
 
 If you had fun while contributing to this project, then don't forget to give this project a star ⭐.
+
+## Contributors:
+- [Rohit Gangwar](https://github.com/rohit8020)
 
 ### Thanks for your contribution
