@@ -209,6 +209,10 @@ footer .footer{
 {
     background: #000;
 }
+.white{
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+}
 .loader
 {
     position: relative;
