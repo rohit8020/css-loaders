@@ -197,8 +197,8 @@ footer .footer{
     }
 }
 
-/* Loader-3 */
 
+/* ...............Loader-3...................... */
 .black
 {
     background: #000;
@@ -255,7 +255,7 @@ footer .footer{
     filter: blur(30px);
 }
 
-/* ...............Loader-4................. */
+/* ...................Loader-4................... */
 .loader-4{
     display: flex;
     justify-content: center;
