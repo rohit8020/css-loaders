@@ -13,6 +13,7 @@ html {
 
 body {
     background: rgb(122, 206, 255);
+
 }
 
 .container {
@@ -21,6 +22,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
+padding-bottom : 10rem;
+
 }
 
 .loader-box {
@@ -296,14 +299,45 @@ footer .footer{
               transform: scale(1);
     }
   }
-/* .............Loader-7............... */
-.loader-7 {
+  
+  
+/* ................Loader-5........................ */
+.loader_5 {
+display : flex;
+justify-content : center;
+align-items: center;    
+height: 120px;
+    width: 120px;
+  }
+  
+  .loader5_int {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid #009ed2;
+    border-right-color: transparent;
+    transform-origin: center;
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+/* .............Loader-6............... */
+.loader-6 {
     height: 120px;
     width: 120px;
     position: relative;
   }
   
-  .loader-7 .circle {
+  .loader-6 .circle {
     width: 20px;
     height: 20px;
     background: black;
@@ -313,18 +347,18 @@ footer .footer{
     animation: mesh 3s ease-in-out infinite -1.5s;
   }
   
-  .loader-7 > div .circle:last-child {
+  .loader-6 > div .circle:last-child {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
   }
   
-  .loader-7 > div {
+  .loader-6 > div {
     position: absolute;
     top: 50%;
     left: 50%;
   }
   
-  .loader-7 > div:last-child {
+  .loader-6 > div:last-child {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
@@ -381,8 +415,9 @@ footer .footer{
             transform: rotate(360deg);
   }
   }
-    
+   
 
+  
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */
 

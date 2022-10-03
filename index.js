@@ -225,10 +225,49 @@ let codes = [
 `,
     },
     {
-        id : 7,
-        code : `/*Loader - 7*/
+        id : 5,
+        code : `/* Loader-5 */
         #HTML
-        <div class="loader-7">
+        <div class="loader_5">
+  <div class="loader4_int"></div>
+</div>
+#CSS
+.loader_5 {
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .loader5_int {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid #009ed2;
+    border-right-color: transparent;
+    transform-origin: center;
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`
+    },
+    {
+        id : 6,
+        code : `/*Loader - 6*/
+        #HTML
+        <div class="loader-6">
             <div class="set-one">
                 <div class="circle"></div>
                 <div class="circle"></div>
@@ -237,13 +276,13 @@ let codes = [
                 <div class="circle"></div>
                 <div class="circle"></div>
             </div>        #CSS
-        .loader-7 {
+        .loader-6 {
             height: 120px;
             width: 120px;
             position: relative;
           }
           
-          .loader-7 .circle {
+          .loader-6 .circle {
             width: 20px;
             height: 20px;
             background: black;
@@ -253,18 +292,18 @@ let codes = [
             animation: mesh 3s ease-in-out infinite -1.5s;
           }
           
-          .loader-7 > div .circle:last-child {
+          .loader-6 > div .circle:last-child {
             -webkit-animation-delay: 0s;
             animation-delay: 0s;
           }
           
-          .loader-7 > div {
+          .loader-6 > div {
             position: absolute;
             top: 50%;
             left: 50%;
           }
           
-          .loader-7 > div:last-child {
+          .loader-6 > div:last-child {
             -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
           }
@@ -320,10 +359,9 @@ let codes = [
             -webkit-transform: rotate(360deg);
                     transform: rotate(360deg);
           }
-          }
-            
+          } 
         `
-    },
+    }
 ];
 
 
