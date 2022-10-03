@@ -69,5 +69,6 @@ If you had fun while contributing to this project, then don't forget to give thi
 
 ## Contributors:
 - [Rohit Gangwar](https://github.com/rohit8020)
+- [NahushSingh](https://github.com/NahushSingh)
 
 ### Thanks for your contribution
