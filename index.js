@@ -226,20 +226,20 @@ let codes = [
     },
     {
         id : 5,
-        code : `/* Loader-4 */
+        code : `/* Loader-5 */
         #HTML
-        <div class="loader_4">
+        <div class="loader_5">
   <div class="loader4_int"></div>
 </div>
 #CSS
-.loader_4 {
+.loader_5 {
     background-color: rgba(0,0,0,0.5);
     position: relative;
     height: 100vh;
     width: 100vw;
   }
   
-  .loader4_int {
+  .loader5_int {
     position: absolute;
     top: 50%;
     left: 50%;
