@@ -164,6 +164,66 @@ let codes = [
             }
             `
     },
+    {
+        id : 4,
+        code : `/* Loader-4 */
+        #HTML
+        <div class="loader-4">
+            
+        <div class="dot-loader"></div>
+        <div class="dot-loader dot-loader--2"></div>
+        <div class="dot-loader dot-loader--3"></div>      
+
+      </div>
+      #CSS
+      .loader-4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+    }
+    .dot-loader {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: black;
+        position: relative;
+        -webkit-animation: 1.2s grow ease-in-out infinite;
+        animation: 1.2s grow ease-in-out infinite;
+      }
+      
+      .dot-loader--2 {
+        -webkit-animation: 1.2s grow ease-in-out infinite 0.15555s;
+        animation: 1.2s grow ease-in-out infinite 0.15555s;
+        margin: 0 20px;
+      }
+      .dot-loader--3 {
+        -webkit-animation: 1.2s grow ease-in-out infinite 0.3s;
+        animation: 1.2s grow ease-in-out infinite 0.3s;
+      }
+      @-webkit-keyframes grow {
+        0%, 40%, 100% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      @keyframes grow {
+        0%, 40%, 100% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }    
+`,
+    }
 ];
 
 
