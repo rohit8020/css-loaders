@@ -20,8 +20,8 @@ and paste inside the codes array in the form ->
 */
 let codes = [
     {
-    id: 1,
-    code: `
+        id: 1,
+        code: `
         /* loader-1 */
         ##HTML
         <div class="loader-1">
@@ -107,14 +107,71 @@ let codes = [
             }
             `
     },
+    {
+        id: 3,
+        code: `
+            /* Loader-3 */
+            #HTML
+            <div class="loader"></div>
+
+            ##CSS
+            .loader
+            {
+                position: relative;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
+                animation: animate 2s linear infinite;
+            }
+            @keyframes animate
+            {
+                0%
+                {
+                    transform: rotate(0deg);
+                    filter: hue-rotate(0deg);
+                }
+                100%
+                {
+                    transform: rotate(360deg);
+                    filter: hue-rotate(360deg);
+                }
+            }
+            .loader:before
+            {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                right: 6px;
+                bottom: 6px;
+                background: #000;
+                border-radius: 50%;
+                z-index: 1000;
+            }
+            .loader:after
+            {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                border-radius: 50%;
+                z-index: 1;
+                background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
+                filter: blur(30px);
+            }
+            `
+    },
 ];
 
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
-let showcode=document.querySelectorAll('.show-code-btn')
-let code_para=document.querySelector('#code-paragraph')
-showcode.forEach(btn=>{
-       btn.addEventListener('click', ()=>{
-            code_para.innerText = codes[Number(btn.id)-1].code
-       })
+let showcode = document.querySelectorAll('.show-code-btn')
+let code_para = document.querySelector('#code-paragraph')
+showcode.forEach(btn => {
+    btn.addEventListener('click', () => {
+        code_para.innerText = codes[Number(btn.id) - 1].code
+    })
 })
