@@ -19,9 +19,9 @@ and paste inside the codes array in the form ->
 - Add  the newly created object to the codes array
 */
 let codes = [
-    {
-        id: 1,
-        code: `
+  {
+    id: 1,
+    code: `
         /* loader-1 */
         ##HTML
         <div class="loader-1">
@@ -75,11 +75,11 @@ let codes = [
                 height: 32px;
             }
         }
-        `
-    },
-    {
-        id: 2,
-        code: `
+        `,
+  },
+  {
+    id: 2,
+    code: `
             /* Loader-2 */
             #HTML
             <div class="loader-2"></div>
@@ -105,11 +105,11 @@ let codes = [
                     transform: rotate(360deg);
                 }
             }
-            `
-    },
-    {
-        id: 3,
-        code: `
+            `,
+  },
+  {
+    id: 3,
+    code: `
             /* Loader-3 */
             #HTML
             <div class="loader"></div>
@@ -162,11 +162,11 @@ let codes = [
                 background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
                 filter: blur(30px);
             }
-            `
-    },
-    {
-        id : 4,
-        code : `/* Loader-4 */
+            `,
+  },
+  {
+    id: 4,
+    code: `/* Loader-4 */
         #HTML
         <div class="loader-4">
             
@@ -223,13 +223,13 @@ let codes = [
         }
       }    
 `,
-    },
-    {
-        id : 5,
-        code : `/* Loader-5 */
+  },
+  {
+    id: 5,
+    code: `/* Loader-5 */
         #HTML
         <div class="loader_5">
-  <div class="loader4_int"></div>
+  <div class="loader5_int"></div>
 </div>
 #CSS
 .loader_5 {
@@ -363,7 +363,6 @@ let codes = [
         `
     }
 ];
-
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
 let showcode = document.querySelectorAll('.show-code-btn')
