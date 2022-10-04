@@ -505,6 +505,33 @@ let codes = [
           }
       }
       `
+    },
+
+    {
+      id:9,
+      code:
+      `
+      ##HTML
+      <div class="loader-9">
+        <div class="l9"></div>
+      </div>
+
+      ##CSS
+      .loader-9 {
+        width: 120px;
+        height: 20px;
+        background: linear-gradient(#514b82 0 0) left -40px top 0/40px 100% no-repeat #eee;
+        -webkit-mask:
+          linear-gradient(#000 0 0) top   /100% 5px no-repeat,
+          linear-gradient(#000 0 0) bottom/100% 5px no-repeat,
+          repeating-linear-gradient(90deg,#000 0 5px, #0000 0 20%) left/calc(100% - 5px) 100%;
+        animation: l9 1s infinite linear;
+    }
+    
+    @keyframes l9 {
+      100% {background-position: right -40px top 0}
+    }
+      `
     }
 ];
 
