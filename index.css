@@ -666,7 +666,6 @@ footer .footer {
     100%{    transform: rotate(360deg)}
   }
 
-
 /* .............Loader-13............... */
 .loader-13{
     height: 50%;
@@ -689,6 +688,49 @@ footer .footer {
     to { transform: rotate(360deg) }
   }
   
+
+/* .............Loader-14.............. */
+.loader-14 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.l-14{
+  -webkit-perspective: 120px;
+  -moz-perspective: 120px;
+  -ms-perspective: 120px;
+  perspective: 120px;
+}
+
+.l-14:before{
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  animation: flip 1s infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(180deg)  rotateX(180deg);
+  }
+}
+
 
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */

@@ -261,11 +261,11 @@ let codes = [
       transform: rotate(360deg);
     }
   }
-`
-    },
-    {
-        id : 6,
-        code : `/*Loader - 6*/
+`,
+  },
+  {
+    id: 6,
+    code: `/*Loader - 6*/
         #HTML
         <div class="loader-6">
             <div class="set-one">
@@ -360,12 +360,11 @@ let codes = [
                     transform: rotate(360deg);
           }
           }
-        `
-    },
-    {
-      id:7,
-      code:
-      `
+        `,
+  },
+  {
+    id: 7,
+    code: `
       ##HTML
       <div class="loader-7">
           <div class="dot-loader-7"></div>
@@ -456,13 +455,12 @@ let codes = [
         color: white;
         font-size: smaller;
       }
-      `
-    },
+      `,
+  },
 
-    {
-      id:8,
-      code:
-      `
+  {
+    id: 8,
+    code: `
       ##HTML
       <div class="loader-8">
           <div class="loader-hourglass"></div>
@@ -504,12 +502,11 @@ let codes = [
               transform: rotate(1800deg);
           }
       }
-      `
-    },
-    {
-      id:9,
-      code:
-      `
+      `,
+  },
+  {
+    id: 9,
+    code: `
       ##HTML
       <div class="loader-box">
         <div class="loader-ripple">
@@ -571,12 +568,11 @@ let codes = [
               opacity: 0;
           }
       }
-      `
-    },
-    {
-      id:10,
-      code:
-      `
+      `,
+  },
+  {
+    id: 10,
+    code: `
       ##HTML
       <div class="loader-10">
         <div class="l10"></div>
@@ -597,12 +593,11 @@ let codes = [
     @keyframes l10 {
       100% {background-position: right -40px top 0}
     }
-      `
-    },
-    {
-      id:11,
-      code:
-      `
+      `,
+  },
+  {
+    id: 11,
+    code: `
       ##HTML
       <!-- Loader-11 -->
       <div class="loader-box">
@@ -643,12 +638,11 @@ let codes = [
           transform: rotateY(3600deg);
         }
       }
-      `
-    },
-    {
-     id:12,
-     code:
-     `
+      `,
+  },
+  {
+    id: 12,
+    code: `
      ##HTML
      <div class="loader-12">
         <span class="loader_arrow"></span>
@@ -682,11 +676,11 @@ let codes = [
        @keyframes rotate {
         100%{    transform: rotate(360deg)}
       }
-     `
-    },
-    {
-      id:13,
-      code:`
+     `,
+  },
+  {
+    id: 13,
+    code: `
       ##HTML
       <div class="loader-13">
         <div class="loader13">
@@ -731,15 +725,67 @@ let codes = [
           to { transform: rotate(360deg) }
         }
       
-      `
-    }
+      `,
+  },
+
+  {
+    id: 14,
+    code: `
+          ##HTML
+          <div class="loader-14">
+              <div class="l-14"></div>
+          </div>
+    
+          ##CSS
+          .loader-14 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: relative;
+            margin: 0 auto;
+          }
+        
+        
+          .l-14{
+            -webkit-perspective: 120px;
+            -moz-perspective: 120px;
+            -ms-perspective: 120px;
+            perspective: 120px;
+          }
+          
+          .l-13:before{
+            content: "";
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            animation: flip 1s infinite;
+          }
+          
+          @keyframes flip {
+            0% {
+              transform: rotate(0);
+            }
+          
+            50% {
+              transform: rotateY(180deg);
+            }
+          
+            100% {
+              transform: rotateY(180deg)  rotateX(180deg);
+            }
+          }
+        `,
+  },
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
-let showcode = document.querySelectorAll('.show-code-btn')
-let code_para = document.querySelector('#code-paragraph')
-showcode.forEach(btn => {
-    btn.addEventListener('click', () => {
-        code_para.innerText = codes.find(c => c.id == btn.id).code
-    })
-})
+let showcode = document.querySelectorAll(".show-code-btn");
+let code_para = document.querySelector("#code-paragraph");
+showcode.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    code_para.innerText = codes.find((c) => c.id == btn.id).code;
+  });
+});
