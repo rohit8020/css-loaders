@@ -779,6 +779,70 @@ let codes = [
           }
         `,
   },
+  {
+    id: 15,
+    code: `
+    ##HTML <div class="spinner-container">
+<div class="spinner"></div>
+</div>
+#CSS 
+body {
+  --clr-background: whitesmoke;
+  --clr-main: tomato;
+}
+
+.spinner-container {
+  height: 70%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  justify-content: center;
+  background-color: var(--clr-background);
+}
+
+.spinner-container .spinner {
+  height: 100px;
+  width: 100px;
+  background-color: var(--clr-main);
+  border-radius: 50%;
+  position: relative;
+  animation: animateRotate 3s linear infinite;
+}
+
+.spinner-container .spinner::before,
+.spinner-container .spinner::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--clr-background);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.spinner-container .spinner::before {
+  height: calc(85% + 3px);
+  width: calc(85% + 3px);
+  left: -2px;
+  animation: animateBall 1s infinite linear alternate;
+}
+
+.spinner-container .spinner::after {
+  height: calc(15% + 3px);
+  width: calc(15% + 3px);
+  right: -2px;
+  animation: animateBall 1s infinite linear alternate-reverse;
+}
+
+@keyframes animateBall {
+  from { height: calc(85% + 3px); width: calc(85% + 3px); }
+  to {height: calc(15% + 3px); width: calc(15% + 3px); }
+}
+
+@keyframes animateRotate {
+  to { transform: rotate(360deg); }
+}`
+    },
+  
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
