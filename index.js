@@ -603,6 +603,53 @@ let codes = [
       100% {background-position: right -40px top 0}
     }
       `
+    },
+    {
+      id:11,
+      code:
+      `
+      ##HTML
+      <!-- Loader-11 -->
+      <div class="loader-box">
+          <div class="loader-11">
+            <div class="loader-circle"><div></div></div>
+          </div>
+          <a href="#demo-modal" id="11" class="show-code-btn">Show Code</a>
+      </div>
+
+      ##CSS
+      /*  ............Loader-11...............*/
+      .loader-circle {
+        display: inline-block;
+        transform: translateZ(1px);
+      }
+      .loader-circle > div {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        background: #fff;
+        animation: loader-circle 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      @keyframes loader-circle {
+        0%,
+        100% {
+          animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+        }
+        0% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          transform: rotateY(1800deg);
+          animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+        }
+        100% {
+          transform: rotateY(3600deg);
+        }
+      }
+
+      `
     }
     
 ];
