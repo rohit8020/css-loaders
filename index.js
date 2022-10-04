@@ -506,19 +506,155 @@ let codes = [
       }
       `
     },
-
     {
       id:9,
       code:
       `
       ##HTML
       <div class="loader-box">
-        <div class="loader-9">
-          <span class="loader_arrow"></span>
+        <div class="loader-ripple">
+          <div></div>
+          <div></div>
         </div>
+      </div>
+      
+      #CSS
+      .loader-ripple {
+          display: inline-block;
+          position: relative;
+          width: 80px;
+          height: 80px;
+      }
+
+      .loader-ripple div {
+          position: absolute;
+          border: 4px solid #fff;
+          opacity: 1;
+          border-radius: 50%;
+          animation: loader-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+
+      .loader-ripple div:nth-child(2) {
+          animation-delay: -0.5s;
+      }
+
+      @keyframes loader-ripple {
+          0% {
+              top: 36px;
+              left: 36px;
+              width: 0;
+              height: 0;
+              opacity: 0;
+          }
+
+          4.9% {
+              top: 36px;
+              left: 36px;
+              width: 0;
+              height: 0;
+              opacity: 0;
+          }
+
+          5% {
+              top: 36px;
+              left: 36px;
+              width: 0;
+              height: 0;
+              opacity: 1;
+          }
+
+          100% {
+              top: 0px;
+              left: 0px;
+              width: 72px;
+              height: 72px;
+              opacity: 0;
+          }
+      }
+      `
+    },
+    {
+      id:10,
+      code:
+      `
+      ##HTML
+      <div class="loader-10">
+        <div class="l10"></div>
       </div>
 
       ##CSS
+      .loader-10 {
+        width: 120px;
+        height: 20px;
+        background: linear-gradient(#514b82 0 0) left -40px top 0/40px 100% no-repeat #eee;
+        -webkit-mask:
+          linear-gradient(#000 0 0) top   /100% 5px no-repeat,
+          linear-gradient(#000 0 0) bottom/100% 5px no-repeat,
+          repeating-linear-gradient(90deg,#000 0 5px, #0000 0 20%) left/calc(100% - 5px) 100%;
+        animation: l10 1s infinite linear;
+    }
+    
+    @keyframes l10 {
+      100% {background-position: right -40px top 0}
+    }
+      `
+    },
+    {
+      id:11,
+      code:
+      `
+      ##HTML
+      <!-- Loader-11 -->
+      <div class="loader-box">
+          <div class="loader-11">
+            <div class="loader-circle"><div></div></div>
+          </div>
+          <a href="#demo-modal" id="11" class="show-code-btn">Show Code</a>
+      </div>
+
+      ##CSS
+      /*  ............Loader-11...............*/
+      .loader-circle {
+        display: inline-block;
+        transform: translateZ(1px);
+      }
+      .loader-circle > div {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        background: #fff;
+        animation: loader-circle 2.8s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+      @keyframes loader-circle {
+        0%,
+        100% {
+          animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+        }
+        0% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          transform: rotateY(1800deg);
+          animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+        }
+        100% {
+          transform: rotateY(3600deg);
+        }
+      }
+      `
+    },
+    {
+     id:12,
+     code:
+     `
+     ##HTML
+     <div class="loader-12">
+        <span class="loader_arrow"></span>
+     </div>
+      
+     ##CSS
       .loader_arrow {
         width: 48px;
         height: 48px;
@@ -545,9 +681,8 @@ let codes = [
       }
        @keyframes rotate {
         100%{    transform: rotate(360deg)}
-      }    
-      `
-    }
+      }
+     `
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
