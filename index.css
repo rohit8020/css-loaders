@@ -732,23 +732,17 @@ footer .footer {
 }
 
 /* .............Loader-15.............. */
-
-
-
-
 body {
-  --clr-background: chocolate;
-  --clr-main: #4a47ff;
+  --clr-background: whitesmoke;
+  --clr-main: tomato;
 }
 
 .spinner-container {
     height: 70%;
     display: flex;
-    width: 50vh;
     align-items: center;
     overflow: hidden;
-  justify-content: center;
-  background-color: var(--clr-background);
+    justify-content: center;
 }
 
 .spinner-container .spinner {
@@ -792,10 +786,6 @@ body {
 @keyframes animateRotate {
   to { transform: rotate(360deg); }
 }
-
-/* .............Loader-15.............. */
-
-
 
 
 /* .............Loader-nth............... */
