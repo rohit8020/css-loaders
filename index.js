@@ -508,19 +508,14 @@ let codes = [
     id: 9,
     code: `
       ##HTML
-      <div class="loader-9">
-        <div class="l9"></div>
-      </div>
-
-      ##CSS
-      .loader-9 {
+      <div class="loader-box">
         <div class="loader-ripple">
           <div></div>
           <div></div>
         </div>
       </div>
-
-      ##CSS
+      
+      #CSS
       .loader-ripple {
           display: inline-block;
           position: relative;
@@ -643,59 +638,97 @@ let codes = [
           transform: rotateY(3600deg);
         }
       }
-
       `,
   },
   {
     id: 12,
     code: `
-      ##HTML
-      <div class="loader-12">
-          <div class="l-12"></div>
-      </div>
-
-      ##CSS
-      .loader-12 {
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
+     ##HTML
+     <div class="loader-12">
+        <span class="loader_arrow"></span>
+     </div>
+      
+     ##CSS
+      .loader_arrow {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
         position: relative;
-        margin: 0 auto;
-      }
-    
-    
-      .l-12{
-        -webkit-perspective: 120px;
-        -moz-perspective: 120px;
-        -ms-perspective: 120px;
-        perspective: 120px;
-      }
-      
-      .l-12:before{
-        content: "";
+        border: 3px solid;
+        border-color:#de3500 #0000 #fff #0000;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: 1s rotate linear infinite;
+     }
+     .loader_arrow:before , .loader_arrow:after{
+        content: '';
+        top: 0;
+        left: 0;
         position: absolute;
-        left: 25px;
-        top: 25px;
-        width: 50px;
-        height: 50px;
-        background-color: #3498db;
-        animation: flip 1s infinite;
+        border: 10px solid transparent;
+        border-bottom-color:#fff;
+        transform: translate(-10px, 19px) rotate(-35deg);
       }
-      
-      @keyframes flip {
-        0% {
-          transform: rotate(0);
-        }
-      
-        50% {
-          transform: rotateY(180deg);
-        }
-      
-        100% {
-          transform: rotateY(180deg)  rotateX(180deg);
-        }
+     .loader_arrow:after {
+        border-color: #de3500 #0000 #0000 #0000 ;
+        transform: translate(32px, 3px) rotate(-35deg);
       }
-    `,
+       @keyframes rotate {
+        100%{    transform: rotate(360deg)}
+      }
+     `,
+  },
+
+  {
+    id: 13,
+    code: `
+        ##HTML
+        <div class="loader-13">
+            <div class="l-13"></div>
+        </div>
+  
+        ##CSS
+        .loader-13 {
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          position: relative;
+          margin: 0 auto;
+        }
+      
+      
+        .l-13{
+          -webkit-perspective: 120px;
+          -moz-perspective: 120px;
+          -ms-perspective: 120px;
+          perspective: 120px;
+        }
+        
+        .l-13:before{
+          content: "";
+          position: absolute;
+          left: 25px;
+          top: 25px;
+          width: 50px;
+          height: 50px;
+          background-color: #3498db;
+          animation: flip 1s infinite;
+        }
+        
+        @keyframes flip {
+          0% {
+            transform: rotate(0);
+          }
+        
+          50% {
+            transform: rotateY(180deg);
+          }
+        
+          100% {
+            transform: rotateY(180deg)  rotateX(180deg);
+          }
+        }
+      `,
   },
 ];
 
