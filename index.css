@@ -586,7 +586,7 @@ footer .footer {
         opacity: 0;
     }
 }
-
+  
 
 /* ..................Loader-10............. */
 .loader-10 {
@@ -667,7 +667,30 @@ footer .footer {
   }
 
 /* .............Loader-13............... */
-.loader-13 {
+.loader-13{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rebeccapurple;
+}
+.loader13{
+    border: 7px groove rebeccapurple;
+  
+    display: table-cell;
+    border-radius: 999px;
+    animation: spin 15s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+  
+
+/* .............Loader-14.............. */
+.loader-14 {
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -676,14 +699,14 @@ footer .footer {
 }
 
 
-.l-13{
+.l-14{
   -webkit-perspective: 120px;
   -moz-perspective: 120px;
   -ms-perspective: 120px;
   perspective: 120px;
 }
 
-.l-13:before{
+.l-14:before{
   content: "";
   position: absolute;
   left: 25px;

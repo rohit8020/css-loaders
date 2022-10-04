@@ -678,57 +678,106 @@ let codes = [
       }
      `,
   },
-
   {
     id: 13,
     code: `
-        ##HTML
-        <div class="loader-13">
-            <div class="l-13"></div>
+      ##HTML
+      <div class="loader-13">
+        <div class="loader13">
+          <div class="loader13">
+            <div class="loader13">
+              <div class="loader13">
+                <div class="loader13">
+                  <div class="loader13">
+                    <div class="loader13">
+                      <div class="loader13">
+                        <div class="loader13">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-  
-        ##CSS
-        .loader-13 {
-          width: 100px;
-          height: 100px;
-          border-radius: 100%;
-          position: relative;
-          margin: 0 auto;
+      </div>
+
+      ##CSS
+      .loader-13{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: rebeccapurple;
+      }
+      .loader13{
+          border: 7px groove rebeccapurple;
+        
+          display: table-cell;
+          border-radius: 999px;
+          animation: spin 15s linear infinite;
+        }
+        
+        @keyframes spin {
+          from { transform: rotate(0deg) }
+          to { transform: rotate(360deg) }
         }
       
-      
-        .l-13{
-          -webkit-perspective: 120px;
-          -moz-perspective: 120px;
-          -ms-perspective: 120px;
-          perspective: 120px;
-        }
-        
-        .l-13:before{
-          content: "";
-          position: absolute;
-          left: 25px;
-          top: 25px;
-          width: 50px;
-          height: 50px;
-          background-color: #3498db;
-          animation: flip 1s infinite;
-        }
-        
-        @keyframes flip {
-          0% {
-            transform: rotate(0);
-          }
-        
-          50% {
-            transform: rotateY(180deg);
-          }
-        
-          100% {
-            transform: rotateY(180deg)  rotateX(180deg);
-          }
-        }
       `,
+  },
+
+  {
+    id: 14,
+    code: `
+          ##HTML
+          <div class="loader-14">
+              <div class="l-14"></div>
+          </div>
+    
+          ##CSS
+          .loader-14 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: relative;
+            margin: 0 auto;
+          }
+        
+        
+          .l-14{
+            -webkit-perspective: 120px;
+            -moz-perspective: 120px;
+            -ms-perspective: 120px;
+            perspective: 120px;
+          }
+          
+          .l-13:before{
+            content: "";
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            animation: flip 1s infinite;
+          }
+          
+          @keyframes flip {
+            0% {
+              transform: rotate(0);
+            }
+          
+            50% {
+              transform: rotateY(180deg);
+            }
+          
+            100% {
+              transform: rotateY(180deg)  rotateX(180deg);
+            }
+          }
+        `,
   },
 ];
 
