@@ -361,6 +361,102 @@ let codes = [
           }
           } 
         `
+    },
+    {
+      id:7,
+      code:
+      `
+      ##HTML
+      <div class="loader-7">
+          <div class="dot-loader-7"></div>
+          <div class="dot-loader-7"></div>
+          <div class="dot-loader-7"></div> 
+          <span class="loading-7">Loading...</span>    
+        </div>
+
+      ##CSS
+      .loader-7{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        background: #011015;
+      }
+      
+      .dot-loader-7{
+        width: 120px;
+        height: 120px;
+        border: 4px solid #011015;
+        border-radius: 50%;
+        position: absolute;
+      }
+      
+      .dot-loader-7:nth-child(1){
+        border-bottom-width: 10px;
+        border-color: rgb(255, 0, 255);
+        animation: rotate1 2s linear infinite;
+      
+      }
+      
+      .dot-loader-7:nth-child(2){
+        border-right-width: 10px;
+        border-color: rgb(0, 247, 255);
+        animation: rotate2 2s linear infinite;
+      
+      }
+      
+      .dot-loader-7:nth-child(3){
+        border-top-width: 10px;
+        border-color: rgb(0, 255, 13);
+        animation: rotate3 2s linear infinite;
+      
+      }
+      @keyframes rotate1{
+        0%{
+            transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+        }
+        50%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+        }
+      }
+      
+      @keyframes rotate2{
+        0%{
+            transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+        }
+        50%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+        }
+      }
+      
+      @keyframes rotate3{
+        0%{
+            transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+        }
+        50%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+        }
+      }
+      
+      .loading-7{
+        color: white;
+        font-size: smaller;
+      } 
+      `
     }
 ];
 
