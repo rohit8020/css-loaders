@@ -549,7 +549,27 @@ footer .footer {
         transform: rotate(1800deg);
     }
 }
-
-
+/* .............Loader-9............... */
+.loader-9{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rebeccapurple;
+}
+.loader9{
+    border: 7px groove rebeccapurple;
+  
+    display: table-cell;
+    border-radius: 999px;
+    animation: spin 15s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+  
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */

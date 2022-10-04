@@ -505,6 +505,57 @@ let codes = [
           }
       }
       `
+    },
+
+    {
+      id:9,
+      code:`
+      ##HTML
+      <div class="loader-9">
+        <div class="loader9">
+          <div class="loader9">
+            <div class="loader9">
+              <div class="loader9">
+                <div class="loader9">
+                  <div class="loader9">
+                    <div class="loader9">
+                      <div class="loader9">
+                        <div class="loader9">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      ##CSS
+
+      .loader-9{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: rebeccapurple;
+      }
+      .loader9{
+          border: 7px groove rebeccapurple;
+        
+          display: table-cell;
+          border-radius: 999px;
+          animation: spin 15s linear infinite;
+        }
+        
+        @keyframes spin {
+          from { transform: rotate(0deg) }
+          to { transform: rotate(360deg) }
+        }
+      
+      `
     }
 ];
 
