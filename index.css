@@ -586,7 +586,7 @@ footer .footer {
         opacity: 0;
     }
 }
-
+  
 
 /* ..................Loader-10............. */
 .loader-10 {
@@ -666,6 +666,29 @@ footer .footer {
     100%{    transform: rotate(360deg)}
   }
 
+
+/* .............Loader-13............... */
+.loader-13{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rebeccapurple;
+}
+.loader13{
+    border: 7px groove rebeccapurple;
+  
+    display: table-cell;
+    border-radius: 999px;
+    animation: spin 15s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
+  
 
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */

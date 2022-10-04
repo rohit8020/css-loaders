@@ -683,7 +683,56 @@ let codes = [
         100%{    transform: rotate(360deg)}
       }
      `
-    } 
+    },
+    {
+      id:13,
+      code:`
+      ##HTML
+      <div class="loader-13">
+        <div class="loader13">
+          <div class="loader13">
+            <div class="loader13">
+              <div class="loader13">
+                <div class="loader13">
+                  <div class="loader13">
+                    <div class="loader13">
+                      <div class="loader13">
+                        <div class="loader13">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      ##CSS
+      .loader-13{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: rebeccapurple;
+      }
+      .loader13{
+          border: 7px groove rebeccapurple;
+        
+          display: table-cell;
+          border-radius: 999px;
+          animation: spin 15s linear infinite;
+        }
+        
+        @keyframes spin {
+          from { transform: rotate(0deg) }
+          to { transform: rotate(360deg) }
+        }
+      
+      `
+    }
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
