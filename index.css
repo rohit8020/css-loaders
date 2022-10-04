@@ -636,8 +636,8 @@ footer .footer {
 }
 
 
-/* .............Loader-11............... */
-.loader-11 {
+/* .............Loader-12............... */
+.loader-12 {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -646,14 +646,14 @@ footer .footer {
   }
 
 
-  .l-11{
+  .l-12{
     -webkit-perspective: 120px;
     -moz-perspective: 120px;
     -ms-perspective: 120px;
     perspective: 120px;
   }
   
-  .l-11:before{
+  .l-12:before{
     content: "";
     position: absolute;
     left: 25px;
