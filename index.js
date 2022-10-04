@@ -512,6 +512,11 @@ let codes = [
       `
       ##HTML
       <div class="loader-9">
+        <div class="l9"></div>
+      </div>
+
+      ##CSS
+      .loader-9 {
         <div class="loader-ripple">
           <div></div>
           <div></div>
