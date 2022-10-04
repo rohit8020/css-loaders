@@ -349,7 +349,7 @@ footer .footer {
     width: 120px;
     position: relative;
   }
-  
+
   .loader-6 .circle {
     width: 20px;
     height: 20px;
@@ -359,23 +359,23 @@ footer .footer {
     -webkit-animation: mesh 3s ease-in-out infinite;
     animation: mesh 3s ease-in-out infinite -1.5s;
   }
-  
+
   .loader-6 > div .circle:last-child {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
   }
-  
+
   .loader-6 > div {
     position: absolute;
     top: 50%;
     left: 50%;
   }
-  
+
   .loader-6 > div:last-child {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
-  
+
   @-webkit-keyframes mesh {
   0% {
     -webkit-transform-origin: 50% -100%;
@@ -428,7 +428,7 @@ footer .footer {
             transform: rotate(360deg);
   }
   }
-   
+
   /* .............Loader-7............... */
 /* ...................Loader-7................... */
 .loader-7{
@@ -511,7 +511,45 @@ footer .footer {
 .loading-7{
   color: white;
   font-size: smaller;
-} 
-  
+}
+
+/* .............Loader-8............... */
+.loader-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.loader-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: loader-hourglass 1.2s infinite;
+}
+
+@keyframes loader-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */

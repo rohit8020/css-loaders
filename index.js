@@ -1,11 +1,11 @@
-/* 
+/*
 You can add more code in the codes array as given below.
-You have to copy the HTML code of the loader and CSS code 
+You have to copy the HTML code of the loader and CSS code
 and paste inside the codes array in the form ->
 - Make a new object inside the codes array
 -   {
         "id": it should be number(1+ previous id number),
-        "code": 
+        "code":
         `
         ##HTML Code
         <div></div>...
@@ -38,7 +38,7 @@ let codes = [
             height: 80px;
             background-color: rgb(42, 119, 163);
         }
-        
+
         .loader-1 div {
             display: inline-block;
             position: absolute;
@@ -47,28 +47,28 @@ let codes = [
             background: #fff;
             animation: loader-1 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
         }
-        
+
         .loader-1 div:nth-child(1) {
             left: 8px;
             animation-delay: -0.24s;
         }
-        
+
         .loader-1 div:nth-child(2) {
             left: 32px;
             animation-delay: -0.12s;
         }
-        
+
         .loader-1 div:nth-child(3) {
             left: 56px;
             animation-delay: 0;
         }
-        
+
         @keyframes loader-1 {
             0% {
                 top: 8px;
                 height: 64px;
             }
-        
+
             50%,
             100% {
                 top: 24px;
@@ -169,10 +169,10 @@ let codes = [
     code: `/* Loader-4 */
         #HTML
         <div class="loader-4">
-            
+
         <div class="dot-loader"></div>
         <div class="dot-loader dot-loader--2"></div>
-        <div class="dot-loader dot-loader--3"></div>      
+        <div class="dot-loader dot-loader--3"></div>
 
       </div>
       #CSS
@@ -192,7 +192,7 @@ let codes = [
         -webkit-animation: 1.2s grow ease-in-out infinite;
         animation: 1.2s grow ease-in-out infinite;
       }
-      
+
       .dot-loader--2 {
         -webkit-animation: 1.2s grow ease-in-out infinite 0.15555s;
         animation: 1.2s grow ease-in-out infinite 0.15555s;
@@ -221,7 +221,7 @@ let codes = [
           -webkit-transform: scale(1);
                   transform: scale(1);
         }
-      }    
+      }
 `,
   },
   {
@@ -238,7 +238,7 @@ let codes = [
     height: 100vh;
     width: 100vw;
   }
-  
+
   .loader5_int {
     position: absolute;
     top: 50%;
@@ -252,7 +252,7 @@ let codes = [
     transform-origin: center;
     animation: rotate 1s linear infinite;
   }
-  
+
   @keyframes rotate {
     from {
       transform: rotate(0);
@@ -281,7 +281,7 @@ let codes = [
             width: 120px;
             position: relative;
           }
-          
+
           .loader-6 .circle {
             width: 20px;
             height: 20px;
@@ -291,23 +291,23 @@ let codes = [
             -webkit-animation: mesh 3s ease-in-out infinite;
             animation: mesh 3s ease-in-out infinite -1.5s;
           }
-          
+
           .loader-6 > div .circle:last-child {
             -webkit-animation-delay: 0s;
             animation-delay: 0s;
           }
-          
+
           .loader-6 > div {
             position: absolute;
             top: 50%;
             left: 50%;
           }
-          
+
           .loader-6 > div:last-child {
             -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
           }
-          
+
           @-webkit-keyframes mesh {
           0% {
             -webkit-transform-origin: 50% -100%;
@@ -359,7 +359,7 @@ let codes = [
             -webkit-transform: rotate(360deg);
                     transform: rotate(360deg);
           }
-          } 
+          }
         `
     },
     {
@@ -370,8 +370,8 @@ let codes = [
       <div class="loader-7">
           <div class="dot-loader-7"></div>
           <div class="dot-loader-7"></div>
-          <div class="dot-loader-7"></div> 
-          <span class="loading-7">Loading...</span>    
+          <div class="dot-loader-7"></div>
+          <span class="loading-7">Loading...</span>
         </div>
 
       ##CSS
@@ -387,7 +387,7 @@ let codes = [
         height: 120px;
         background: #011015;
       }
-      
+
       .dot-loader-7{
         width: 120px;
         height: 120px;
@@ -395,26 +395,26 @@ let codes = [
         border-radius: 50%;
         position: absolute;
       }
-      
+
       .dot-loader-7:nth-child(1){
         border-bottom-width: 10px;
         border-color: rgb(255, 0, 255);
         animation: rotate1 2s linear infinite;
-      
+
       }
-      
+
       .dot-loader-7:nth-child(2){
         border-right-width: 10px;
         border-color: rgb(0, 247, 255);
         animation: rotate2 2s linear infinite;
-      
+
       }
-      
+
       .dot-loader-7:nth-child(3){
         border-top-width: 10px;
         border-color: rgb(0, 255, 13);
         animation: rotate3 2s linear infinite;
-      
+
       }
       @keyframes rotate1{
         0%{
@@ -427,7 +427,7 @@ let codes = [
             transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
         }
       }
-      
+
       @keyframes rotate2{
         0%{
             transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
@@ -439,7 +439,7 @@ let codes = [
             transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
         }
       }
-      
+
       @keyframes rotate3{
         0%{
             transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
@@ -451,11 +451,59 @@ let codes = [
             transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
         }
       }
-      
+
       .loading-7{
         color: white;
         font-size: smaller;
-      } 
+      }
+      `
+    },
+
+    {
+      id:8,
+      code:
+      `
+      ##HTML
+      <div class="loader-8">
+          <div class="loader-hourglass"></div>
+      </div>
+
+      ##CSS
+      .loader-hourglass {
+          display: inline-block;
+          position: relative;
+          width: 80px;
+          height: 80px;
+      }
+
+      .loader-hourglass:after {
+          content: " ";
+          display: block;
+          border-radius: 50%;
+          width: 0;
+          height: 0;
+          margin: 8px;
+          box-sizing: border-box;
+          border: 32px solid #fff;
+          border-color: #fff transparent #fff transparent;
+          animation: loader-hourglass 1.2s infinite;
+      }
+
+      @keyframes loader-hourglass {
+          0% {
+              transform: rotate(0);
+              animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          }
+
+          50% {
+              transform: rotate(900deg);
+              animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          }
+
+          100% {
+              transform: rotate(1800deg);
+          }
+      }
       `
     }
 ];
