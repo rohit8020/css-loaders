@@ -7,6 +7,7 @@ Hacktober Fest 2022, This is the website from which you can copy  the  code for 
 ![Alt text](./website.png)
 
 ## How to contribute
+- Always add a new CSS Loader, do not  repeat the Loader.
 - Make a CSS-LOADER in HTML file(index.html). [here](index.html)
 - Add the CSS for the your loader in the CSS file(index.css). [here](index.css)
 - Add the HTML Code and CSS code inside the JavaScript file(index.js) inside the codes array by making the object, as shown in the index.js file. [here](index.js)
