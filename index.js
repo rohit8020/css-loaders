@@ -781,7 +781,8 @@ let codes = [
   },
   {
     id: 15,
-    code: `
+    code: 
+    `
     ##HTML 
     <div class="spinner-container">
     <div class="spinner"></div>
@@ -1040,7 +1041,42 @@ let codes = [
     }
   }
     `
-  }
+  },
+  {
+    id: 19,
+    code: `
+    ##HTML 
+    <div class="loading">
+        <div></div>
+	  </div>
+    
+    #CSS 
+    .loading {
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      display: grid;
+      place-items: center;
+      max-width: 100%;
+    }
+    
+    .loading > div {
+      width: 10vmax;
+      height: 10vmax;
+      border-bottom: 5px solid rgba(0, 0, 0, 0.719);
+    
+      border-radius: 50%;
+    
+      animation: loadingRotate 800ms linear infinite;
+    }
+    
+    @keyframes loadingRotate {
+      to {
+        transform: rotateZ(-360deg);
+      }
+    }
+    `
+  },
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array

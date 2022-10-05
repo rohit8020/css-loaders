@@ -787,8 +787,8 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* .............Loader-16............... */
 
+/* .............Loader-16............... */
 .loader-16{
   position: absolute;
   width: 100px;
@@ -931,6 +931,32 @@ body {
   }
 }
 
+
+/* .............Loader-19.............. */
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+
+.loading > div {
+  width: 10vmax;
+  height: 10vmax;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.719);
+
+  border-radius: 50%;
+
+  animation: loadingRotate 800ms linear infinite;
+}
+
+@keyframes loadingRotate {
+      to {
+        transform: rotateZ(-360deg);
+      }
+    }
 
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */
