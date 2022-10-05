@@ -849,11 +849,9 @@ let codes = [
     code:
     `
     ##HTML
-    <div class="loader-box">
     <div class="loader-16"></div>
     <span class="sat"> loading... </span>
     <a href="#demo-modal" id="16" class="show-code-btn">Show Code</a>
-    </div>
 
     ##CSS
     
@@ -904,7 +902,6 @@ let codes = [
     code:
     `
     ##HTML
-    <div class="loader-box">
     <div class="loader-17">
     <span class="pp" style="--i:1;"></span>
     <span class="pp" style="--i:2;"></span>
@@ -927,8 +924,8 @@ let codes = [
     <span class="pp" style="--i:19;"></span>
     <span class="pp" style="--i:20;"></span>
     <a href="#demo-modal" id="17" class="show-code-btn show">Show Code</a>
-     </div>
-  </div>
+    </div>
+ 
 
   ##CSS
   .loader-17{
