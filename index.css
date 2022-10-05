@@ -666,7 +666,6 @@ footer .footer {
     100%{    transform: rotate(360deg)}
   }
 
-
 /* .............Loader-13............... */
 .loader-13{
     height: 50%;
@@ -689,8 +688,250 @@ footer .footer {
     to { transform: rotate(360deg) }
   }
   
-/* .............Loader-14............... */
+/* .............Loader-14.............. */
 .loader-14 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.l-14{
+  -webkit-perspective: 120px;
+  -moz-perspective: 120px;
+  -ms-perspective: 120px;
+  perspective: 120px;
+}
+
+.l-14:before{
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  animation: flip 1s infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(180deg)  rotateX(180deg);
+  }
+}
+
+/* .............Loader-15.............. */
+body {
+  --clr-background: whitesmoke;
+  --clr-main: tomato;
+}
+
+.spinner-container {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.spinner-container .spinner {
+  height: 100px;
+  width: 100px;
+  background-color: var(--clr-main);
+  border-radius: 50%;
+  position: relative;
+  animation: animateRotate 3s linear infinite;
+}
+
+.spinner-container .spinner::before,
+.spinner-container .spinner::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--clr-background);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.spinner-container .spinner::before {
+  height: calc(85% + 3px);
+  width: calc(85% + 3px);
+  left: -2px;
+  animation: animateBall 1s infinite linear alternate;
+}
+
+.spinner-container .spinner::after {
+  height: calc(15% + 3px);
+  width: calc(15% + 3px);
+  right: -2px;
+  animation: animateBall 1s infinite linear alternate-reverse;
+}
+
+@keyframes animateBall {
+  from { height: calc(85% + 3px); width: calc(85% + 3px); }
+  to {height: calc(15% + 3px); width: calc(15% + 3px); }
+}
+
+@keyframes animateRotate {
+  to { transform: rotate(360deg); }
+}
+
+/* .............Loader-16............... */
+
+.loader-16{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+  margin-bottom: 56px;
+}
+
+@keyframes ring {
+  0%{transform: rotate(0deg);
+      box-shadow: 1px 4px 2px #e65c00;
+  }
+  50%{transform: rotate(180deg);
+      box-shadow: 1px 4px 2px #18b201;
+  }
+  100%{transform: rotate(360deg);
+      box-shadow: 1px 4px 2px #0456c8;
+  }
+}
+.loader-16:before {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+.sat{
+
+  color: #000000;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  font-weight: bold;
+ 
+}
+
+/* .............Loader-17............... */
+
+.loader-17{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: anim 10s linear infinite;
+}
+@keyframes anim
+{
+  0%{
+     filter: hue-rotate(0deg);
+  }
+  100%{
+      filter: hue-rotate(360deg);
+  }
+}
+
+.loader-17 .pp
+{
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  width: 80px;
+  height: 80px;
+  transform: rotate(calc(18deg * var(--i)));
+     
+}
+
+.loader-17 .pp::before{
+
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #e9c912;
+  box-shadow: 0 0 5px #7ffa1a,
+              0 0 10px #7ffa1a,
+              0 0 20px #7ffa1a,
+              0 0 40px #7ffa1a,
+              0 0 60px #7ffa1a,
+              0 0 80px #7ffa1a;
+
+  animation: sat11 2s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes sat11
+{
+  0%{
+     transform: scale(1);
+  }
+  80%,100%{
+      transform: scale(2);
+  }
+ 
+}
+.show{
+  margin-top: 14rem;
+  
+}
+
+/* .............Loader-18............... */
+.loader-18 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 45px;
+}
+
+.loader-placeholder {
+  width: 100%;
+  height: 20px;
+  border: 2px solid #6A0DAD;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.indicator {
+  position: relative;
+  width: 30px;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #6A0DAD;
+  animation: loader18 1s infinite linear alternate-reverse;
+  margin: 0;
+}
+
+@keyframes loader18 {
+  0%{
+     left: 0px;
+  }
+  100%{
+    left: 130px;
+  }
+}
+
+/* .............Loader-19............... */
+.loader-19 {
   margin: 0;
   padding: 0;
   font-weight: 100;
@@ -698,45 +939,45 @@ footer .footer {
   color: #ffffff;
 }
 
-.loader-14 span {
+.loader-19 span {
   display: inline-block;
   text-transform: uppercase;  
   opacity: 0;
   transform: rotateX(-90deg);
 }
 
-.loader-14 .word1 {
+.loader-19 .word1 {
   animation: drop 1.2s ease-in-out infinite;
   animation-delay: 1.2s;
 }
 
-.loader-14 .word2 {
+.loader-19 .word2 {
   animation: drop 1.2s ease-in-out infinite;
   animation-delay: 1.3s;
 }
 
-.loader-14 .word3 {
+.loader-19 .word3 {
   animation: drop 1.2s ease-in-out infinite;
   animation-delay: 1.4s;
 }
 
-.loader-14 .word4 {
+.loader-19 .word4 {
   animation: drop 1.2s ease-in-out infinite;
   animation-delay: 1.5s;
 
 }
 
-.loader-14 .word5 {
+.loader-19 .word5 {
   animation: drop 1.2s ease-in-out infinite;
   animation-delay: 1.6s;
 }
 
-.loader-14 .word6 {
+.loader-19 .word6 {
   animation: drop 1.2s ease-in-out infinite;
   animation-delay: 1.7s;
 }
 
-.loader-14 .word7 {
+.loader-19 .word7 {
   animation: drop 1.2s ease-in-out infinite;
   animation-delay: 1.8s;
 }
@@ -763,5 +1004,6 @@ footer .footer {
         top: 6.94em
     }
 }
+
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */

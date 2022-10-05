@@ -261,11 +261,11 @@ let codes = [
       transform: rotate(360deg);
     }
   }
-`
-    },
-    {
-        id : 6,
-        code : `/*Loader - 6*/
+`,
+  },
+  {
+    id: 6,
+    code: `/*Loader - 6*/
         #HTML
         <div class="loader-6">
             <div class="set-one">
@@ -360,12 +360,11 @@ let codes = [
                     transform: rotate(360deg);
           }
           }
-        `
-    },
-    {
-      id:7,
-      code:
-      `
+        `,
+  },
+  {
+    id: 7,
+    code: `
       ##HTML
       <div class="loader-7">
           <div class="dot-loader-7"></div>
@@ -456,13 +455,12 @@ let codes = [
         color: white;
         font-size: smaller;
       }
-      `
-    },
+      `,
+  },
 
-    {
-      id:8,
-      code:
-      `
+  {
+    id: 8,
+    code: `
       ##HTML
       <div class="loader-8">
           <div class="loader-hourglass"></div>
@@ -504,12 +502,11 @@ let codes = [
               transform: rotate(1800deg);
           }
       }
-      `
-    },
-    {
-      id:9,
-      code:
-      `
+      `,
+  },
+  {
+    id: 9,
+    code: `
       ##HTML
       <div class="loader-box">
         <div class="loader-ripple">
@@ -571,12 +568,11 @@ let codes = [
               opacity: 0;
           }
       }
-      `
-    },
-    {
-      id:10,
-      code:
-      `
+      `,
+  },
+  {
+    id: 10,
+    code: `
       ##HTML
       <div class="loader-10">
         <div class="l10"></div>
@@ -597,12 +593,11 @@ let codes = [
     @keyframes l10 {
       100% {background-position: right -40px top 0}
     }
-      `
-    },
-    {
-      id:11,
-      code:
-      `
+      `,
+  },
+  {
+    id: 11,
+    code: `
       ##HTML
       <!-- Loader-11 -->
       <div class="loader-box">
@@ -643,12 +638,11 @@ let codes = [
           transform: rotateY(3600deg);
         }
       }
-      `
-    },
-    {
-     id:12,
-     code:
-     `
+      `,
+  },
+  {
+    id: 12,
+    code: `
      ##HTML
      <div class="loader-12">
         <span class="loader_arrow"></span>
@@ -682,11 +676,11 @@ let codes = [
        @keyframes rotate {
         100%{    transform: rotate(360deg)}
       }
-     `
-    },
-    {
-      id:13,
-      code:`
+     `,
+  },
+  {
+    id: 13,
+    code: `
       ##HTML
       <div class="loader-13">
         <div class="loader13">
@@ -730,12 +724,325 @@ let codes = [
           from { transform: rotate(0deg) }
           to { transform: rotate(360deg) }
         }
-      
       `
-    },
-    {
-      id:14,
-      code:`
+  },
+  {
+    id: 14,
+    code: `
+          ##HTML
+          <div class="loader-14">
+              <div class="l-14"></div>
+          </div>
+    
+          ##CSS
+          .loader-14 {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: relative;
+            margin: 0 auto;
+          }
+        
+        
+          .l-14{
+            -webkit-perspective: 120px;
+            -moz-perspective: 120px;
+            -ms-perspective: 120px;
+            perspective: 120px;
+          }
+          
+          .l-13:before{
+            content: "";
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            animation: flip 1s infinite;
+          }
+          
+          @keyframes flip {
+            0% {
+              transform: rotate(0);
+            }
+          
+            50% {
+              transform: rotateY(180deg);
+            }
+          
+            100% {
+              transform: rotateY(180deg)  rotateX(180deg);
+            }
+          }
+        `,
+  },
+  {
+    id: 15,
+    code: `
+    ##HTML 
+    <div class="spinner-container">
+    <div class="spinner"></div>
+    </div>
+    
+    #CSS 
+    body {
+      --clr-background: whitesmoke;
+      --clr-main: tomato;
+    }
+
+    .spinner-container {
+      height: 70%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      justify-content: center;
+      background-color: var(--clr-background);
+    }
+
+    .spinner-container .spinner {
+      height: 100px;
+      width: 100px;
+      background-color: var(--clr-main);
+      border-radius: 50%;
+      position: relative;
+      animation: animateRotate 3s linear infinite;
+    }
+
+    .spinner-container .spinner::before,
+    .spinner-container .spinner::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background-color: var(--clr-background);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .spinner-container .spinner::before {
+      height: calc(85% + 3px);
+      width: calc(85% + 3px);
+      left: -2px;
+      animation: animateBall 1s infinite linear alternate;
+    }
+
+    .spinner-container .spinner::after {
+      height: calc(15% + 3px);
+      width: calc(15% + 3px);
+      right: -2px;
+      animation: animateBall 1s infinite linear alternate-reverse;
+    }
+
+    @keyframes animateBall {
+      from { height: calc(85% + 3px); width: calc(85% + 3px); }
+      to {height: calc(15% + 3px); width: calc(15% + 3px); }
+    }
+
+    @keyframes animateRotate {
+      to { transform: rotate(360deg); }
+    }`,
+  },
+  {
+    id:16,
+    code:
+    `
+    ##HTML
+    <div class="loader-16"></div>
+    <span class="sat"> loading... </span>
+    <a href="#demo-modal" id="16" class="show-code-btn">Show Code</a>
+
+    ##CSS
+    
+.loader-16{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+  margin-bottom: 56px;
+}
+
+@keyframes ring {
+  0%{transform: rotate(0deg);
+      box-shadow: 1px 4px 2px #e65c00;
+  }
+  50%{transform: rotate(180deg);
+      box-shadow: 1px 4px 2px #18b201;
+  }
+  100%{transform: rotate(360deg);
+      box-shadow: 1px 4px 2px #0456c8;
+  }
+}
+.loader-16:before {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+.sat{
+  color: #000000;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  font-weight: bold;
+ 
+}
+    `
+  },
+  {
+    id:17,
+    code:
+    `
+    ##HTML
+    <div class="loader-17">
+    <span class="pp" style="--i:1;"></span>
+    <span class="pp" style="--i:2;"></span>
+    <span class="pp" style="--i:3;"></span>
+    <span class="pp" style="--i:4;"></span>
+    <span class="pp" style="--i:5;"></span>
+    <span class="pp" style="--i:6;"></span>
+    <span class="pp" style="--i:7;"></span>
+    <span class="pp" style="--i:8;"></span>
+    <span class="pp" style="--i:9;"></span>
+    <span class="pp" style="--i:10;"></span>
+    <span class="pp" style="--i:11;"></span>
+    <span class="pp" style="--i:12;"></span>
+    <span class="pp" style="--i:13;"></span>
+    <span class="pp" style="--i:14;"></span>
+    <span class="pp" style="--i:15;"></span>
+    <span class="pp" style="--i:16;"></span>
+    <span class="pp" style="--i:17;"></span>
+    <span class="pp" style="--i:18;"></span>
+    <span class="pp" style="--i:19;"></span>
+    <span class="pp" style="--i:20;"></span>
+    <a href="#demo-modal" id="17" class="show-code-btn show">Show Code</a>
+    </div>
+ 
+
+  ##CSS
+  .loader-17{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: anim 10s linear infinite;
+  }
+  @keyframes anim
+  {
+    0%{
+       filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+>>>>>>> upstream/main
+    }
+  }
+  
+  .loader-17 .pp
+  {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    width: 80px;
+    height: 80px;
+    transform: rotate(calc(18deg * var(--i)));
+       
+  }
+  
+  .loader-17 .pp::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #e9c912;
+    box-shadow: 0 0 5px #7ffa1a,
+                0 0 10px #7ffa1a,
+                0 0 20px #7ffa1a,
+                0 0 40px #7ffa1a,
+                0 0 60px #7ffa1a,
+                0 0 80px #7ffa1a;
+  
+    animation: sat11 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+  @keyframes sat11
+  {
+    0%{
+       transform: scale(1);
+    }
+    80%,100%{
+        transform: scale(2);
+    }
+   
+  }
+  .show{
+    margin-top: 14rem;
+    
+  }
+    `
+  },
+  {
+    id: 18,
+    code:
+    `
+    ##HTML
+    <div class="loader-box">
+      <div class="loader-18">
+        <div class="loader-placeholder">
+          <div class="indicator"></div>
+        </div>
+      </div>
+    </div>
+ 
+
+  ##CSS
+  .loader-18 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 45px;
+  }
+  
+  .loader-placeholder {
+    width: 100%;
+    height: 20px;
+    border: 2px solid #6A0DAD;
+    border-radius: 8px;
+    padding: 2px;
+  }
+  
+  .indicator {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #6A0DAD;
+    animation: loader18 1s infinite linear alternate-reverse;
+    margin: 0;
+  }
+  
+  @keyframes loader18 {
+    0%{
+       left: 0px;
+    }
+    100%{
+      left: 130px;
+    }
+  }
+    `
+  },
+  {
+    id: 19,
+    code:`
       ##HTML
       <div class="loader-box">
         <div class="loader-14">
@@ -825,14 +1132,14 @@ let codes = [
           }
       }
       `
-    }
+  },
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
-let showcode = document.querySelectorAll('.show-code-btn')
-let code_para = document.querySelector('#code-paragraph')
-showcode.forEach(btn => {
-    btn.addEventListener('click', () => {
-        code_para.innerText = codes.find(c => c.id == btn.id).code
-    })
-})
+let showcode = document.querySelectorAll(".show-code-btn");
+let code_para = document.querySelector("#code-paragraph");
+showcode.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    code_para.innerText = codes.find((c) => c.id == btn.id).code;
+  });
+});
