@@ -989,6 +989,57 @@ let codes = [
     
   }
     `
+  },
+  {
+    id: 18,
+    code:
+    `
+    ##HTML
+    <div class="loader-box">
+      <div class="loader-18">
+        <div class="loader-placeholder">
+          <div class="indicator"></div>
+        </div>
+      </div>
+    </div>
+ 
+
+  ##CSS
+  .loader-18 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 45px;
+  }
+  
+  .loader-placeholder {
+    width: 100%;
+    height: 20px;
+    border: 2px solid #6A0DAD;
+    border-radius: 8px;
+    padding: 2px;
+  }
+  
+  .indicator {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #6A0DAD;
+    animation: loader18 1s infinite linear alternate-reverse;
+    margin: 0;
+  }
+  
+  @keyframes loader18 {
+    0%{
+       left: 0px;
+    }
+    100%{
+      left: 130px;
+    }
+  }
+    `
   }
 ];
 
