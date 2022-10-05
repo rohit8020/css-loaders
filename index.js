@@ -1286,6 +1286,91 @@ let codes = [
     `
   }
 
+  ,
+  {
+    id: 22,
+    code:
+    `
+    ##HTML Code
+    <div>
+    <span class="dot" id="dot1"></span>
+    <span class="dot" id="dot2"></span>
+    <span class="dot" id="dot3"></span>
+    <span class="dot" id="dot4"></span>
+  </div>
+
+    ##CSS Code
+    .dot {
+      height: 5px;
+      width: 15px;
+      background-color: black;
+      border-radius: 10%;
+      display: inline-block;
+    }
+    
+    #dot1 {
+      animation: ajay1 1.2s infinite;
+    }
+    
+    #dot2 {
+      animation: ajay2 1.2s infinite;
+    }
+    
+    #dot3 {
+      animation: ajay3 1.2s infinite;
+    }
+    
+    #dot4 {
+      animation: ajay4 1.2s infinite;
+    }
+    
+    @keyframes ajay4 {
+      40% {
+        height: 50px;
+      }
+    
+      100% {
+        opacity: 55%;
+        height: 9px;
+      }
+    }
+    
+    @keyframes ajay3 {
+      30% {
+        height: 35px;
+      }
+    
+      100% {
+        opacity: 40%;
+        height: 6px;
+      }
+    }
+    
+    @keyframes ajay2 {
+      20% {
+        height: 25px;
+      }
+    
+      100% {
+        opacity: 25%;
+        height: 4px;
+      }
+    }
+    
+    @keyframes ajay1 {
+      10% {
+        /* opacity: 40%; */
+        height: 15px;
+      }
+    
+      100% {
+        opacity: 10%;
+        height: 2px;
+      }
+    }
+    `
+},
+
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
