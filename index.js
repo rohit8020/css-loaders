@@ -1373,37 +1373,37 @@ let codes = [
 	
 
   {
-    id: 21,
+    id: 23,
     code: `
     ###HTML
     <div class="loader-box">
-      <div class="loader-21">
+      <div class="loader-23">
           <div class="loading">
             <span class="loader"></span>
             <span class="loader"></span>
             <span class="loader"></span>
       </div>
     </div>
-    <a href="#demo-modal" id="21" class="show-code-btn">Show Code</a>
+    <a href="#demo-modal" id="23" class="show-code-btn">Show Code</a>
   </div>
 
 
     ###CSS
-    .loader-21 {
+    .loader-23 {
       width: 100%;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    .loader-21 .loading {
+    .loader-23 .loading {
       display: flex;
       position: absolute;
       width: auto;
       height: 20px;
       transition: all 0.4s ease;
     }
-    .loader-21 .loading .loader {
+    .loader-23 .loading .loader {
       display: block;
       align-items: flex-end;
       background-color: #ffffff;
@@ -1414,13 +1414,13 @@ let codes = [
       border-radius: 4px;
       bottom: 0;
     }
-    .loader-21 .loading .loader:nth-child(1) {
+    .loader-23 .loading .loader:nth-child(1) {
       transform: translateX(-20px);
     }
-    .loader-21 .loading .loader:nth-child(2) {
+    .loader-23 .loading .loader:nth-child(2) {
       animation-delay: 0.4s;
     }
-    .loader-21 .loading .loader:nth-child(3) {
+    .loader-23 .loading .loader:nth-child(3) {
       animation-delay: 0.8s;
       transform: translateX(20px);
     }
