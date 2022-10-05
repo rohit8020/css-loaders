@@ -732,6 +732,99 @@ let codes = [
         }
       
       `
+    },
+    {
+      id:14,
+      code:`
+      ##HTML
+      <div class="loader-box">
+        <div class="loader-14">
+          <span class="word1">l</span>  
+          <span class="word2">o</span>  
+          <span class="word3">a</span>  
+          <span class="word4">d</span>  
+          <span class="word5">i</span>  
+          <span class="word6">n</span>  
+          <span class="word7">g</span> 
+        </div>
+        <a href="#demo-modal" id="n" class="show-code-btn">Show Code</a>
+      </div>
+
+      ##CSS
+      .loader-14 {
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
+        font-size: 1.1em;
+        color: #ffffff;
+      }
+      
+      .loader-14 span {
+        display: inline-block;
+        text-transform: uppercase;  
+        opacity: 0;
+        transform: rotateX(-90deg);
+      }
+      
+      .loader-14 .word1 {
+        animation: drop 1.2s ease-in-out infinite;
+        animation-delay: 1.2s;
+      }
+      
+      .loader-14 .word2 {
+        animation: drop 1.2s ease-in-out infinite;
+        animation-delay: 1.3s;
+      }
+      
+      .loader-14 .word3 {
+        animation: drop 1.2s ease-in-out infinite;
+        animation-delay: 1.4s;
+      }
+      
+      .loader-14 .word4 {
+        animation: drop 1.2s ease-in-out infinite;
+        animation-delay: 1.5s;
+      
+      }
+      
+      .loader-14 .word5 {
+        animation: drop 1.2s ease-in-out infinite;
+        animation-delay: 1.6s;
+      }
+      
+      .loader-14 .word6 {
+        animation: drop 1.2s ease-in-out infinite;
+        animation-delay: 1.7s;
+      }
+      
+      .loader-14 .word7 {
+        animation: drop 1.2s ease-in-out infinite;
+        animation-delay: 1.8s;
+      }
+      
+      @keyframes drop {
+          10% {
+              opacity: 0.5;
+          }
+          20% {
+              opacity: 1;
+              top: 3.78em;
+              transform: rotateX(-360deg);
+          }
+          80% {
+              opacity: 1;
+              top: 3.78em;
+              transform: rotateX(-360deg);
+          }
+          90% {
+              opacity: 0.5;
+          }
+          100% {
+              opacity: 0;
+              top: 6.94em
+          }
+      }
+      `
     }
 ];
 
