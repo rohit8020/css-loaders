@@ -264,6 +264,41 @@
       </div>
       <a href="#demo-modal" id="20" class="show-code-btn">Show Code</a>
     </div>
+    <!-- Loader 21-->
+
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.86">
+      <defs>
+        <polygon id="hexagon" points="4.29 13.36 0.58 6.93 4.29 0.5 11.71 0.5 15.42 6.93 11.71 13.36 4.29 13.36" />
+        <g id="inner-shadow" transform="translate(-2, -2)">
+          <use xlink:href="#hexagon" class="inner-shadow" transform="scale(1.25)" />
+        </g>
+        <g id="inner-shadow-animated" transform="translate(-2, -2)">
+          <use xlink:href="#hexagon" class="inner-shadow--animated" transform="scale(1.25)" />
+        </g>
+      </defs>
+    
+      <mask id="mask">
+        <rect x="-4" y="-4" width="24" height="24" fill="black" />
+        <use xlink:href="#hexagon" fill="white" />
+      </mask>
+    
+    <!--  White hexagon fill  -->
+      <use xlink:href="#hexagon" class="fill" />
+      
+    <!--  Animated blue fill -->
+      <use xlink:href="#hexagon" class="fill--animated" />
+      
+    <!--  "Inner Shadow"  -->
+    <!--  1. #inner-shadow hexagon is scaled to be larger than mask. 
+          2. #inner-shadow hexagon is given a stroke which allows a drop-shadow is then applied. 
+          3. Mask matching original hexagon is applied  -->
+      <use xlink:href="#inner-shadow" mask="url(#mask)" />
+      
+    <!--  Animated "Inner Shadow"  -->
+      <use xlink:href="#inner-shadow-animated" mask="url(#mask)" />
+    </svg>
+    
+
 
     <!-- Loader-n -->
     <!-- <div class="loader-box">

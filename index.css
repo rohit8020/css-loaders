@@ -1032,5 +1032,94 @@ body {
         top: 6.94em
     }
 }
+/* .............Loader-20............... */
+
+:root {
+  --timing: 1.5s infinite linear;
+}
+
+body {
+    margin: 0;
+    background: #2c2d3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.svg {
+    animation: size var(--timing);
+    overflow: visible;
+    transform: scale(1);
+    width: 4rem;
+}
+
+.fill {
+    animation: drop-shadow-blink var(--timing);
+    fill: white;
+    filter: drop-shadow(0 0 2px blue);
+}
+
+.fill--animated {
+   animation: fill-blink var(--timing);
+   fill: blue;
+}
+
+.inner-shadow, .inner-shadow--animated {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 2px;
+}
+
+.inner-shadow {
+    filter: drop-shadow(0 0 1px blue);
+}
+
+.inner-shadow--animated {
+    animation: inner-shadow-blink var(--timing);
+    filter: drop-shadow(0 0 3px blue);
+}
+
+@keyframes size {
+    0%, 95%, 100% {
+        transform: scale(1);
+    }
+    
+    75% {
+        transform: scale(.9);
+    }
+}
+
+@keyframes fill-blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    
+    75% {
+        opacity: .45;
+    }
+}
+
+@keyframes inner-shadow-blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    
+    75% {
+        opacity: 1;
+    }
+}
+
+@keyframes drop-shadow-blink {
+    0%, 90%, 100%{
+        filter: drop-shadow(0 0 6px rgb(104, 104, 255));
+    }
+    75% {
+        filter: drop-shadow(0 0 3px blue);
+    }
+}
+
+
+
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */
