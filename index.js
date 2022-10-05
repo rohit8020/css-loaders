@@ -1370,6 +1370,89 @@ let codes = [
     }
     `
 },
+	
+
+  {
+    id: 21,
+    code: `
+    ###HTML
+    <div class="loader-box">
+      <div class="loader-21">
+          <div class="loading">
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+      </div>
+    </div>
+    <a href="#demo-modal" id="21" class="show-code-btn">Show Code</a>
+  </div>
+
+
+    ###CSS
+    .loader-21 {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader-21 .loading {
+      display: flex;
+      position: absolute;
+      width: auto;
+      height: 20px;
+      transition: all 0.4s ease;
+    }
+    .loader-21 .loading .loader {
+      display: block;
+      align-items: flex-end;
+      background-color: #ffffff;
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      animation: loader 1.2s ease infinite both;
+      border-radius: 4px;
+      bottom: 0;
+    }
+    .loader-21 .loading .loader:nth-child(1) {
+      transform: translateX(-20px);
+    }
+    .loader-21 .loading .loader:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    .loader-21 .loading .loader:nth-child(3) {
+      animation-delay: 0.8s;
+      transform: translateX(20px);
+    }
+    @keyframes loader {
+      0% {
+        height: 5px;
+        bottom: 0;
+        opacity: 1;
+      }
+      25% {
+        opacity: 0.3;
+        bottom: 0;
+        height: 15px;
+      }
+      50% {
+        opacity: 1;
+        height: 5px;
+        bottom: calc(100% - 5px);
+      }
+      75% {
+        opacity: 0.3;
+        height: 15px;
+        bottom: 0;
+      }
+      100% {
+        opacity: 1;
+        height: 5px;
+        bottom: 0;
+      }
+    }
+    `	
+  }
 
 ];
 
