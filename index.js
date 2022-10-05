@@ -1171,127 +1171,116 @@ let codes = [
     `	
   },
   {
-    id: 20,
+    id: 21,
     code: `
     ###HTML
-     <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.86">
-    <defs>
-      <polygon id="hexagon" points="4.29 13.36 0.58 6.93 4.29 0.5 11.71 0.5 15.42 6.93 11.71 13.36 4.29 13.36" />
-      <g id="inner-shadow" transform="translate(-2, -2)">
-        <use xlink:href="#hexagon" class="inner-shadow" transform="scale(1.25)" />
-      </g>
-      <g id="inner-shadow-animated" transform="translate(-2, -2)">
-        <use xlink:href="#hexagon" class="inner-shadow--animated" transform="scale(1.25)" />
-      </g>
-    </defs>
-  
-    <mask id="mask">
-      <rect x="-4" y="-4" width="24" height="24" fill="black" />
-      <use xlink:href="#hexagon" fill="white" />
-    </mask>
-  
-  <!--  White hexagon fill  -->
-    <use xlink:href="#hexagon" class="fill" />
-    
-  <!--  Animated blue fill -->
-    <use xlink:href="#hexagon" class="fill--animated" />
-    
-  <!--  "Inner Shadow"  -->
-  <!--  1. #inner-shadow hexagon is scaled to be larger than mask. 
-        2. #inner-shadow hexagon is given a stroke which allows a drop-shadow is then applied. 
-        3. Mask matching original hexagon is applied  -->
-    <use xlink:href="#inner-shadow" mask="url(#mask)" />
-    
-  <!--  Animated "Inner Shadow"  -->
-    <use xlink:href="#inner-shadow-animated" mask="url(#mask)" />
-  </svg>
+    <div class="loader21">
+    <svg class="svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.86">
+      <defs>
+        <polygon id="hexagon" points="4.29 13.36 0.58 6.93 4.29 0.5 11.71 0.5 15.42 6.93 11.71 13.36 4.29 13.36" />
+        <g id="inner-shadow" transform="translate(-2, -2)">
+          <use xlink:href="#hexagon" class="inner-shadow" transform="scale(1.25)" />
+        </g>
+        <g id="inner-shadow-animated" transform="translate(-2, -2)">
+          <use xlink:href="#hexagon" class="inner-shadow--animated" transform="scale(1.25)" />
+        </g>
+      </defs>
+      <mask id="mask">
+        <rect x="-4" y="-4" width="24" height="24" fill="black" />
+        <use xlink:href="#hexagon" fill="white" />
+      </mask>
+      <use xlink:href="#hexagon" class="fill" />
+      <use xlink:href="#hexagon" class="fill--animated" />
+      <use xlink:href="#inner-shadow" mask="url(#mask)" />
+      
+      <use xlink:href="#inner-shadow-animated" mask="url(#mask)" />
+    </svg>
+   
+    </div>
 
    ###CSS
-    :root {
-      --timing: 1.5s infinite linear;
-    }
+   .loader21 {
+    margin: 0;
+    background: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    --timing: 1.5s infinite linear;
     
-    body {
-        margin: 0;
-        background: #2c2d3e;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    
-    .svg {
-        animation: size var(--timing);
-        overflow: visible;
+}
+
+.svg {
+    animation: size var(--timing);
+    overflow: visible;
+    transform: scale(1);
+    width: 4rem;
+}
+
+.fill {
+    animation: drop-shadow-blink var(--timing);
+    fill: white;
+    filter: drop-shadow(0 0 2px blue);
+}
+
+.fill--animated {
+   animation: fill-blink var(--timing);
+   fill: blue;
+}
+
+.inner-shadow, .inner-shadow--animated {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 2px;
+}
+
+.inner-shadow {
+    filter: drop-shadow(0 0 1px blue);
+}
+
+.inner-shadow--animated {
+    animation: inner-shadow-blink var(--timing);
+    filter: drop-shadow(0 0 3px blue);
+}
+
+@keyframes size {
+    0%, 95%, 100% {
         transform: scale(1);
-        width: 4rem;
     }
     
-    .fill {
-        animation: drop-shadow-blink var(--timing);
-        fill: white;
-        filter: drop-shadow(0 0 2px blue);
+    75% {
+        transform: scale(.9);
+    }
+}
+
+@keyframes fill-blink {
+    0%, 100% {
+        opacity: 0;
     }
     
-    .fill--animated {
-       animation: fill-blink var(--timing);
-       fill: blue;
+    75% {
+        opacity: .45;
+    }
+}
+
+@keyframes inner-shadow-blink {
+    0%, 100% {
+        opacity: 0;
     }
     
-    .inner-shadow, .inner-shadow--animated {
-        fill: transparent;
-        stroke: white;
-        stroke-width: 2px;
+    75% {
+        opacity: 1;
     }
-    
-    .inner-shadow {
-        filter: drop-shadow(0 0 1px blue);
+}
+
+@keyframes drop-shadow-blink {
+    0%, 90%, 100%{
+        filter: drop-shadow(0 0 6px rgb(104, 104, 255));
     }
-    
-    .inner-shadow--animated {
-        animation: inner-shadow-blink var(--timing);
+    75% {
         filter: drop-shadow(0 0 3px blue);
     }
-    
-    @keyframes size {
-        0%, 95%, 100% {
-            transform: scale(1);
-        }
-        
-        75% {
-            transform: scale(.9);
-        }
-    }
-    
-    @keyframes fill-blink {
-        0%, 100% {
-            opacity: 0;
-        }
-        
-        75% {
-            opacity: .45;
-        }
-    }
-    
-    @keyframes inner-shadow-blink {
-        0%, 100% {
-            opacity: 0;
-        }
-        
-        75% {
-            opacity: 1;
-        }
-    }
-    
-    @keyframes drop-shadow-blink {
-        0%, 90%, 100%{
-            filter: drop-shadow(0 0 6px rgb(104, 104, 255));
-        }
-        75% {
-            filter: drop-shadow(0 0 3px blue);
-        }
-    }
-    
+}
     
     
     `

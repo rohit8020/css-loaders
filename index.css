@@ -1032,19 +1032,18 @@ body {
         top: 6.94em
     }
 }
-/* .............Loader-20............... */
+/* .............Loader-21............... */
 
-:root {
-  --timing: 1.5s infinite linear;
-}
 
-body {
+.loader21 {
     margin: 0;
-    background: #2c2d3e;
+    background: chocolate;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+   
+    --timing: 1.5s infinite linear;
+    
 }
 
 .svg {
