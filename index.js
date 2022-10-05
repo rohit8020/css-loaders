@@ -1077,6 +1077,99 @@ let codes = [
     }
     `
   },
+  {
+    id: 20,
+    code: `
+    ###HTML
+    <div class="loader-box">
+      <div class="loader-20">
+        <span class="word1">l</span>
+        <span class="word2">o</span>
+        <span class="word3">a</span>
+        <span class="word4">d</span>
+        <span class="word5">i</span>
+        <span class="word6">n</span>
+        <span class="word7">g</span> 
+      </div>
+      <a href="#demo-modal" id="20" class="show-code-btn">Show Code</a>
+    </div>
+
+    ###CSS
+    .loader-20 {
+      margin: 0;
+      padding: 0;
+      font-weight: 100;
+      font-size: 1.1em;
+      color: #ffffff;
+    }
+    
+    .loader-20 span {
+      display: inline-block;
+      text-transform: uppercase;
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    
+    .loader-20 .word1 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.2s;
+    }
+    
+    .loader-20 .word2 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.3s;
+    }
+    
+    .loader-20 .word3 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.4s;
+    }
+    
+    .loader-20 .word4 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.5s;
+    
+    }
+    
+    .loader-20 .word5 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.6s;
+    }
+    
+    .loader-20 .word6 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.7s;
+    }
+    
+    .loader-20 .word7 {
+      animation: drop 1.2s ease-in-out infinite;
+      animation-delay: 1.8s;
+    }
+    
+    @keyframes drop {
+        10% {
+            opacity: 0.5;
+        }
+        20% {
+            opacity: 1;
+            top: 3.78em;
+            transform: rotateX(-360deg);
+        }
+        80% {
+            opacity: 1;
+            top: 3.78em;
+            transform: rotateX(-360deg);
+        }
+        90% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 0;
+            top: 6.94em
+        }
+    }
+    `	
+  }
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
