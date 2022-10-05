@@ -252,8 +252,37 @@
       </div>
       <a href="#demo-modal" id="20" class="show-code-btn">Show Code</a>
     </div>
+    <!-- Loader 21-->
 
-    <!-- Loader 21 -->
+    <div class="loader-box">
+      <div class="loader21">
+    <svg class="svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.86">
+      <defs>
+        <polygon id="hexagon" points="4.29 13.36 0.58 6.93 4.29 0.5 11.71 0.5 15.42 6.93 11.71 13.36 4.29 13.36" />
+        <g id="inner-shadow" transform="translate(-2, -2)">
+          <use xlink:href="#hexagon" class="inner-shadow" transform="scale(1.25)" />
+        </g>
+        <g id="inner-shadow-animated" transform="translate(-2, -2)">
+          <use xlink:href="#hexagon" class="inner-shadow--animated" transform="scale(1.25)" />
+        </g>
+      </defs>
+      <mask id="mask">
+        <rect x="-4" y="-4" width="24" height="24" fill="black" />
+        <use xlink:href="#hexagon" fill="white" />
+      </mask>
+      <use xlink:href="#hexagon" class="fill" />
+      <use xlink:href="#hexagon" class="fill--animated" />
+      <use xlink:href="#inner-shadow" mask="url(#mask)" />
+      
+      <use xlink:href="#inner-shadow-animated" mask="url(#mask)" />
+    </svg>
+   
+    </div>
+    <a href="#demo-modal" id="21" class="show-code-btn">Show Code</a>
+    </div>
+
+
+    <!-- Loader 22 -->
     <div class="loader-box">
       <div>
         <span class="dot" id="dot1"></span>
