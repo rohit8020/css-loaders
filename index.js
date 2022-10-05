@@ -844,6 +844,155 @@ let codes = [
       to { transform: rotate(360deg); }
     }`,
   },
+  {
+    id:16,
+    code:
+    `
+    ##HTML
+    <div class="loader-box">
+    <div class="loader-16"></div>
+    <span class="sat"> loading... </span>
+    <a href="#demo-modal" id="16" class="show-code-btn">Show Code</a>
+    </div>
+
+    ##CSS
+    
+.loader-16{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+  margin-bottom: 56px;
+}
+
+@keyframes ring {
+  0%{transform: rotate(0deg);
+      box-shadow: 1px 4px 2px #e65c00;
+  }
+  50%{transform: rotate(180deg);
+      box-shadow: 1px 4px 2px #18b201;
+  }
+  100%{transform: rotate(360deg);
+      box-shadow: 1px 4px 2px #0456c8;
+  }
+}
+.loader-16:before {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+.sat{
+  color: #000000;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  font-weight: bold;
+ 
+}
+    `
+  },
+  {
+    id:17,
+    code:
+    `
+    ##HTML
+    <div class="loader-box">
+    <div class="loader-17">
+    <span class="pp" style="--i:1;"></span>
+    <span class="pp" style="--i:2;"></span>
+    <span class="pp" style="--i:3;"></span>
+    <span class="pp" style="--i:4;"></span>
+    <span class="pp" style="--i:5;"></span>
+    <span class="pp" style="--i:6;"></span>
+    <span class="pp" style="--i:7;"></span>
+    <span class="pp" style="--i:8;"></span>
+    <span class="pp" style="--i:9;"></span>
+    <span class="pp" style="--i:10;"></span>
+    <span class="pp" style="--i:11;"></span>
+    <span class="pp" style="--i:12;"></span>
+    <span class="pp" style="--i:13;"></span>
+    <span class="pp" style="--i:14;"></span>
+    <span class="pp" style="--i:15;"></span>
+    <span class="pp" style="--i:16;"></span>
+    <span class="pp" style="--i:17;"></span>
+    <span class="pp" style="--i:18;"></span>
+    <span class="pp" style="--i:19;"></span>
+    <span class="pp" style="--i:20;"></span>
+    <a href="#demo-modal" id="17" class="show-code-btn show">Show Code</a>
+     </div>
+  </div>
+
+  ##CSS
+  .loader-17{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: anim 10s linear infinite;
+  }
+  @keyframes anim
+  {
+    0%{
+       filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+  }
+  
+  .loader-17 .pp
+  {
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    width: 80px;
+    height: 80px;
+    transform: rotate(calc(18deg * var(--i)));
+       
+  }
+  
+  .loader-17 .pp::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #e9c912;
+    box-shadow: 0 0 5px #7ffa1a,
+                0 0 10px #7ffa1a,
+                0 0 20px #7ffa1a,
+                0 0 40px #7ffa1a,
+                0 0 60px #7ffa1a,
+                0 0 80px #7ffa1a;
+  
+    animation: sat11 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+  @keyframes sat11
+  {
+    0%{
+       transform: scale(1);
+    }
+    80%,100%{
+        transform: scale(2);
+    }
+   
+  }
+  .show{
+    margin-top: 14rem;
+    
+  }
+    `
+  }
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
