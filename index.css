@@ -787,6 +787,114 @@ body {
   to { transform: rotate(360deg); }
 }
 
+/* .............Loader-16............... */
+
+.loader-16{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+  margin-bottom: 56px;
+}
+
+@keyframes ring {
+  0%{transform: rotate(0deg);
+      box-shadow: 1px 4px 2px #e65c00;
+  }
+  50%{transform: rotate(180deg);
+      box-shadow: 1px 4px 2px #18b201;
+  }
+  100%{transform: rotate(360deg);
+      box-shadow: 1px 4px 2px #0456c8;
+  }
+}
+.loader-16:before {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+.sat{
+
+  color: #000000;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  font-weight: bold;
+ 
+}
+
+/* .............Loader-17............... */
+
+.loader-17{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: anim 10s linear infinite;
+}
+@keyframes anim
+{
+  0%{
+     filter: hue-rotate(0deg);
+  }
+  100%{
+      filter: hue-rotate(360deg);
+  }
+}
+
+.loader-17 .pp
+{
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  width: 80px;
+  height: 80px;
+  transform: rotate(calc(18deg * var(--i)));
+     
+}
+
+.loader-17 .pp::before{
+
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #e9c912;
+  box-shadow: 0 0 5px #7ffa1a,
+              0 0 10px #7ffa1a,
+              0 0 20px #7ffa1a,
+              0 0 40px #7ffa1a,
+              0 0 60px #7ffa1a,
+              0 0 80px #7ffa1a;
+
+  animation: sat11 2s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes sat11
+{
+  0%{
+     transform: scale(1);
+  }
+  80%,100%{
+      transform: scale(2);
+  }
+ 
+}
+.show{
+  margin-top: 14rem;
+  
+}
+
 
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */
