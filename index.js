@@ -1376,16 +1376,12 @@ let codes = [
     id: 23,
     code: `
     ###HTML
-    <div class="loader-box">
-      <div class="loader-23">
-          <div class="loading">
-            <span class="loader"></span>
-            <span class="loader"></span>
-            <span class="loader"></span>
-      </div>
+    <div class="loader-23">
+        <div class="loading">
+        <span class="loader"></span>
+        <span class="loader"></span>
+        <span class="loader"></span>
     </div>
-    <a href="#demo-modal" id="23" class="show-code-btn">Show Code</a>
-  </div>
 
 
     ###CSS
