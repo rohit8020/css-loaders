@@ -781,8 +781,7 @@ let codes = [
   },
   {
     id: 15,
-    code: 
-    `
+    code: `
     ##HTML 
     <div class="spinner-container">
     <div class="spinner"></div>
@@ -846,9 +845,8 @@ let codes = [
     }`,
   },
   {
-    id:16,
-    code:
-    `
+    id: 16,
+    code: `
     ##HTML
     <div class="loader-16"></div>
     <span class="sat"> loading... </span>
@@ -896,12 +894,11 @@ let codes = [
   font-weight: bold;
  
 }
-    `
+    `,
   },
   {
-    id:17,
-    code:
-    `
+    id: 17,
+    code: `
     ##HTML
     <div class="loader-17">
     <span class="pp" style="--i:1;"></span>
@@ -989,12 +986,11 @@ let codes = [
     margin-top: 14rem;
     
   }
-    `
+    `,
   },
   {
     id: 18,
-    code:
-    `
+    code: `
     ##HTML
     <div class="loader-box">
       <div class="loader-18">
@@ -1040,7 +1036,7 @@ let codes = [
       left: 130px;
     }
   }
-    `
+    `,
   },
   {
     id: 19,
@@ -1075,7 +1071,7 @@ let codes = [
         transform: rotateZ(-360deg);
       }
     }
-    `
+    `,
   },
   {
     id: 20,
@@ -1168,7 +1164,7 @@ let codes = [
             top: 6.94em
         }
     }
-    `	
+    `,
   },
   {
     id: 21,
@@ -1283,14 +1279,12 @@ let codes = [
 }
     
     
-    `
-  }
+    `,
+  },
 
-  ,
   {
     id: 22,
-    code:
-    `
+    code: `
     ##HTML Code
     <div>
     <span class="dot" id="dot1"></span>
@@ -1368,9 +1362,8 @@ let codes = [
         height: 2px;
       }
     }
-    `
-},
-	
+    `,
+  },
 
   {
     id: 23,
@@ -1447,7 +1440,7 @@ let codes = [
         bottom: 0;
       }
     }
-    `	
+    `,
   },
   {
     id: 24,
@@ -1483,12 +1476,11 @@ let codes = [
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
     }
-    `	
+    `,
   },
   {
-    id :25,
-    code: 
-    `
+    id: 25,
+    code: `
     ##HTML
     <div class="loader-25"></div>
 
@@ -1525,12 +1517,11 @@ let codes = [
         0% , 60% , 100%{ transform:  scale(1) }
         80% { transform:  scale(1.2)}
     }
-    `
+    `,
   },
   {
     id: 26,
-    code : 
-    `
+    code: `
     ###HTML
     <div class="loader-box">
     <div class="pixels">
@@ -1590,9 +1581,8 @@ let codes = [
     opacity: 1;
   }
 } 
-  `
-}
-
+  `,
+  },
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
