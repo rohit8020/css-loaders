@@ -1448,6 +1448,86 @@ let codes = [
       }
     }
     `	
+  },
+
+  {
+    id: 24,
+    code: `
+    ###HTML
+    <div class="loader-24"></div>
+
+
+    ###CSS
+    .loader-24 {
+        width: 48px;
+        height: 48px;
+        border: 3px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        animation: rotation-24 1s linear infinite;
+    }
+    .loader-24::after {
+        content: '';  
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #ffffff;
+        width: 16px;
+        height: 16px;
+        transform: translate(-50%, 50%);
+        border-radius: 50%;
+    }
+    @keyframes rotation-24 {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    `	
+  },
+
+  {
+    id: 25,
+    code: `
+    ###HTML
+    <div class="loader-25"></div>
+
+
+    ###CSS
+    .loader-25 {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #FFF;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        animation: pulse-25 1s linear infinite;
+    }
+    .loader-25:after {
+        content: '';
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border: 5px solid #FFF;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: scaleUp-25 1s linear infinite;
+    }
+    @keyframes scaleUp-25 {
+        0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+        60% , 100% { transform: translate(-50%, -50%)  scale(1); opacity: 1;}
+    }
+    @keyframes pulse-25 {
+        0% , 60% , 100%{ transform:  scale(1) }
+        80% { transform:  scale(1.2)}
+    }
+    `	
   }
 
 ];
