@@ -1600,7 +1600,6 @@ body {
 
 
 /* .............Loader-28th............... */
-/* add the css for the Loader-28th... */
 
 .loader-28 {
   width: 48px;
@@ -1639,3 +1638,6 @@ body {
     transform: rotate(360deg);
   }
 } 
+
+/* .............Loader-nth............... */
+/* add the css for the Loader-nth... */

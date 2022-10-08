@@ -1693,7 +1693,10 @@ let codes = [
     id: 28,
     code: `
     ##HTML
-    <div class="loader-28"></div>
+    <div class="loader-28">
+      <div class="lds-spinner">
+      </div>
+    </div>
 
     ##CSS
     .loader-28 {
