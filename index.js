@@ -1688,6 +1688,54 @@ let codes = [
         
         `,
   },
+
+  {
+    id: 28,
+    code: `
+    ##HTML
+    <div class="loader-28"></div>
+
+    ##CSS
+    .loader-28 {
+      width: 48px;
+      height: 48px;
+      border: 2px solid #FFF;
+      border-radius: 50%;
+      display: inline-block;
+      position: relative;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+    .loader-28::after,
+    .loader-28::before {
+      content: '';  
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #FF3D00;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+    .loader-28::before {
+      left: auto;
+      top: auto;
+      right: 0;
+      bottom: 0;
+    }
+    
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    } 
+        
+        `,
+  },
 ];
 
 //There is no need to touch below code, You just have add you loader code inside the codes array
