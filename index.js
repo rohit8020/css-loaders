@@ -1713,7 +1713,7 @@ let codes = [
       position: absolute;
       left: 0;
       top: 0;
-      background: #FF3D00;
+      background: #d0ff00;
       width: 6px;
       height: 6px;
       border-radius: 50%;
