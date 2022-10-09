@@ -1766,12 +1766,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.loader1 {
+.loader31 {
   position: relative;
   width: 75px;
   height: 100px;
 }
-.loader1 .bar {
+.loader31 .bar {
   position: absolute;
   bottom: 0;
   width: 10px;
@@ -1780,27 +1780,27 @@ body {
   transform-origin: center bottom;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
 }
-.loader1 .bar:nth-child(1) {
+.loader31 .bar:nth-child(1) {
   left: 0px;
   transform: scale(1, 0.2);
   animation: barUp1 4s infinite;
 }
-.loader1 .bar:nth-child(2) {
+.loader31 .bar:nth-child(2) {
   left: 15px;
   transform: scale(1, 0.4);
   animation: barUp2 4s infinite;
 }
-.loader1 .bar:nth-child(3) {
+.loader31 .bar:nth-child(3) {
   left: 30px;
   transform: scale(1, 0.6);
   animation: barUp3 4s infinite;
 }
-.loader1 .bar:nth-child(4) {
+.loader31 .bar:nth-child(4) {
   left: 45px;
   transform: scale(1, 0.8);
   animation: barUp4 4s infinite;
 }
-.loader1 .bar:nth-child(5) {
+.loader31 .bar:nth-child(5) {
   left: 60px;
   transform: scale(1, 1);
   animation: barUp5 4s infinite;
