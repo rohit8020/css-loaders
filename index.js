@@ -603,6 +603,61 @@ let codes = [
       100% {background-position: right -40px top 0}
     }
       `
+    },
+
+    {
+      id:11,
+      code:
+      `
+      ##HTML
+      <div class = "loader-box">
+      <div class="loader-11">
+        <div class = "lds">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <a href="#demo-modal" id="11" class="show-code-btn">Show Code</a>
+    </div>
+      
+      ##CSS
+      .lds {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+      }
+      .lds div {
+        display: inline-block;
+        position: absolute;
+        left: 8px;
+        width: 16px;
+        background: #fff;
+        animation: lds 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      }
+      .lds div:nth-child(1) {
+        left: 8px;
+        animation-delay: -0.24s;
+      }
+      .lds div:nth-child(2) {
+        left: 32px;
+        animation-delay: -0.12s;
+      }
+      .lds div:nth-child(3) {
+        left: 56px;
+        animation-delay: 0;
+      }
+      @keyframes lds {
+        0% {
+          top: 8px;
+          height: 64px;
+        }
+        50%, 100% {
+          top: 24px;
+          height: 32px;
+        }
+      }
+      `
     }
     
 ];
