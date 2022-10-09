@@ -1721,6 +1721,45 @@ body {
     transform: scale(0);
   }
 }
+/* .............Loader-30th............... */
+
+.loader-30{
+    position: relative;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 10px solid skyblue;
+    border-radius: 15px;
+}
+.loader-30 .color{
+    position: absolute;
+    background-color: orange;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: loader-30 4s infinite linear;    
+}
+@keyframes loader-30{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
+
+
 
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */

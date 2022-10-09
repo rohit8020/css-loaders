@@ -1814,4 +1814,55 @@ const codes = [
             
             `,
       },
+      {
+        id: 30,
+        code: `
+       ##HTML
+       <div class="loader-box">
+        <div class="loader-30">
+          <div class="color"></div>
+        </div>
+        
+        <a href="#demo-modal" id="30" class="show-code-btn">Show Code</a>
+      </div> 
+
+      ##CSS
+      .loader-30{
+        position: relative;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        border: 10px solid lightblue;
+        border-radius: 15px;
+    }
+    .loader-30 .color{
+        position: absolute;
+        background-color: whitesmoke;
+        width: 0px;
+        height: 10px;
+        border-radius: 15px;
+        animation: progres 4s infinite linear;    
+    }
+    @keyframes progres{
+        0%{
+          width: 0%;
+        }
+        25%{
+            width: 50%;
+        }
+        50%{
+            width: 75%;
+        }
+        75%{
+            width: 85%;
+        }
+        100%{
+            width: 100%;
+        }
+    };
+    
+            `,
+      },
 ];
