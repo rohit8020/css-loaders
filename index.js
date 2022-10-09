@@ -1,4 +1,5 @@
-// There is no need to touch below code, You just have add you loader code inside the [codes.js] file
+//There is no need to touch below code, You just have to add your loader's code 
+// inside the codes array i.e in the file codes.js
 let showcode = document.querySelectorAll(".show-code-btn");
 let code_para = document.querySelector("#code-paragraph");
 showcode.forEach((btn) => {
