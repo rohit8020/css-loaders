@@ -1869,7 +1869,7 @@ const codes = [
         id: 31,
         code: `
        ##HTML
-       
+       <div class="loader-box">
        <div class="loader-31">
          <div class="loader31">
            <div class="loader__bar bar"></div>
@@ -1879,6 +1879,8 @@ const codes = [
            <div class="loader__bar bar"></div>
            <div class="loader__ball"></div>
          </div>
+       </div>
+       <a href="#demo-modal" id="31" class="show-code-btn">Show Code</a>
      </div>
 
       ##CSS
@@ -2074,5 +2076,85 @@ const codes = [
       };
     
             `,
+  },
+
+  {
+    id: 32,
+    code: `
+   ##HTML
+   <div class="loader-box">
+   <div class="loader-32">
+     <div class="loader32 loadern"></div>
+   </div>
+   <a href="#demo-modal" id="32" class="show-code-btn">Show Code</a>
+ </div>  
+  ##CSS
+  .loader32 {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 10px;
   }
+   
+  @keyframes loadern-bubbles {
+    0% {
+      box-shadow: 0 -10px #efdfff,
+                  3px 0 #efdfff,
+                  5px 0 #efdfff;
+    }
+    30% {
+      box-shadow: 3px -20px rgba(239,223,255,0),
+                  5px -10px #efdfff,
+                  5px 0 #efdfff;
+    }
+    60% {
+      box-shadow: 3px 0 rgba(239,223,255,0),
+                  4px -20px rgba(239,223,255,0),
+                  3px -10px #efdfff;
+    }
+    61% {
+      box-shadow: 3px 0 #efdfff,
+                  4px -20px rgba(239,223,255,0),
+                  3px -10px #efdfff;
+    }
+    100% {
+      box-shadow: 0 -10px #efdfff,
+                  4px -20px rgba(239,223,255,0),
+                  5px -20px rgba(239,223,255,0);
+    }
+  }
+  .loadern {
+    width: 10px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #efdfff;
+  }
+  .loadern:before,
+  .loadern:after {
+    content: '';
+    position: absolute;
+  }
+  .loadern:before {
+    top: -8px;
+    left: -13px;
+    width: 0;
+    height: 0;
+    border: 18px solid transparent;
+    border-bottom: 20px solid #efdfff;
+    border-radius: 3px;
+  }
+  .loadern:after {
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: #efdfff;
+    border-radius: 50%;
+    animation: loadern-bubbles 1s linear infinite forwards;
+  }
+   
+
+        `,
+}
 ];
