@@ -1869,7 +1869,7 @@ const codes = [
         id: 31,
         code: `
        ##HTML
-       <div class="loader-box">
+       
        <div class="loader-31">
          <div class="loader31">
            <div class="loader__bar bar"></div>
@@ -1879,8 +1879,6 @@ const codes = [
            <div class="loader__bar bar"></div>
            <div class="loader__ball"></div>
          </div>
-       </div>
-       <a href="#demo-modal" id="31" class="show-code-btn">Show Code</a>
      </div>
 
       ##CSS
