@@ -2082,12 +2082,11 @@ const codes = [
     id: 32,
     code: `
    ##HTML
-   <div class="loader-box">
+   
    <div class="loader-32">
      <div class="loader32 loadern"></div>
    </div>
-   <a href="#demo-modal" id="32" class="show-code-btn">Show Code</a>
- </div>  
+    
   ##CSS
   .loader32 {
     display: inline-block;
