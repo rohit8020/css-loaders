@@ -1,7 +1,7 @@
 ##  `Steps To Generate PR(Pull Request)`
 
-- (Star ⭐ & Fork 🍽️) this repository.
-- Follow [rohit8020](https://www.github.com/rohit8020) get it merged fast.
+# - (Star ⭐ & Fork 🍽️) this repository.
+# - Follow [rohit8020](https://www.github.com/rohit8020) get it merged fast.
 # Fork this repository
 
 Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
@@ -53,3 +53,4 @@ git push origin <branch-name>
 Then go to your repository on GitHub, you'll see a Compare & pull request button. Click on that button.
 
 Now submit the pull request.
+# Thankyou 
