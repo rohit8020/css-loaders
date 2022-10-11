@@ -273,6 +273,7 @@ footer .footer {
 }
 
 @-webkit-keyframes grow {
+
   0%,
   40%,
   100% {
@@ -287,6 +288,7 @@ footer .footer {
 }
 
 @keyframes grow {
+
   0%,
   40%,
   100% {
@@ -346,18 +348,18 @@ footer .footer {
   animation: mesh 3s ease-in-out infinite -1.5s;
 }
 
-.loader-6 > div .circle:last-child {
+.loader-6>div .circle:last-child {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 
-.loader-6 > div {
+.loader-6>div {
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
-.loader-6 > div:last-child {
+.loader-6>div:last-child {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -608,8 +610,7 @@ footer .footer {
   background: linear-gradient(#514b82 0 0) left -40px top 0/40px 100% no-repeat #eee;
   -webkit-mask: linear-gradient(#000 0 0) top / 100% 5px no-repeat,
     linear-gradient(#000 0 0) bottom/100% 5px no-repeat,
-    repeating-linear-gradient(90deg, #000 0 5px, #0000 0 20%)
-      left/calc(100% - 5px) 100%;
+    repeating-linear-gradient(90deg, #000 0 5px, #0000 0 20%) left/calc(100% - 5px) 100%;
   animation: l10 1s infinite linear;
 }
 
@@ -625,7 +626,7 @@ footer .footer {
   transform: translateZ(1px);
 }
 
-.loader-circle > div {
+.loader-circle>div {
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -636,6 +637,7 @@ footer .footer {
 }
 
 @keyframes loader-circle {
+
   0%,
   100% {
     animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
@@ -976,7 +978,7 @@ body {
   max-width: 100%;
 }
 
-.loading > div {
+.loading>div {
   width: 10vmax;
   height: 10vmax;
   border-bottom: 5px solid rgba(0, 0, 0, 0.719);
@@ -1154,6 +1156,7 @@ body {
 }
 
 @keyframes size {
+
   0%,
   95%,
   100% {
@@ -1166,6 +1169,7 @@ body {
 }
 
 @keyframes fill-blink {
+
   0%,
   100% {
     opacity: 0;
@@ -1177,6 +1181,7 @@ body {
 }
 
 @keyframes inner-shadow-blink {
+
   0%,
   100% {
     opacity: 0;
@@ -1188,6 +1193,7 @@ body {
 }
 
 @keyframes drop-shadow-blink {
+
   0%,
   90%,
   100% {
@@ -1420,6 +1426,7 @@ body {
 }
 
 @keyframes pulse-25 {
+
   0%,
   60%,
   100% {
@@ -1492,10 +1499,12 @@ body {
   width: 80px;
   height: 80px;
 }
+
 .lds-spinner div {
   transform-origin: 40px 40px;
   animation: lds-spinner 1.2s linear infinite;
 }
+
 .lds-spinner div:after {
   content: " ";
   display: block;
@@ -1507,58 +1516,72 @@ body {
   border-radius: 20%;
   background: #fff;
 }
+
 .lds-spinner div:nth-child(1) {
   transform: rotate(0deg);
   animation-delay: -1.1s;
 }
+
 .lds-spinner div:nth-child(2) {
   transform: rotate(30deg);
   animation-delay: -1s;
 }
+
 .lds-spinner div:nth-child(3) {
   transform: rotate(60deg);
   animation-delay: -0.9s;
 }
+
 .lds-spinner div:nth-child(4) {
   transform: rotate(90deg);
   animation-delay: -0.8s;
 }
+
 .lds-spinner div:nth-child(5) {
   transform: rotate(120deg);
   animation-delay: -0.7s;
 }
+
 .lds-spinner div:nth-child(6) {
   transform: rotate(150deg);
   animation-delay: -0.6s;
 }
+
 .lds-spinner div:nth-child(7) {
   transform: rotate(180deg);
   animation-delay: -0.5s;
 }
+
 .lds-spinner div:nth-child(8) {
   transform: rotate(210deg);
   animation-delay: -0.4s;
 }
+
 .lds-spinner div:nth-child(9) {
   transform: rotate(240deg);
   animation-delay: -0.3s;
 }
+
 .lds-spinner div:nth-child(10) {
   transform: rotate(270deg);
   animation-delay: -0.2s;
 }
+
 .lds-spinner div:nth-child(11) {
   transform: rotate(300deg);
   animation-delay: -0.1s;
 }
+
 .lds-spinner div:nth-child(12) {
   transform: rotate(330deg);
   animation-delay: 0s;
 }
+
 @keyframes lds-spinner {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -1576,6 +1599,7 @@ body {
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
+
 .loader-28::after,
 .loader-28::before {
   content: "";
@@ -1588,6 +1612,7 @@ body {
   height: 6px;
   border-radius: 50%;
 }
+
 .loader-28::before {
   left: auto;
   top: auto;
@@ -1599,6 +1624,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1615,6 +1641,7 @@ body {
   align-items: center;
   background: rgba(0, 0, 0, 0);
 }
+
 .wave {
   width: 5px;
   height: 90px;
@@ -1623,30 +1650,39 @@ body {
   animation: wave 1s linear infinite;
   border-radius: 20px;
 }
+
 .wave:nth-child(2) {
   animation-delay: 0.1s;
 }
+
 .wave:nth-child(3) {
   animation-delay: 0.2s;
 }
+
 .wave:nth-child(4) {
   animation-delay: 0.3s;
 }
+
 .wave:nth-child(5) {
   animation-delay: 0.4s;
 }
+
 .wave:nth-child(6) {
   animation-delay: 0.5s;
 }
+
 .wave:nth-child(7) {
   animation-delay: 0.6s;
 }
+
 .wave:nth-child(8) {
   animation-delay: 0.7s;
 }
+
 .wave:nth-child(9) {
   animation-delay: 0.8s;
 }
+
 .wave:nth-child(10) {
   animation-delay: 0.9s;
 }
@@ -1655,9 +1691,11 @@ body {
   0% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0);
   }
@@ -1674,6 +1712,7 @@ body {
   align-items: center;
   background: rgba(0, 0, 0, 0);
 }
+
 .wave {
   width: 5px;
   height: 90px;
@@ -1682,30 +1721,39 @@ body {
   animation: wave 1s linear infinite;
   border-radius: 20px;
 }
+
 .wave:nth-child(2) {
   animation-delay: 0.1s;
 }
+
 .wave:nth-child(3) {
   animation-delay: 0.2s;
 }
+
 .wave:nth-child(4) {
   animation-delay: 0.3s;
 }
+
 .wave:nth-child(5) {
   animation-delay: 0.4s;
 }
+
 .wave:nth-child(6) {
   animation-delay: 0.5s;
 }
+
 .wave:nth-child(7) {
   animation-delay: 0.6s;
 }
+
 .wave:nth-child(8) {
   animation-delay: 0.7s;
 }
+
 .wave:nth-child(9) {
   animation-delay: 0.8s;
 }
+
 .wave:nth-child(10) {
   animation-delay: 0.9s;
 }
@@ -1714,50 +1762,61 @@ body {
   0% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0);
   }
 }
+
 /* .............Loader-30th............... */
 
-.loader-30{
-    position: relative;
-    height: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loader-30 {
+  position: relative;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 10px solid skyblue;
+  border-radius: 15px;
+}
+
+.loader-30 .color {
+  position: absolute;
+  background-color: orange;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: loader-30 4s infinite linear;
+}
+
+@keyframes loader-30 {
+  0% {
+    width: 0%;
+  }
+
+  25% {
     width: 50%;
-    border: 10px solid skyblue;
-    border-radius: 15px;
+  }
+
+  50% {
+    width: 75%;
+  }
+
+  75% {
+    width: 85%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
-.loader-30 .color{
-    position: absolute;
-    background-color: orange;
-    width: 0px;
-    height: 10px;
-    border-radius: 15px;
-    animation: loader-30 4s infinite linear;    
-}
-@keyframes loader-30{
-    0%{
-      width: 0%;
-    }
-    25%{
-        width: 50%;
-    }
-    50%{
-        width: 75%;
-    }
-    75%{
-        width: 85%;
-    }
-    100%{
-        width: 100%;
-    }
-};
+
+;
 
 /* .............Loader-31st............... */
 .loader-31 {
@@ -1766,11 +1825,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .loader31 {
   position: relative;
   width: 75px;
   height: 100px;
 }
+
 .loader31 .bar {
   position: absolute;
   bottom: 0;
@@ -1780,31 +1841,37 @@ body {
   transform-origin: center bottom;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
 }
+
 .loader31 .bar:nth-child(1) {
   left: 0px;
   transform: scale(1, 0.2);
   animation: barUp1 4s infinite;
 }
+
 .loader31 .bar:nth-child(2) {
   left: 15px;
   transform: scale(1, 0.4);
   animation: barUp2 4s infinite;
 }
+
 .loader31 .bar:nth-child(3) {
   left: 30px;
   transform: scale(1, 0.6);
   animation: barUp3 4s infinite;
 }
+
 .loader31 .bar:nth-child(4) {
   left: 45px;
   transform: scale(1, 0.8);
   animation: barUp4 4s infinite;
 }
+
 .loader31 .bar:nth-child(5) {
   left: 60px;
   transform: scale(1, 1);
   animation: barUp5 4s infinite;
 }
+
 .loader__ball {
   position: absolute;
   bottom: 10px;
@@ -1815,140 +1882,181 @@ body {
   border-radius: 50%;
   animation: ball 4s infinite;
 }
+
 @keyframes ball {
   0% {
     transform: translate(0, 0);
- }
+  }
+
   5% {
     transform: translate(8px, -14px);
- }
+  }
+
   10% {
     transform: translate(15px, -10px);
- }
+  }
+
   17% {
     transform: translate(23px, -24px);
- }
+  }
+
   20% {
     transform: translate(30px, -20px);
- }
+  }
+
   27% {
     transform: translate(38px, -34px);
- }
+  }
+
   30% {
     transform: translate(45px, -30px);
- }
+  }
+
   37% {
     transform: translate(53px, -44px);
- }
+  }
+
   40% {
     transform: translate(60px, -40px);
- }
+  }
+
   50% {
     transform: translate(60px, 0);
- }
+  }
+
   57% {
     transform: translate(53px, -14px);
- }
+  }
+
   60% {
     transform: translate(45px, -10px);
- }
+  }
+
   67% {
     transform: translate(37px, -24px);
- }
+  }
+
   70% {
     transform: translate(30px, -20px);
- }
+  }
+
   77% {
     transform: translate(22px, -34px);
- }
+  }
+
   80% {
     transform: translate(15px, -30px);
- }
+  }
+
   87% {
     transform: translate(7px, -44px);
- }
+  }
+
   90% {
     transform: translate(0, -40px);
- }
+  }
+
   100% {
     transform: translate(0, 0);
- }
+  }
 }
+
 @keyframes barUp1 {
   0% {
     transform: scale(1, 0.2);
- }
+  }
+
   40% {
     transform: scale(1, 0.2);
- }
+  }
+
   50% {
     transform: scale(1, 1);
- }
+  }
+
   90% {
     transform: scale(1, 1);
- }
+  }
+
   100% {
     transform: scale(1, 0.2);
- }
+  }
 }
+
 @keyframes barUp2 {
   0% {
     transform: scale(1, 0.4);
- }
+  }
+
   40% {
     transform: scale(1, 0.4);
- }
+  }
+
   50% {
     transform: scale(1, 0.8);
- }
+  }
+
   90% {
     transform: scale(1, 0.8);
- }
+  }
+
   100% {
     transform: scale(1, 0.4);
- }
+  }
 }
+
 @keyframes barUp3 {
   0% {
     transform: scale(1, 0.6);
- }
+  }
+
   100% {
     transform: scale(1, 0.6);
- }
+  }
 }
+
 @keyframes barUp4 {
   0% {
     transform: scale(1, 0.8);
- }
+  }
+
   40% {
     transform: scale(1, 0.8);
- }
+  }
+
   50% {
     transform: scale(1, 0.4);
- }
+  }
+
   90% {
     transform: scale(1, 0.4);
- }
+  }
+
   100% {
     transform: scale(1, 0.8);
- }
+  }
 }
+
 @keyframes barUp5 {
   0% {
     transform: scale(1, 1);
- }
+  }
+
   40% {
     transform: scale(1, 1);
- }
+  }
+
   50% {
     transform: scale(1, 0.2);
- }
+  }
+
   90% {
     transform: scale(1, 0.2);
- }
+  }
+
   100% {
     transform: scale(1, 1);
- }
+  }
 }
 
 
@@ -1960,34 +2068,39 @@ body {
   position: relative;
   margin: 10px;
 }
- 
+
 @keyframes loadern-bubbles {
   0% {
     box-shadow: 0 -10px #efdfff,
-                3px 0 #efdfff,
-                5px 0 #efdfff;
+      3px 0 #efdfff,
+      5px 0 #efdfff;
   }
+
   30% {
-    box-shadow: 3px -20px rgba(239,223,255,0),
-                5px -10px #efdfff,
-                5px 0 #efdfff;
+    box-shadow: 3px -20px rgba(239, 223, 255, 0),
+      5px -10px #efdfff,
+      5px 0 #efdfff;
   }
+
   60% {
-    box-shadow: 3px 0 rgba(239,223,255,0),
-                4px -20px rgba(239,223,255,0),
-                3px -10px #efdfff;
+    box-shadow: 3px 0 rgba(239, 223, 255, 0),
+      4px -20px rgba(239, 223, 255, 0),
+      3px -10px #efdfff;
   }
+
   61% {
     box-shadow: 3px 0 #efdfff,
-                4px -20px rgba(239,223,255,0),
-                3px -10px #efdfff;
+      4px -20px rgba(239, 223, 255, 0),
+      3px -10px #efdfff;
   }
+
   100% {
     box-shadow: 0 -10px #efdfff,
-                4px -20px rgba(239,223,255,0),
-                5px -20px rgba(239,223,255,0);
+      4px -20px rgba(239, 223, 255, 0),
+      5px -20px rgba(239, 223, 255, 0);
   }
 }
+
 .loadern {
   width: 10px;
   height: 20px;
@@ -1995,11 +2108,13 @@ body {
   margin-right: 20px;
   background: #efdfff;
 }
+
 .loadern:before,
 .loadern:after {
   content: '';
   position: absolute;
 }
+
 .loadern:before {
   top: -8px;
   left: -13px;
@@ -2009,6 +2124,7 @@ body {
   border-bottom: 20px solid #efdfff;
   border-radius: 3px;
 }
+
 .loadern:after {
   top: 0;
   left: 0;
@@ -2028,6 +2144,7 @@ body {
   transform: rotate(45deg);
   transform-origin: 40px 40px;
 }
+
 .lds-heart div {
   top: 32px;
   left: 32px;
@@ -2037,6 +2154,7 @@ body {
   background: #fff;
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .lds-heart div:after,
 .lds-heart div:before {
   content: " ";
@@ -2046,33 +2164,78 @@ body {
   height: 32px;
   background: #fff;
 }
+
 .lds-heart div:before {
   left: -24px;
   border-radius: 50% 0 0 50%;
 }
+
 .lds-heart div:after {
   top: -24px;
   border-radius: 50% 50% 0 0;
 }
+
 @keyframes lds-heart {
   0% {
     transform: scale(0.95);
   }
+
   5% {
     transform: scale(1.1);
   }
+
   39% {
     transform: scale(0.85);
   }
+
   45% {
     transform: scale(1);
   }
+
   60% {
     transform: scale(0.95);
   }
+
   100% {
     transform: scale(0.9);
   }
 }
+
+/*---------------------------------------Loader-34rd------------------------------*/
+.signal {
+  width: 40px;
+  height: 40px;
+
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0)
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */
