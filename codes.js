@@ -2157,7 +2157,6 @@ const codes = [
         `,
   },
   {
-
     id: 33,
     code: `
    ##HTML
@@ -2223,58 +2222,119 @@ const codes = [
   }
 
         `,
-
   },
-
   {
-
-    id: 35,
+    id: 34,
     code: `
- ##HTML
- 
- <div class="loader-35">
-        <div class="signal">
-          <div></div>
-        </div>
+    ##HTML Code
+    <div class="loader-box">
+      <div class="loader-34">
+        <span class="loader34_circle_1"></span>
+        <span class="loader34_circle_2"></span>
+        <span class="loader34_circle_3"></span>
+        <span class="loader34_circle_4"></span>
+        <span class="loader34_circle_5"></span>
       </div>
+      <a href="#demo-modal" id="34" class="show-code-btn">Show Code</a>
+    </div>
+
+    ##CSS Code
+    .loader-34 span {
+        display: inline-block;
+        margin: 5px;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: #eb0000;
+
+        animation: oscillate 1.2s cubic-bezier(.8, .5, .2, 1.4) infinite ;
+      }
+
+      .loader34_circle_1{
+        animation-delay: 0.1s !important; 
+      } 
+
+      .loader34_circle_2{
+        animation-delay: 0.2s !important;
+      }
+
+      .loader34_circle_3{
+        animation-delay: 0.3s !important;
+      }
+
+      .loader34_circle_4{
+        animation-delay: 0.4s !important;
+      }
+
+      .loader34_circle_5{
+        animation-delay: 0.5s !important;
+      }
+
+      @keyframes oscillate {
+        0%{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+        50%{
+          transform: translateY(-30px);
+          opacity: 0;
+        }
+        100%{
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+    `,
+  },
+  {
+    id: 35,
+    code:
+      `
+    #Loader-35
   
-##CSS
-.signal {
-  width: 40px;
-  height: 40px;
-  margin: 100px auto;
-  background-color: #333;
-
-  border-radius: 100%;
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-scaleout {
-  0% {
-    -webkit-transform: scale(0)
-  }
-
-  100% {
-    -webkit-transform: scale(1.0);
-    opacity: 0;
-  }
-}
-
-@keyframes sk-scaleout {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-
-  100% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-    opacity: 0;
-  }
-}
-
-      `,
-
+    ##HTML
+  
+    <div class="loader35">
+            <svg viewBox="0 0 100 100">
+              <defs>
+                <filter id="shadow">
+                  <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
+                    flood-color="#fc6767"/>
+                </filter>
+              </defs>
+              <circle class="loader-35" style="fill:transparent;stroke:#ffffff;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
+          </svg>
+          </div>
+    
+  
+    ##CSS
+    
+    .loader35{
+      width: 80px;
+      height: 80px;
+    }
+    .loader-35 {
+      transform-origin: center;
+      animation-name: animation;
+      animation-duration: 1.2s;
+      animation-timing-function: cubic-bezier;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes animation {
+      0% {
+        stroke-dasharray: 1 98;
+        stroke-dashoffset: -105;
+      }
+      50% {
+        stroke-dasharray: 80 10;
+        stroke-dashoffset: -160;
+      }
+      100% {
+        stroke-dasharray: 1 98;
+        stroke-dashoffset: -300;
+      }
+    }
+    `
   }
 ];
