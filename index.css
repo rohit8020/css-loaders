@@ -2082,7 +2082,7 @@ body {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #eb0000;
+  background-color: #ffffff;
 
   animation: oscillate 1.2s cubic-bezier(.8, .5, .2, 1.4) infinite;
 }
