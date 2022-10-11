@@ -2288,8 +2288,7 @@ const codes = [
   },
   {
     id: 35,
-    code:
-      `
+    code: `
     #Loader-35
   
     ##HTML
@@ -2335,13 +2334,12 @@ const codes = [
         stroke-dashoffset: -300;
       }
     }
-    `
+    `,
   },
 
   {
     id: 36,
-    code:
-      `
+    code: `
     #Loader-36
   
     ##HTML
@@ -2388,6 +2386,91 @@ const codes = [
         opacity: 0;
       }
     }
-    `
-  }
+    `,
+  },
+  {
+    id: 37,
+    code: `
+    ##HTML Code
+
+      <div class="loader-box">
+        <div class="loader-37">
+          <div class="loader loader37"></div>
+        </div>
+        <a href="#demo-modal" id="37" class="show-code-btn">Show Code</a>
+      </div>
+
+
+
+    ##CSS Code
+   
+    @keyframes loader37 {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes loader37-part {
+      from {
+        transform: translate(0);
+      }
+      25% {
+        transform: translate(5px);
+        animation-timing-function: cubic-bezier(1, 0, 0.51, 1.58);
+      }
+      50% {
+        transform: translate(10px) scale(1.6);
+        animation-timing-function: ease-in;
+      }
+      75% {
+        transform: translate(5px);
+      }
+    }
+    @keyframes loader37-part2 {
+      from {
+        transform: translate(20px);
+      }
+      25% {
+        transform: translate(15px);
+        animation-timing-function: cubic-bezier(1, 0, 0.51, 1.58);
+      }
+      50% {
+        transform: translate(10px) scale(1.6);
+        animation-timing-function: ease-in;
+      }
+      75% {
+        transform: translate(15px);
+      }
+    }
+    .loader37 {
+      height: 20px;
+      width: 30px;
+      animation: loader37 2s linear infinite;
+    }
+    .loader37:before,
+    .loader37:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background: #efdfff;
+      transform-origin: 50% 50%;
+    }
+    .loader37:before {
+      transform: translate(0);
+      animation: loader37-part 1.5s linear infinite;
+    }
+    .loader37:after {
+      transform: translate(20px);
+      animation: loader37-part2 1.5s linear infinite;
+    }
+
+    `,
+  },
 ];
