@@ -2224,5 +2224,56 @@ const codes = [
 
         `,
 
+},
+{
+  id:34,
+  code:
+  `
+  #Loader-34
+
+  ##HTML
+
+  <div class="loader34">
+          <svg viewBox="0 0 100 100">
+            <defs>
+              <filter id="shadow">
+                <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
+                  flood-color="#fc6767"/>
+              </filter>
+            </defs>
+            <circle class="loader-34" style="fill:transparent;stroke:#ffffff;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
+        </svg>
+        </div>
+  
+
+  ##CSS
+  
+  .loader34{
+    width: 80px;
+    height: 80px;
+  }
+  .loader-34 {
+    transform-origin: center;
+    animation-name: animation;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animation {
+    0% {
+      stroke-dasharray: 1 98;
+      stroke-dashoffset: -105;
+    }
+    50% {
+      stroke-dasharray: 80 10;
+      stroke-dashoffset: -160;
+    }
+    100% {
+      stroke-dasharray: 1 98;
+      stroke-dashoffset: -300;
+    }
+  }
+  `
 }
 ];
