@@ -19,9 +19,9 @@ and paste inside the codes array in the form ->
 - Add  the newly created object to the codes array(preferably at last of the array)
 */
 const codes = [
-	{
-		id: 1,
-		code: `
+  {
+    id: 1,
+    code: `
         /* loader-1 */
         ##HTML
         <div class="loader-1">
@@ -76,10 +76,10 @@ const codes = [
             }
         }
         `,
-	},
-	{
-		id: 2,
-		code: `
+  },
+  {
+    id: 2,
+    code: `
             /* Loader-2 */
             #HTML
             <div class="loader-2"></div>
@@ -106,10 +106,10 @@ const codes = [
                 }
             }
             `,
-	},
-	{
-		id: 3,
-		code: `
+  },
+  {
+    id: 3,
+    code: `
             /* Loader-3 */
             #HTML
             <div class="loader"></div>
@@ -163,10 +163,10 @@ const codes = [
                 filter: blur(30px);
             }
             `,
-	},
-	{
-		id: 4,
-		code: `/* Loader-4 */
+  },
+  {
+    id: 4,
+    code: `/* Loader-4 */
         #HTML
         <div class="loader-4">
 
@@ -223,10 +223,10 @@ const codes = [
         }
       }
 `,
-	},
-	{
-		id: 5,
-		code: `/* Loader-5 */
+  },
+  {
+    id: 5,
+    code: `/* Loader-5 */
         #HTML
         <div class="loader_5">
   <div class="loader5_int"></div>
@@ -262,10 +262,10 @@ const codes = [
     }
   }
 `,
-	},
-	{
-		id: 6,
-		code: `/*Loader - 6*/
+  },
+  {
+    id: 6,
+    code: `/*Loader - 6*/
         #HTML
         <div class="loader-6">
             <div class="set-one">
@@ -361,10 +361,10 @@ const codes = [
           }
           }
         `,
-	},
-	{
-		id: 7,
-		code: `
+  },
+  {
+    id: 7,
+    code: `
       ##HTML
       <div class="loader-7">
           <div class="dot-loader-7"></div>
@@ -456,11 +456,11 @@ const codes = [
         font-size: smaller;
       }
       `,
-	},
+  },
 
-	{
-		id: 8,
-		code: `
+  {
+    id: 8,
+    code: `
       ##HTML
       <div class="loader-8">
           <div class="loader-hourglass"></div>
@@ -503,10 +503,10 @@ const codes = [
           }
       }
       `,
-	},
-	{
-		id: 9,
-		code: `
+  },
+  {
+    id: 9,
+    code: `
       ##HTML
       <div class="loader-box">
         <div class="loader-ripple">
@@ -569,10 +569,10 @@ const codes = [
           }
       }
       `,
-	},
-	{
-		id: 10,
-		code: `
+  },
+  {
+    id: 10,
+    code: `
       ##HTML
       <div class="loader-10">
         <div class="l10"></div>
@@ -594,10 +594,10 @@ const codes = [
       100% {background-position: right -40px top 0}
     }
       `,
-	},
-	{
-		id: 11,
-		code: `
+  },
+  {
+    id: 11,
+    code: `
       ##HTML
       <!-- Loader-11 -->
       <div class="loader-box">
@@ -639,10 +639,10 @@ const codes = [
         }
       }
       `,
-	},
-	{
-		id: 12,
-		code: `
+  },
+  {
+    id: 12,
+    code: `
      ##HTML
      <div class="loader-12">
         <span class="loader_arrow"></span>
@@ -677,10 +677,10 @@ const codes = [
         100%{    transform: rotate(360deg)}
       }
      `,
-	},
-	{
-		id: 13,
-		code: `
+  },
+  {
+    id: 13,
+    code: `
       ##HTML
       <div class="loader-13">
         <div class="loader13">
@@ -726,11 +726,11 @@ const codes = [
         }
 
       `,
-	},
+  },
 
-	{
-		id: 14,
-		code: `
+  {
+    id: 14,
+    code: `
           ##HTML
           <div class="loader-14">
               <div class="l-14"></div>
@@ -778,10 +778,10 @@ const codes = [
             }
           }
         `,
-	},
-	{
-		id: 15,
-		code: `
+  },
+  {
+    id: 15,
+    code: `
     ##HTML
     <div class="spinner-container">
     <div class="spinner"></div>
@@ -843,10 +843,10 @@ const codes = [
     @keyframes animateRotate {
       to { transform: rotate(360deg); }
     }`,
-	},
-	{
-		id: 16,
-		code: `
+  },
+  {
+    id: 16,
+    code: `
     ##HTML
     <div class="loader-16"></div>
     <span class="sat"> loading... </span>
@@ -895,10 +895,10 @@ const codes = [
 
 }
     `,
-	},
-	{
-		id: 17,
-		code: `
+  },
+  {
+    id: 17,
+    code: `
     ##HTML
     <div class="loader-17">
     <span class="pp" style="--i:1;"></span>
@@ -987,10 +987,10 @@ const codes = [
 
   }
     `,
-	},
-	{
-		id: 18,
-		code: `
+  },
+  {
+    id: 18,
+    code: `
     ##HTML
     <div class="loader-box">
       <div class="loader-18">
@@ -1037,10 +1037,10 @@ const codes = [
     }
   }
     `,
-	},
-	{
-		id: 19,
-		code: `
+  },
+  {
+    id: 19,
+    code: `
     ##HTML
     <div class="loading">
         <div></div>
@@ -1072,10 +1072,10 @@ const codes = [
       }
     }
     `,
-	},
-	{
-		id: 20,
-		code: `
+  },
+  {
+    id: 20,
+    code: `
     ###HTML
     <div class="loader-box">
       <div class="loader-20">
@@ -1165,10 +1165,10 @@ const codes = [
         }
     }
     `,
-	},
-	{
-		id: 21,
-		code: `
+  },
+  {
+    id: 21,
+    code: `
     ###HTML
     <div class="loader21">
     <svg class="svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13.86">
@@ -1280,11 +1280,11 @@ const codes = [
 
 
     `,
-	},
+  },
 
-	{
-		id: 22,
-		code: `
+  {
+    id: 22,
+    code: `
     ##HTML Code
     <div>
     <span class="dot" id="dot1"></span>
@@ -1363,11 +1363,11 @@ const codes = [
       }
     }
     `,
-	},
+  },
 
-	{
-		id: 23,
-		code: `
+  {
+    id: 23,
+    code: `
     ###HTML
     <div class="loader-23">
         <div class="loading">
@@ -1441,10 +1441,10 @@ const codes = [
       }
     }
     `,
-	},
-	{
-		id: 24,
-		code: `
+  },
+  {
+    id: 24,
+    code: `
     ###HTML
     <div class="loader-24"></div>
 
@@ -1477,10 +1477,10 @@ const codes = [
         100% { transform: rotate(360deg); }
     }
     `,
-	},
-	{
-		id: 25,
-		code: `
+  },
+  {
+    id: 25,
+    code: `
     ##HTML
     <div class="loader-25"></div>
 
@@ -1518,10 +1518,10 @@ const codes = [
         80% { transform:  scale(1.2)}
     }
     `,
-	},
-	{
-		id: 26,
-		code: `
+  },
+  {
+    id: 26,
+    code: `
     ###HTML
     <div class="loader-box">
     <div class="pixels">
@@ -1582,11 +1582,11 @@ const codes = [
   }
 }
   `,
-	},
+  },
 
-	{
-		id: 27,
-		code: `
+  {
+    id: 27,
+    code: `
         /* loader-27 */
         ##HTML
         <div class="loader-27">
@@ -1687,11 +1687,11 @@ const codes = [
         }
 
         `,
-	},
+  },
 
-	{
-		id: 28,
-		code: `
+  {
+    id: 28,
+    code: `
     ##HTML
     <div class="loader-28">
       <div class="lds-spinner">
@@ -1738,10 +1738,10 @@ const codes = [
     }
 
         `,
-	},
-	{
-		id: 29,
-		code: `
+  },
+  {
+    id: 29,
+    code: `
         ##HTML
         <div class="loader-29">
                     <div class="wave"></div>
@@ -1813,10 +1813,10 @@ const codes = [
         } 
             
             `,
-	},
-	{
-		id: 30,
-		code: `
+  },
+  {
+    id: 30,
+    code: `
        ##HTML
        <div class="loader-box">
         <div class="loader-30">
@@ -1864,10 +1864,10 @@ const codes = [
     };
     
             `,
-	},
-	{
-		id: 31,
-		code: `
+  },
+  {
+    id: 31,
+    code: `
        ##HTML
        <div class="loader-box">
        <div class="loader-31">
@@ -2076,11 +2076,11 @@ const codes = [
       };
     
             `,
-	},
+  },
 
-	{
-		id: 32,
-		code: `
+  {
+    id: 32,
+    code: `
    ##HTML
    
    <div class="loader-32">
@@ -2155,10 +2155,10 @@ const codes = [
    
 
         `,
-	},
-	{
-		id: 33,
-		code: `
+  },
+  {
+    id: 33,
+    code: `
    ##HTML
    
    <div class="loader-33">
@@ -2222,10 +2222,10 @@ const codes = [
   }
 
         `,
-	},
-	{
-		id: 34,
-		code: `
+  },
+  {
+    id: 34,
+    code: `
     ##HTML Code
     <div class="loader-box">
       <div class="loader-34">
@@ -2285,11 +2285,11 @@ const codes = [
         }
       }
     `,
-	},
+  },
   {
-    id:35,
+    id: 35,
     code:
-    `
+      `
     #Loader-35
   
     ##HTML
@@ -2333,6 +2333,59 @@ const codes = [
       100% {
         stroke-dasharray: 1 98;
         stroke-dashoffset: -300;
+      }
+    }
+    `
+  },
+
+  {
+    id: 36,
+    code:
+      `
+    #Loader-36
+  
+    ##HTML
+  
+    <div class="loader-36">
+        <div class="signal">
+          <div></div>
+        </div>
+      </div>
+    
+  
+    ##CSS
+    
+    .signal {
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+    
+      border-radius: 100%;
+      -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+      animation: sk-scaleout 1.0s infinite ease-in-out;
+    }
+    
+    @-webkit-keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0)
+      }
+    
+      100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+      }
+    }
+    
+    @keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+    
+      100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
       }
     }
     `
