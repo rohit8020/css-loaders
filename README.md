@@ -80,5 +80,6 @@ If you had fun while contributing to this project, then don't forget to give thi
 - [NahushSingh](https://github.com/NahushSingh)
 - [Sachin Gupta](https://github.com/sachingupta63)
 - [Abhay Gupta](https://github.com/abhaygupta08)
+- [Navkiran Singh](https://github.com/inavkiran)
 
 ### Thanks for your contribution
