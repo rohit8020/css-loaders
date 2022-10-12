@@ -2393,15 +2393,11 @@ const codes = [
     code: `
     ##HTML Code
 
-      <div class="loader-box">
-        <div class="loader-37">
-          <div class="loader loader37"></div>
-        </div>
-        <a href="#demo-modal" id="37" class="show-code-btn">Show Code</a>
-      </div>
-
-
-
+    <div class="loader-37">
+      <div class="loader loader37"></div>
+    </div>
+        
+    
     ##CSS Code
    
     @keyframes loader37 {
