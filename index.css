@@ -2344,6 +2344,7 @@ body {
 .loader37 {
   height: 20px;
   width: 30px;
+  margin: 30px auto;
   animation: loader37 2s linear infinite;
 }
 .loader37:before,
@@ -2377,7 +2378,7 @@ body {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  margin: 72px auto;
+  margin: 25px auto;
   position: relative;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);

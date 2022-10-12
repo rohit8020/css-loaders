@@ -2473,10 +2473,10 @@ const codes = [
     id:38,
     code:`
     #HTML
-    <div class="loader"></div>
+    <div class="loader38"></div>
     
     #CSS
-    .loader {
+    .loader38 {
       color: #ffffff;
       font-size: 30px;
       overflow: hidden;
