@@ -273,7 +273,6 @@ footer .footer {
 }
 
 @-webkit-keyframes grow {
-
   0%,
   40%,
   100% {
@@ -288,7 +287,6 @@ footer .footer {
 }
 
 @keyframes grow {
-
   0%,
   40%,
   100% {
@@ -348,18 +346,18 @@ footer .footer {
   animation: mesh 3s ease-in-out infinite -1.5s;
 }
 
-.loader-6>div .circle:last-child {
+.loader-6 > div .circle:last-child {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 
-.loader-6>div {
+.loader-6 > div {
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
-.loader-6>div:last-child {
+.loader-6 > div:last-child {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -610,7 +608,8 @@ footer .footer {
   background: linear-gradient(#514b82 0 0) left -40px top 0/40px 100% no-repeat #eee;
   -webkit-mask: linear-gradient(#000 0 0) top / 100% 5px no-repeat,
     linear-gradient(#000 0 0) bottom/100% 5px no-repeat,
-    repeating-linear-gradient(90deg, #000 0 5px, #0000 0 20%) left/calc(100% - 5px) 100%;
+    repeating-linear-gradient(90deg, #000 0 5px, #0000 0 20%)
+      left/calc(100% - 5px) 100%;
   animation: l10 1s infinite linear;
 }
 
@@ -626,7 +625,7 @@ footer .footer {
   transform: translateZ(1px);
 }
 
-.loader-circle>div {
+.loader-circle > div {
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -637,7 +636,6 @@ footer .footer {
 }
 
 @keyframes loader-circle {
-
   0%,
   100% {
     animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
@@ -978,7 +976,7 @@ body {
   max-width: 100%;
 }
 
-.loading>div {
+.loading > div {
   width: 10vmax;
   height: 10vmax;
   border-bottom: 5px solid rgba(0, 0, 0, 0.719);
@@ -1156,7 +1154,6 @@ body {
 }
 
 @keyframes size {
-
   0%,
   95%,
   100% {
@@ -1169,7 +1166,6 @@ body {
 }
 
 @keyframes fill-blink {
-
   0%,
   100% {
     opacity: 0;
@@ -1181,7 +1177,6 @@ body {
 }
 
 @keyframes inner-shadow-blink {
-
   0%,
   100% {
     opacity: 0;
@@ -1193,7 +1188,6 @@ body {
 }
 
 @keyframes drop-shadow-blink {
-
   0%,
   90%,
   100% {
@@ -1426,7 +1420,6 @@ body {
 }
 
 @keyframes pulse-25 {
-
   0%,
   60%,
   100% {
@@ -1630,8 +1623,6 @@ body {
   }
 }
 
-
-
 /* .............Loader-29th............... */
 
 .loader-29 {
@@ -1700,8 +1691,6 @@ body {
     transform: scale(0);
   }
 }
-
-
 
 /* .............Loader-29th............... */
 
@@ -1816,8 +1805,6 @@ body {
   }
 }
 
-;
-
 /* .............Loader-31st............... */
 .loader-31 {
   height: 100%;
@@ -1839,7 +1826,7 @@ body {
   height: 50%;
   background: #fff;
   transform-origin: center bottom;
-  box-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .loader31 .bar:nth-child(1) {
@@ -2059,7 +2046,6 @@ body {
   }
 }
 
-
 /* .............Loader-32nd............... */
 
 .loader32 {
@@ -2071,32 +2057,26 @@ body {
 
 @keyframes loadern-bubbles {
   0% {
-    box-shadow: 0 -10px #efdfff,
-      3px 0 #efdfff,
-      5px 0 #efdfff;
+    box-shadow: 0 -10px #efdfff, 3px 0 #efdfff, 5px 0 #efdfff;
   }
 
   30% {
-    box-shadow: 3px -20px rgba(239, 223, 255, 0),
-      5px -10px #efdfff,
+    box-shadow: 3px -20px rgba(239, 223, 255, 0), 5px -10px #efdfff,
       5px 0 #efdfff;
   }
 
   60% {
-    box-shadow: 3px 0 rgba(239, 223, 255, 0),
-      4px -20px rgba(239, 223, 255, 0),
+    box-shadow: 3px 0 rgba(239, 223, 255, 0), 4px -20px rgba(239, 223, 255, 0),
       3px -10px #efdfff;
   }
 
   61% {
-    box-shadow: 3px 0 #efdfff,
-      4px -20px rgba(239, 223, 255, 0),
+    box-shadow: 3px 0 #efdfff, 4px -20px rgba(239, 223, 255, 0),
       3px -10px #efdfff;
   }
 
   100% {
-    box-shadow: 0 -10px #efdfff,
-      4px -20px rgba(239, 223, 255, 0),
+    box-shadow: 0 -10px #efdfff, 4px -20px rgba(239, 223, 255, 0),
       5px -20px rgba(239, 223, 255, 0);
   }
 }
@@ -2111,7 +2091,7 @@ body {
 
 .loadern:before,
 .loadern:after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -2201,8 +2181,6 @@ body {
   }
 }
 
-
-
 /*---------------------------------------Loader-34th------------------------------*/
 .loader-34 span {
   display: inline-block;
@@ -2214,7 +2192,7 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
 
-  animation: oscillate 1.2s cubic-bezier(.8, .5, .2, 1.4) infinite;
+  animation: oscillate 1.2s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
 }
 
 .loader34_circle_1 {
@@ -2293,17 +2271,17 @@ body {
   background-color: rgb(255, 255, 255);
 
   border-radius: 100%;
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-  animation: sk-scaleout 1.0s infinite ease-in-out;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
 }
 
 @-webkit-keyframes sk-scaleout {
   0% {
-    -webkit-transform: scale(0)
+    -webkit-transform: scale(0);
   }
 
   100% {
-    -webkit-transform: scale(1.0);
+    -webkit-transform: scale(1);
     opacity: 0;
   }
 }
@@ -2315,12 +2293,80 @@ body {
   }
 
   100% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 0;
   }
 }
 
+/* ----------------Loader-37th----------------- */
+
+@keyframes loader37 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader37-part {
+  from {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(5px);
+    animation-timing-function: cubic-bezier(1, 0, 0.51, 1.58);
+  }
+  50% {
+    transform: translate(10px) scale(1.6);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: translate(5px);
+  }
+}
+@keyframes loader37-part2 {
+  from {
+    transform: translate(20px);
+  }
+  25% {
+    transform: translate(15px);
+    animation-timing-function: cubic-bezier(1, 0, 0.51, 1.58);
+  }
+  50% {
+    transform: translate(10px) scale(1.6);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: translate(15px);
+  }
+}
+.loader37 {
+  height: 20px;
+  width: 30px;
+  animation: loader37 2s linear infinite;
+}
+.loader37:before,
+.loader37:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #efdfff;
+  transform-origin: 50% 50%;
+}
+.loader37:before {
+  transform: translate(0);
+  animation: loader37-part 1.5s linear infinite;
+}
+.loader37:after {
+  transform: translate(20px);
+  animation: loader37-part2 1.5s linear infinite;
+}
 
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */
