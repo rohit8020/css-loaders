@@ -2470,8 +2470,8 @@ const codes = [
     `,
   },
   {
-    id:38,
-    code:`
+    id: 38,
+    code: `
     #HTML
     <div class="loader38"></div>
     
@@ -2555,15 +2555,15 @@ const codes = [
         transform: rotate(360deg);
       }
     }
-    `
+    `,
   },
   {
-    id:39,
-    code:
-    `##HTML
-    
-    <div class="loader39"></div>
-  
+    id: 39,
+    code: `##HTML
+      <div class="loader-box">
+    <span class="loader39"></span>
+  <a href="#demo-modal" id="39" class="show-code-btn">Show Code</a>
+</div> 
 
 ##CSS
 .loader39{
@@ -2638,5 +2638,101 @@ const codes = [
     background-position: 50% 36px;
   }
 } `,
+  },
+  {
+    id: 40,
+    code: `
+    ##HTML
+
+    <div class="loader40">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+
+    ##CSS
+    
+.loader40 {
+  text-align: center;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  background: white;
+  border-radius: 10%;
+  box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2);
+}
+
+.loader40 span{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #eee;
+  border-radius: 50%;
+  margin: 0 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loader40 span:nth-child(2) {
+  background: #f07e6e;
+}
+
+.loader40 span:nth-child(3) {
+  background: #84cdfa;
+}
+
+.loader40 span:nth-child(4) {
+  background: #5ad1cd;
+}
+
+.loader40 span:not(:last-child) {
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
   }
+
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.loader40 span:last-child {
+  animation: jump 1.5s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(5px, -5px);
+  }
+  20% {
+    transform: translate(10px, 5px);
+  }
+  30% {
+    transform: translate(15px, -25px);
+  }
+  70% {
+    transform: translate(-75px, -25px);
+  }
+  80% {
+    transform: translate(-70px, 5px);
+  }
+  90% {
+    transform: translate(-65px, -5px);
+  }
+  100% {
+    transform: translate(-60px, 0);
+  }
+}
+    `,
+  },
 ];
