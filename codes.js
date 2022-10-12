@@ -112,19 +112,19 @@ const codes = [
     code: `
             /* Loader-3 */
             #HTML
-            <div class="loader"></div>
+            <div class="loader-3"></div>
 
             ##CSS
-            .loader
+            .loader-3
             {
                 position: relative;
                 width: 150px;
                 height: 150px;
                 border-radius: 50%;
                 background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
-                animation: animate 2s linear infinite;
+                animation: animate-3 2s linear infinite;
             }
-            @keyframes animate
+            @keyframes animate-3
             {
                 0%
                 {
@@ -137,7 +137,7 @@ const codes = [
                     filter: hue-rotate(360deg);
                 }
             }
-            .loader:before
+            .loader-3:before
             {
                 content: '';
                 position: absolute;
@@ -149,7 +149,7 @@ const codes = [
                 border-radius: 50%;
                 z-index: 1000;
             }
-            .loader:after
+            .loader-4:after
             {
                 content: '';
                 position: absolute;

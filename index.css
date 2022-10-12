@@ -192,33 +192,16 @@ footer .footer {
 }
 
 /* ...............Loader-3...................... */
-.white {
-  border: 2px solid rgb(255, 255, 255);
-  color: white;
-}
-
-.loader {
+.loader-3 {
   position: relative;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
-  animation: animate 2s linear infinite;
+  animation: animate-3 2s linear infinite;
 }
 
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-    filter: hue-rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-    filter: hue-rotate(360deg);
-  }
-}
-
-.loader:before {
+.loader-3:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -229,7 +212,7 @@ footer .footer {
   z-index: 1000;
 }
 
-.loader:after {
+.loader-3:after {
   content: "";
   position: absolute;
   top: 0px;
@@ -241,6 +224,24 @@ footer .footer {
   background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
   filter: blur(30px);
 }
+
+@keyframes animate-3 {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+.white {
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+
 
 /* ...................Loader-4................... */
 .loader-4 {
@@ -971,16 +972,16 @@ body {
 
 /* .............Loader-19.............. */
 .loading {
-  width: 100vw;
-  height: 100vh;
+  width: 100px;
+  height: 100px;
   display: grid;
   place-items: center;
   max-width: 100%;
 }
 
 .loading>div {
-  width: 10vmax;
-  height: 10vmax;
+  width: 80px;
+  height: 80px;
   border-bottom: 5px solid rgba(0, 0, 0, 0.719);
 
   border-radius: 50%;
