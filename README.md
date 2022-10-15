@@ -81,5 +81,6 @@ If you had fun while contributing to this project, then don't forget to give thi
 - [Sachin Gupta](https://github.com/sachingupta63)
 - [Abhay Gupta](https://github.com/abhaygupta08)
 - [Navkiran Singh](https://github.com/inavkiran)
+- [Anuj Kumar Maurya](https://github.com/Anujkumar2017)
 
 ### Thanks for your contribution
