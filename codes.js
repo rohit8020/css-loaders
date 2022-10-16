@@ -2798,10 +2798,9 @@ const codes = [
     "id": 42,
     "code":
     `##HTML Code
-    <div class="loader-box">
-        <div class="loader42"></div>
-        <a href="#demo-modal" id="42" class="show-code-btn">Show Code</a>
-    </div>
+    
+    <div class="loader42"></div>
+        
 
     ##CSS Code
     .loader42 {
