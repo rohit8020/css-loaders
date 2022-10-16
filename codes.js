@@ -2792,5 +2792,81 @@ const codes = [
           100%{opacity: 0;width: 0px;}
       }
     `
+  },
+  {
+    id: 42,
+    code:`
+    ##HTML
+
+      <div class="loader42"></div>
+      
+    ##CSS
+
+    .loader42 {
+      width:20px;
+      height:20px;
+      background:#24bd54;
+      box-shadow:0 0 60px 15px #24bd54;
+      transform: translate(-80px);
+      clip-path:inset(0);
+      animation:
+        l42-1 0.5s ease-in-out infinite alternate,
+        l42-2 1s   ease-in-out infinite;
+    }
+    
+    @keyframes l42-1 {
+      100% {transform:translateX(80px)}
+    }
+    
+    @keyframes l42-2 {
+       33% {clip-path:inset(0 0 0 -100px)}
+       50% {clip-path:inset(0 0 0 0)     }
+       83% {clip-path:inset(0 -100px 0 0)}
+    }
+    `
+
+    
+  },{
+    id:43,
+    code:`
+    ##HTML
+
+    <div class="loader43"></div>
+
+    ##CSS
+
+    .loader43 {
+      width:120px;
+      height:21px;
+      background:
+       linear-gradient(#000 0 0) left/10px 100% no-repeat
+       #ddd;
+      animation:l43 1s infinite cubic-bezier(0,0.2,1,1);
+      position: relative;
+    }
+    .loader43:before,
+    .loader43:after {
+      content: "";
+      position: absolute;
+      left:0;
+      right:0;
+      height:7px;
+      background:
+        linear-gradient(#000 0 0) left/10px 100% no-repeat
+        #ddd;
+      animation: inherit;
+    }
+    .loader43:before {
+      top:0;
+      animation-timing-function: cubic-bezier(0,0,1,1);
+    }
+    .loader43:after {
+      bottom:0;
+      animation-timing-function: cubic-bezier(0,0.4,1,1);
+    }
+    @keyframes l43 {
+        50% {background-position: right }
+    }
+    `
   }
 ];
