@@ -2798,7 +2798,7 @@ const codes = [
     "code":
     `##HTML Code
     
-        <div class="loader42"></div>
+    <div class="loader42"></div>
         
 
     ##CSS Code
