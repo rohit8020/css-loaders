@@ -2794,15 +2794,74 @@ const codes = [
     `
   },
   {
-    id: 42,
+    "id": 42,
+    "code":
+    `##HTML Code
+    
+        <div class="loader42"></div>
+        
+
+    ##CSS Code
+    .loader42 {
+      position: relative;
+      width: 120px;
+      height: 90px;
+      margin: 0 auto;
+    }
+    .loader42:before {
+      content: "";
+      position: absolute;
+      bottom: 30px;
+      left: 51px;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background: #FF3D00;
+      animation: loading-bounce 0.5s ease-in-out infinite alternate;
+    }
+    .loader42:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 7px;
+      width: 45px;
+      border-radius: 4px;
+      box-shadow: 0 5px 0 #fff, -35px 50px 0 #fff, -70px 95px 0 #fff;
+      animation: loading-step 1s ease-in-out infinite;
+    }
+    
+    @keyframes loading-bounce {
+      0% { transform: scale(1, 0.7)}
+      40% { transform: scale(0.8, 1.2)}
+      60% { transform: scale(1, 1)}
+      100% { bottom: 100px }
+    }
+    @keyframes loading-step {
+      0% {
+        box-shadow: 0 10px 0 rgba(0,0,0,0),
+                    0 10px 0 #fff,
+                  -35px 50px 0 #fff,
+                  -70px 90px 0 #fff;
+      }
+      100% {
+        box-shadow: 0 10px 0 #fff,
+                  -35px 50px 0 #fff,
+                  -70px 90px 0 #fff,
+                  -70px 90px 0 rgba(0,0,0,0);
+      }
+    }`
+  },
+  {
+    id: 43,
     code:`
     ##HTML
 
-      <div class="loader42"></div>
+      <div class="loader43"></div>
       
     ##CSS
 
-    .loader42 {
+    .loader43 {
       width:20px;
       height:20px;
       background:#24bd54;
@@ -2810,42 +2869,42 @@ const codes = [
       transform: translate(-80px);
       clip-path:inset(0);
       animation:
-        l42-1 0.5s ease-in-out infinite alternate,
-        l42-2 1s   ease-in-out infinite;
+        l43-1 0.5s ease-in-out infinite alternate,
+        l43-2 1s   ease-in-out infinite;
     }
     
-    @keyframes l42-1 {
+    @keyframes l43-1 {
       100% {transform:translateX(80px)}
     }
     
-    @keyframes l42-2 {
+    @keyframes l43-2 {
        33% {clip-path:inset(0 0 0 -100px)}
        50% {clip-path:inset(0 0 0 0)     }
        83% {clip-path:inset(0 -100px 0 0)}
     }
-    `
-
     
-  },{
-    id:43,
+    `
+  },
+  {
+    id:44,
     code:`
     ##HTML
 
-    <div class="loader43"></div>
+    <div class="loader44"></div>
 
     ##CSS
 
-    .loader43 {
+    .loader44 {
       width:120px;
       height:21px;
       background:
        linear-gradient(#000 0 0) left/10px 100% no-repeat
        #ddd;
-      animation:l43 1s infinite cubic-bezier(0,0.2,1,1);
+      animation:l44 1s infinite cubic-bezier(0,0.2,1,1);
       position: relative;
     }
-    .loader43:before,
-    .loader43:after {
+    .loader44:before,
+    .loader44:after {
       content: "";
       position: absolute;
       left:0;
@@ -2856,15 +2915,15 @@ const codes = [
         #ddd;
       animation: inherit;
     }
-    .loader43:before {
+    .loader44:before {
       top:0;
       animation-timing-function: cubic-bezier(0,0,1,1);
     }
-    .loader43:after {
+    .loader44:after {
       bottom:0;
       animation-timing-function: cubic-bezier(0,0.4,1,1);
     }
-    @keyframes l43 {
+    @keyframes l44 {
         50% {background-position: right }
     }
     `
