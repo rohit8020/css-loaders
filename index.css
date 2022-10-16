@@ -2719,7 +2719,6 @@ body {
 }
 
 /* .............Loader 42............... */
-
 .loader42 {
   position: relative;
   width: 120px;
@@ -2769,6 +2768,66 @@ body {
               -70px 90px 0 rgba(0,0,0,0);
   }
 }
+
+
+/* .............Loader-43rd............... */
+.loader43 {
+  width:20px;
+  height:20px;
+  background:#24bd54;
+  box-shadow:0 0 60px 15px #24bd54;
+  transform: translate(-80px);
+  clip-path:inset(0);
+  animation:
+    l43-1 0.5s ease-in-out infinite alternate,
+    l43-2 1s   ease-in-out infinite;
+}
+
+@keyframes l43-1 {
+  100% {transform:translateX(80px)}
+}
+
+@keyframes l43-2 {
+   33% {clip-path:inset(0 0 0 -100px)}
+   50% {clip-path:inset(0 0 0 0)     }
+   83% {clip-path:inset(0 -100px 0 0)}
+}
+
+/* .............Loader-44th............... */
+.loader44 {
+  width:120px;
+  height:21px;
+  background:
+   linear-gradient(#000 0 0) left/10px 100% no-repeat
+   #ddd;
+  animation:l44 1s infinite cubic-bezier(0,0.2,1,1);
+  position: relative;
+}
+.loader44:before,
+.loader44:after {
+  content: "";
+  position: absolute;
+  left:0;
+  right:0;
+  height:7px;
+  background:
+    linear-gradient(#000 0 0) left/10px 100% no-repeat
+    #ddd;
+  animation: inherit;
+}
+.loader44:before {
+  top:0;
+  animation-timing-function: cubic-bezier(0,0,1,1);
+}
+.loader44:after {
+  bottom:0;
+  animation-timing-function: cubic-bezier(0,0.4,1,1);
+}
+@keyframes l44 {
+    50% {background-position: right }
+}
+
+
 
 /* .............Loader-nth............... */
 /* add the css for the Loader-nth... */
