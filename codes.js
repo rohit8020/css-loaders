@@ -3053,11 +3053,8 @@ const codes = [
     code: `
         ##HTML Code
 
-        <div class="loader-box">
-          <div class="loader-46">
-            <div></div>
-          </div>
-          <a href="#demo-modal" id="46" class="show-code-btn">Show Code</a>
+        <div class="loader-46">
+          <div></div>
         </div>
 
         ##CSS Code
