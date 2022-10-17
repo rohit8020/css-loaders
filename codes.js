@@ -2791,12 +2791,11 @@ const codes = [
           90%{opacity: 0; width: 100%;}
           100%{opacity: 0;width: 0px;}
       }
-    `
+    `,
   },
   {
-    "id": 42,
-    "code":
-    `##HTML Code
+    id: 42,
+    code: `##HTML Code
     
     <div class="loader42"></div>
         
@@ -2850,11 +2849,11 @@ const codes = [
                   -70px 90px 0 #fff,
                   -70px 90px 0 rgba(0,0,0,0);
       }
-    }`
+    }`,
   },
   {
     id: 43,
-    code:`
+    code: `
     ##HTML
 
       <div class="loader43"></div>
@@ -2883,11 +2882,11 @@ const codes = [
        83% {clip-path:inset(0 -100px 0 0)}
     }
     
-    `
+    `,
   },
   {
-    id:44,
-    code:`
+    id: 44,
+    code: `
     ##HTML
 
     <div class="loader44"></div>
@@ -2926,29 +2925,18 @@ const codes = [
     @keyframes l44 {
         50% {background-position: right }
     }
-    `
+    `,
   },
 
   {
-    id:45,
-    code:`
-    ##HTML
-    <div class = "loader-45"> </div>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_wukqhhrq.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-    
-    `
-  },
-
-  {
-    id: 46,
-    code:`
+    id: 45,
+    code: `
     ##HTML
 
-    <div class = "loader-46"> </div>
-
+    <div class = "loader-45"> 
     <div class="hourglass2"></div>
-      
+    </div>
+  
     ##CSS
 
     :root {
@@ -3058,7 +3046,6 @@ const codes = [
       }
     }
     
-    `
+    `,
   },
-  
 ];

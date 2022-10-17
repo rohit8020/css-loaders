@@ -2668,54 +2668,82 @@ body {
 
 /* .............Loader-41th............... */
 
-.loader41{
-	position: relative;
-	width: 150px;
-	height: 20px;
-	background-color: rgba(255,255,255,0.2);
+.loader41 {
+  position: relative;
+  width: 150px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.loader41:before{
-	content: "";
-	position: absolute;
-	background-color: #fff;
-	top: 0px;
-	left: 0px;
-	height: 20px;
-	width: 0px;
-	z-index: 0;
-	opacity: 1;
-	-webkit-transform-origin:  100% 0%;
-			transform-origin:  100% 0% ;
-	-webkit-animation: loader41 10s ease-in-out infinite;
-			animation: loader41 10s ease-in-out infinite;
+.loader41:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0px;
+  left: 0px;
+  height: 20px;
+  width: 0px;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-animation: loader41 10s ease-in-out infinite;
+  animation: loader41 10s ease-in-out infinite;
 }
 
-.loader41:after{
-	content: "LOADING ...";
-	color: #fff;
-	font-weight: 200;
-	font-size: 16px;
-	position: absolute;
-	width: 100%;
-	height: 20px;
-	line-height: 20px;
-	left: 0;
-	top: 0;
+.loader41:after {
+  content: "LOADING ...";
+  color: #fff;
+  font-weight: 200;
+  font-size: 16px;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  left: 0;
+  top: 0;
 }
 
-@-webkit-keyframes loader41{
-    0%{width: 0px;}
-    70%{width: 100%; opacity: 1;}
-    90%{opacity: 0; width: 100%;}
-    100%{opacity: 0;width: 0px;}
+@-webkit-keyframes loader41 {
+  0% {
+    width: 0px;
+  }
+
+  70% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+    width: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    width: 0px;
+  }
 }
 
-@keyframes loader41{
-    0%{width: 0px;}
-    70%{width: 100%; opacity: 1;}
-    90%{opacity: 0; width: 100%;}
-    100%{opacity: 0;width: 0px;}
+@keyframes loader41 {
+  0% {
+    width: 0px;
+  }
+
+  70% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+    width: 100%;
+  }
+
+  100% {
+    opacity: 0;
+    width: 0px;
+  }
 }
 
 /* .............Loader 42............... */
@@ -2725,6 +2753,7 @@ body {
   height: 90px;
   margin: 0 auto;
 }
+
 .loader42:before {
   content: "";
   position: absolute;
@@ -2736,6 +2765,7 @@ body {
   background: #FF3D00;
   animation: loading-bounce 0.5s ease-in-out infinite alternate;
 }
+
 .loader42:after {
   content: "";
   position: absolute;
@@ -2749,124 +2779,162 @@ body {
 }
 
 @keyframes loading-bounce {
-  0% { transform: scale(1, 0.7)}
-  40% { transform: scale(0.8, 1.2)}
-  60% { transform: scale(1, 1)}
-  100% { bottom: 100px }
+  0% {
+    transform: scale(1, 0.7)
+  }
+
+  40% {
+    transform: scale(0.8, 1.2)
+  }
+
+  60% {
+    transform: scale(1, 1)
+  }
+
+  100% {
+    bottom: 100px
+  }
 }
+
 @keyframes loading-step {
   0% {
-    box-shadow: 0 10px 0 rgba(0,0,0,0),
-                0 10px 0 #fff,
-              -35px 50px 0 #fff,
-              -70px 90px 0 #fff;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+      0 10px 0 #fff,
+      -35px 50px 0 #fff,
+      -70px 90px 0 #fff;
   }
+
   100% {
     box-shadow: 0 10px 0 #fff,
-              -35px 50px 0 #fff,
-              -70px 90px 0 #fff,
-              -70px 90px 0 rgba(0,0,0,0);
+      -35px 50px 0 #fff,
+      -70px 90px 0 #fff,
+      -70px 90px 0 rgba(0, 0, 0, 0);
   }
 }
 
 
 /* .............Loader-43rd............... */
 .loader43 {
-  width:20px;
-  height:20px;
-  background:#24bd54;
-  box-shadow:0 0 60px 15px #24bd54;
+  width: 20px;
+  height: 20px;
+  background: #24bd54;
+  box-shadow: 0 0 60px 15px #24bd54;
   transform: translate(-80px);
-  clip-path:inset(0);
+  clip-path: inset(0);
   animation:
     l43-1 0.5s ease-in-out infinite alternate,
-    l43-2 1s   ease-in-out infinite;
+    l43-2 1s ease-in-out infinite;
 }
 
 @keyframes l43-1 {
-  100% {transform:translateX(80px)}
+  100% {
+    transform: translateX(80px)
+  }
 }
 
 @keyframes l43-2 {
-   33% {clip-path:inset(0 0 0 -100px)}
-   50% {clip-path:inset(0 0 0 0)     }
-   83% {clip-path:inset(0 -100px 0 0)}
+  33% {
+    clip-path: inset(0 0 0 -100px)
+  }
+
+  50% {
+    clip-path: inset(0 0 0 0)
+  }
+
+  83% {
+    clip-path: inset(0 -100px 0 0)
+  }
 }
 
 /* .............Loader-44th............... */
 .loader44 {
-  width:120px;
-  height:21px;
+  width: 120px;
+  height: 21px;
   background:
-   linear-gradient(#000 0 0) left/10px 100% no-repeat
-   #ddd;
-  animation:l44 1s infinite cubic-bezier(0,0.2,1,1);
+    linear-gradient(#000 0 0) left/10px 100% no-repeat #ddd;
+  animation: l44 1s infinite cubic-bezier(0, 0.2, 1, 1);
   position: relative;
 }
+
 .loader44:before,
 .loader44:after {
   content: "";
   position: absolute;
-  left:0;
-  right:0;
-  height:7px;
+  left: 0;
+  right: 0;
+  height: 7px;
   background:
-    linear-gradient(#000 0 0) left/10px 100% no-repeat
-    #ddd;
+    linear-gradient(#000 0 0) left/10px 100% no-repeat #ddd;
   animation: inherit;
 }
+
 .loader44:before {
-  top:0;
-  animation-timing-function: cubic-bezier(0,0,1,1);
+  top: 0;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1);
 }
+
 .loader44:after {
-  bottom:0;
-  animation-timing-function: cubic-bezier(0,0.4,1,1);
+  bottom: 0;
+  animation-timing-function: cubic-bezier(0, 0.4, 1, 1);
 }
+
 @keyframes l44 {
-    50% {background-position: right }
+  50% {
+    background-position: right
+  }
 }
 
 
-/* .............Loader-46th............... */
+/* .............Loader-45th............... */
 :root {
-  --bg: #e3e4e8;
-  --fg: #2e3138;
-  --primary: #25dff4;
+  --bg-45: #e3e4e8;
+  --fg-45: #2e3138;
+  --primary-45: #25dff4;
 
 }
 
-.hourglass2, .hourglass2:before, .hourglass2:after {
+.loader-45 {
+  width: 80px;
+  height: 100px;
+}
+
+.hourglass2,
+.hourglass2:before,
+.hourglass2:after {
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
+
 .hourglass2 {
-  --polygonH: polygon(0% 0%,100% 0%,100% 5.55%,95% 5.55%,95% 28%,60% 46%,60% 54%,95% 72%,95% 94.45%,100% 94.45%,100% 100%,0% 100%,0% 94.45%,5% 94.45%,5% 72%,40% 54%,40% 46%,5% 28%,5% 5.55%,0% 5.55%);
+  --polygonH: polygon(0% 0%, 100% 0%, 100% 5.55%, 95% 5.55%, 95% 28%, 60% 46%, 60% 54%, 95% 72%, 95% 94.45%, 100% 94.45%, 100% 100%, 0% 100%, 0% 94.45%, 5% 94.45%, 5% 72%, 40% 54%, 40% 46%, 5% 28%, 5% 5.55%, 0% 5.55%);
   animation-name: flip;
   animation-timing-function: ease-in-out;
-  background-image: linear-gradient(var(--primary) 0.5em,#737a8c55 0.5em 8.5em,var(--primary) 8.5em);
+  background-image: linear-gradient(var(--primary-45) 0.5em, #737a8c55 0.5em 8.5em, var(--primary-45) 8.5em);
   clip-path: var(--polygonH);
   -webkit-clip-path: var(--polygonH);
   overflow: hidden;
   position: relative;
-  width: 5em;
-  height: 9em;
+  width: 100%;
+  height: 100%;
   z-index: 0;
 }
-.hourglass2:before, .hourglass2:after {
+
+.hourglass2:before,
+.hourglass2:after {
   animation-timing-function: linear;
   content: "";
   display: block;
   position: absolute;
 }
+
 .hourglass2:before {
-  --polygonB1: polygon(0% 0%,100% 0%,100% 24%,50% 47%,50% 47%,50% 47%,50% 47%,50% 47%,50% 47%,50% 47%,50% 47%,0% 24%);
-  --polygonB2: polygon(0% 4%,100% 4%,100% 24%,55% 45%,55% 100%,55% 100%,55% 100%,45% 100%,45% 100%,45% 100%,45% 45%,0% 24%);
-  --polygonB3: polygon(0% 24%,100% 24%,100% 24%,55% 45%,55% 80%,100% 100%,100% 100%,0% 100%,0% 100%,45% 80%,45% 45%,0% 24%);
-  --polygonB4: polygon(45% 45%,55% 45%,55% 45%,55% 45%,55% 58%,100% 76%,100% 100%,0% 100%,0% 76%,45% 58%,45% 45%,45% 45%);
-  --polygonB5: polygon(50% 53%,50% 53%,50% 53%,50% 53%,50% 53%,100% 76%,100% 100%,0% 100%,0% 76%,50% 53%,50% 53%,50% 53%);
+  --polygonB1: polygon(0% 0%, 100% 0%, 100% 24%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 0% 24%);
+  --polygonB2: polygon(0% 4%, 100% 4%, 100% 24%, 55% 45%, 55% 100%, 55% 100%, 55% 100%, 45% 100%, 45% 100%, 45% 100%, 45% 45%, 0% 24%);
+  --polygonB3: polygon(0% 24%, 100% 24%, 100% 24%, 55% 45%, 55% 80%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 45% 80%, 45% 45%, 0% 24%);
+  --polygonB4: polygon(45% 45%, 55% 45%, 55% 45%, 55% 45%, 55% 58%, 100% 76%, 100% 100%, 0% 100%, 0% 76%, 45% 58%, 45% 45%, 45% 45%);
+  --polygonB5: polygon(50% 53%, 50% 53%, 50% 53%, 50% 53%, 50% 53%, 100% 76%, 100% 100%, 0% 100%, 0% 76%, 50% 53%, 50% 53%, 50% 53%);
   animation-name: fill;
-  background-color: var(--fg);
+  background-color: var(--fg-45);
   background-size: 100% 3.6em;
   clip-path: var(--polygonB1);
   -webkit-clip-path: var(--polygonB1);
@@ -2876,12 +2944,13 @@ body {
   height: 8em;
   z-index: 1;
 }
+
 .hourglass2:after {
   animation-name: glare;
   background:
-      linear-gradient(90deg,#0000 0.5em,#0003 0.5em 1.5em,#0000 1.5em 3.5em,#fff3 3.5em 4.5em,#fff0 4.5em 6.5em,#0003 6.5em 7.5em,#0000 7.5em) 0 0 / 100% 0.5em,
-      linear-gradient(90deg,#0000 0.75em,#0003 0.75em 1.25em,#0000 1.25em 3.75em,#fff3 3.75em 4.25em,#fff0 4.25em 6.75em,#0003 6.75em 7.25em,#0000 7.25em) 0 0.5em / 100% 8em,
-      linear-gradient(90deg,#0000 0.5em,#0003 0.5em 1.5em,#0000 1.5em 3.5em,#fff3 3.5em 4.5em,#fff0 4.5em 6.5em,#0003 6.5em 7.5em,#0000 7.5em) 0 100% / 100% 0.5em;
+    linear-gradient(90deg, #0000 0.5em, #0003 0.5em 1.5em, #0000 1.5em 3.5em, #fff3 3.5em 4.5em, #fff0 4.5em 6.5em, #0003 6.5em 7.5em, #0000 7.5em) 0 0 / 100% 0.5em,
+    linear-gradient(90deg, #0000 0.75em, #0003 0.75em 1.25em, #0000 1.25em 3.75em, #fff3 3.75em 4.25em, #fff0 4.25em 6.75em, #0003 6.75em 7.25em, #0000 7.25em) 0 0.5em / 100% 8em,
+    linear-gradient(90deg, #0000 0.5em, #0003 0.5em 1.5em, #0000 1.5em 3.5em, #fff3 3.5em 4.5em, #fff0 4.5em 6.5em, #0003 6.5em 7.5em, #0000 7.5em) 0 100% / 100% 0.5em;
   background-repeat: repeat-x;
   /* top: 0;
   left: -3em;
@@ -2889,50 +2958,65 @@ body {
   height: 100%; */
   z-index: 2;
 }
+
 /* Animations */
 @keyframes fill {
   from {
-      clip-path: var(--polygonB1);
-      -webkit-clip-path: var(--polygonB1);
+    clip-path: var(--polygonB1);
+    -webkit-clip-path: var(--polygonB1);
   }
+
   10% {
-      clip-path: var(--polygonB2);
-      -webkit-clip-path: var(--polygonB2);
+    clip-path: var(--polygonB2);
+    -webkit-clip-path: var(--polygonB2);
   }
+
   45% {
-      clip-path: var(--polygonB3);
-      -webkit-clip-path: var(--polygonB3);
+    clip-path: var(--polygonB3);
+    -webkit-clip-path: var(--polygonB3);
   }
+
   80% {
-      clip-path: var(--polygonB4);
-      -webkit-clip-path: var(--polygonB4);
+    clip-path: var(--polygonB4);
+    -webkit-clip-path: var(--polygonB4);
   }
-  85%, to {
-      clip-path: var(--polygonB5);
-      -webkit-clip-path: var(--polygonB5);
+
+  85%,
+  to {
+    clip-path: var(--polygonB5);
+    -webkit-clip-path: var(--polygonB5);
   }
 }
+
 @keyframes glare {
-  from, 90% {
-      transform: translateX(0);
+
+  from,
+  90% {
+    transform: translateX(0);
   }
+
   to {
-      transform: translateX(3em);
+    transform: translateX(3em);
   }
 }
+
 @keyframes flip {
-  from, 90% {
-      transform: rotate(0);
+
+  from,
+  90% {
+    transform: rotate(0);
   }
+
   to {
-      transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-      --bg: #17181c;
-      --fg: #c7cad1;
+    --bg-45: #17181c;
+    --fg-45: #c7cad1;
   }
 }
 
