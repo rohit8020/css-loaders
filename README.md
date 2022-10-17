@@ -76,12 +76,13 @@ If you had fun while contributing to this project, then don't forget to give thi
 
 ## Contributors:
 
-- [Rohit Gangwar](https://github.com/rohit8020)
-- [NahushSingh](https://github.com/NahushSingh)
-- [Sachin Gupta](https://github.com/sachingupta63)
 - [Abhay Gupta](https://github.com/abhaygupta08)
-- [Navkiran Singh](https://github.com/inavkiran)
-- [Anuj Kumar Maurya](https://github.com/Anujkumar2017)
 - [Adithi Desai](https://github.com/AdithiDesai)
+- [Anuj Kumar Maurya](https://github.com/Anujkumar2017)
+- [NahushSingh](https://github.com/NahushSingh)
+- [Navkiran Singh](https://github.com/inavkiran)
+- [Rohit Gangwar](https://github.com/rohit8020)
+- [Sachin Gupta](https://github.com/sachingupta63)
+- [Vikas Ganiga](https://github.com/vikasganiga05)
 
 ### Thanks for your contribution
