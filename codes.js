@@ -3048,4 +3048,90 @@ const codes = [
     
     `,
   },
+  {
+    id:46,
+    code:
+    `
+    #HTML
+
+    <div class="loader-46">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+    </div>
+
+
+    #CSS
+    
+    .loader-46, .loader-46 div {
+      box-sizing: border-box;
+    }
+    
+    .loader-46 {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+    
+    .loader-46 div {
+      position: absolute;
+      top: 33.33333px;
+      width: 13.33333px;
+      height: 13.33333px;
+      border-radius: 50%;
+      background: white;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+    
+    .loader-46 div:nth-child(1) {
+      left: 8px;
+      animation: loader-461 0.6s infinite;
+    }
+    
+    .loader-46 div:nth-child(2) {
+      left: 8px;
+      animation: loader-462 0.6s infinite;
+    }
+    
+    .loader-46 div:nth-child(3) {
+      left: 32px;
+      animation: loader-462 0.6s infinite;
+    }
+    
+    .loader-46 div:nth-child(4) {
+      left: 56px;
+      animation: loader-463 0.6s infinite;
+    }
+    
+    @keyframes loader-461 {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes loader-463 {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0);
+      }
+    }
+    
+    @keyframes loader-462 {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(24px, 0);
+      }
+    }
+    
+    `
+  }
 ];
