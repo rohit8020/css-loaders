@@ -1755,7 +1755,7 @@ const codes = [
                     <div class="wave"></div>
                     <div class="wave"></div>
                   </div>
-    
+
         ##CSS
         .loader-29 {
           height: 90vh;
@@ -1799,7 +1799,7 @@ const codes = [
         .wave:nth-child(10) {
           animation-delay: 0.9s;
         }
-        
+
         @keyframes wave {
           0% {
             transform: scale(0);
@@ -1810,8 +1810,8 @@ const codes = [
           100% {
             transform: scale(0);
           }
-        } 
-            
+        }
+
             `,
   },
   {
@@ -1822,9 +1822,9 @@ const codes = [
         <div class="loader-30">
           <div class="color"></div>
         </div>
-        
+
         <a href="#demo-modal" id="30" class="show-code-btn">Show Code</a>
-      </div> 
+      </div>
 
       ##CSS
       .loader-30{
@@ -1843,7 +1843,7 @@ const codes = [
         width: 0px;
         height: 10px;
         border-radius: 15px;
-        animation: progres 4s infinite linear;    
+        animation: progres 4s infinite linear;
     }
     @keyframes progres{
         0%{
@@ -1862,7 +1862,7 @@ const codes = [
             width: 100%;
         }
     };
-    
+
             `,
   },
   {
@@ -2074,7 +2074,7 @@ const codes = [
           transform: scale(1, 1);
        }
       };
-    
+
             `,
   },
 
@@ -2082,11 +2082,11 @@ const codes = [
     id: 32,
     code: `
    ##HTML
-   
+
    <div class="loader-32">
      <div class="loader32 loadern"></div>
    </div>
-    
+
   ##CSS
   .loader32 {
     display: inline-block;
@@ -2094,7 +2094,7 @@ const codes = [
     position: relative;
     margin: 10px;
   }
-   
+
   @keyframes loadern-bubbles {
     0% {
       box-shadow: 0 -10px #efdfff,
@@ -2152,7 +2152,7 @@ const codes = [
     border-radius: 50%;
     animation: loadern-bubbles 1s linear infinite forwards;
   }
-   
+
 
         `,
   },
@@ -2160,11 +2160,11 @@ const codes = [
     id: 33,
     code: `
    ##HTML
-   
+
    <div class="loader-33">
    <div class="lds-heart"><div></div></div>
    </div>
-    
+
   ##CSS
   .lds-heart {
     display: inline-block;
@@ -2251,8 +2251,8 @@ const codes = [
       }
 
       .loader34_circle_1{
-        animation-delay: 0.1s !important; 
-      } 
+        animation-delay: 0.1s !important;
+      }
 
       .loader34_circle_2{
         animation-delay: 0.2s !important;
@@ -2290,24 +2290,24 @@ const codes = [
     id: 35,
     code: `
     #Loader-35
-  
+
     ##HTML
-  
+
     <div class="loader35">
             <svg viewBox="0 0 100 100">
               <defs>
                 <filter id="shadow">
-                  <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
+                  <feDropShadow dx="0" dy="0" stdDeviation="1.5"
                     flood-color="#fc6767"/>
                 </filter>
               </defs>
               <circle class="loader-35" style="fill:transparent;stroke:#ffffff;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
           </svg>
           </div>
-    
-  
+
+
     ##CSS
-    
+
     .loader35{
       width: 80px;
       height: 80px;
@@ -2319,7 +2319,7 @@ const codes = [
       animation-timing-function: cubic-bezier;
       animation-iteration-count: infinite;
     }
-    
+
     @keyframes animation {
       0% {
         stroke-dasharray: 1 98;
@@ -2341,45 +2341,45 @@ const codes = [
     id: 36,
     code: `
     #Loader-36
-  
+
     ##HTML
-  
+
     <div class="loader-36">
         <div class="signal">
           <div></div>
         </div>
       </div>
-    
-  
+
+
     ##CSS
-    
+
     .signal {
       width: 40px;
       height: 40px;
       background-color: #333;
-    
+
       border-radius: 100%;
       -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
       animation: sk-scaleout 1.0s infinite ease-in-out;
     }
-    
+
     @-webkit-keyframes sk-scaleout {
       0% {
         -webkit-transform: scale(0)
       }
-    
+
       100% {
         -webkit-transform: scale(1.0);
         opacity: 0;
       }
     }
-    
+
     @keyframes sk-scaleout {
       0% {
         -webkit-transform: scale(0);
         transform: scale(0);
       }
-    
+
       100% {
         -webkit-transform: scale(1.0);
         transform: scale(1.0);
@@ -2396,10 +2396,10 @@ const codes = [
     <div class="loader-37">
       <div class="loader loader37"></div>
     </div>
-        
-    
+
+
     ##CSS Code
-   
+
     @keyframes loader37 {
       from {
         transform: rotate(0);
@@ -2474,7 +2474,7 @@ const codes = [
     code: `
     #HTML
     <div class="loader38"></div>
-    
+
     #CSS
     .loader38 {
       color: #ffffff;
@@ -2563,7 +2563,7 @@ const codes = [
       <div class="loader-box">
     <span class="loader39"></span>
   <a href="#demo-modal" id="39" class="show-code-btn">Show Code</a>
-</div> 
+</div>
 
 ##CSS
 .loader39{
@@ -2654,7 +2654,7 @@ const codes = [
 
 
     ##CSS
-    
+
 .loader40 {
   text-align: center;
   vertical-align: middle;
@@ -2740,7 +2740,7 @@ const codes = [
     code: `
       ##HTML
       <div class="loader41"></div>
-      
+
       ##CSS
       .loader41{
         position: relative;
@@ -2748,7 +2748,7 @@ const codes = [
         height: 20px;
         background-color: rgba(255,255,255,0.2);
       }
-      
+
       .loader41:before{
         content: "";
         position: absolute;
@@ -2764,7 +2764,7 @@ const codes = [
         -webkit-animation: loader41 10s ease-in-out infinite;
             animation: loader41 10s ease-in-out infinite;
       }
-      
+
       .loader41:after{
         content: "LOADING ...";
         color: #fff;
@@ -2777,14 +2777,14 @@ const codes = [
         left: 0;
         top: 0;
       }
-      
+
       @-webkit-keyframes loader41{
           0%{width: 0px;}
           70%{width: 100%; opacity: 1;}
           90%{opacity: 0; width: 100%;}
           100%{opacity: 0;width: 0px;}
       }
-      
+
       @keyframes loader41{
           0%{width: 0px;}
           70%{width: 100%; opacity: 1;}
@@ -2796,9 +2796,9 @@ const codes = [
   {
     id: 42,
     code: `##HTML Code
-    
+
     <div class="loader42"></div>
-        
+
 
     ##CSS Code
     .loader42 {
@@ -2829,7 +2829,7 @@ const codes = [
       box-shadow: 0 5px 0 #fff, -35px 50px 0 #fff, -70px 95px 0 #fff;
       animation: loading-step 1s ease-in-out infinite;
     }
-    
+
     @keyframes loading-bounce {
       0% { transform: scale(1, 0.7)}
       40% { transform: scale(0.8, 1.2)}
@@ -2857,7 +2857,7 @@ const codes = [
     ##HTML
 
       <div class="loader43"></div>
-      
+
     ##CSS
 
     .loader43 {
@@ -2871,17 +2871,17 @@ const codes = [
         l43-1 0.5s ease-in-out infinite alternate,
         l43-2 1s   ease-in-out infinite;
     }
-    
+
     @keyframes l43-1 {
       100% {transform:translateX(80px)}
     }
-    
+
     @keyframes l43-2 {
        33% {clip-path:inset(0 0 0 -100px)}
        50% {clip-path:inset(0 0 0 0)     }
        83% {clip-path:inset(0 -100px 0 0)}
     }
-    
+
     `,
   },
   {
@@ -2933,19 +2933,19 @@ const codes = [
     code: `
     ##HTML
 
-    <div class = "loader-45"> 
+    <div class = "loader-45">
     <div class="hourglass2"></div>
     </div>
-  
+
     ##CSS
 
     :root {
       --bg: #e3e4e8;
       --fg: #2e3138;
       --primary: #25dff4;
-    
+
     }
-    
+
     .hourglass2, .hourglass2:before, .hourglass2:after {
       animation-duration: 4s;
       animation-iteration-count: infinite;
@@ -3045,90 +3045,157 @@ const codes = [
           --fg: #c7cad1;
       }
     }
-    
+
     `,
   },
   {
-    id:46,
-    code:
+    id: 46,
+    code: `
+        ##HTML Code
+
+        <div class="loader-46">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        ##CSS Code
+
+        .loader-46, .loader-46 div {
+          box-sizing: border-box;
+        }
+        
+        .loader-46 {
+          display: inline-block;
+          position: relative;
+          width: 80px;
+          height: 80px;
+        }
+        
+        .loader-46 div {
+          position: absolute;
+          top: 33.33333px;
+          width: 13.33333px;
+          height: 13.33333px;
+          border-radius: 50%;
+          background: white;
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+        
+        .loader-46 div:nth-child(1) {
+          left: 8px;
+          animation: loader-461 0.6s infinite;
+        }
+        
+        .loader-46 div:nth-child(2) {
+          left: 8px;
+          animation: loader-462 0.6s infinite;
+        }
+        
+        .loader-46 div:nth-child(3) {
+          left: 32px;
+          animation: loader-462 0.6s infinite;
+        }
+        
+        .loader-46 div:nth-child(4) {
+          left: 56px;
+          animation: loader-463 0.6s infinite;
+        }
+        
+        @keyframes loader-461 {
+          0% {
+            transform: scale(0);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        
+        @keyframes loader-463 {
+          0% {
+            transform: scale(1);
+          }
+          100% {
+            transform: scale(0);
+          }
+        }
+        
+        @keyframes loader-462 {
+          0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(24px, 0);
+          }
+        }
+        `,
+  },
+  {
+    id: 47,
+    code: 
     `
     #HTML
 
-    <div class="loader-46">
+    <div class="loader-47">
           <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-    </div>
-
+        </div>
 
     #CSS
-    
-    .loader-46, .loader-46 div {
-      box-sizing: border-box;
+    .loader-47 {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #ffffff;
+      animation: loader-47-rotate 2s infinite ease;
     }
     
-    .loader-46 {
-      display: inline-block;
-      position: relative;
-      width: 80px;
-      height: 80px;
+    .loader-47 div {
+      width: 100%;
+      background-color: #ffffff;
+      animation: loader-47-fill 2s infinite ease-in;
     }
     
-    .loader-46 div {
-      position: absolute;
-      top: 33.33333px;
-      width: 13.33333px;
-      height: 13.33333px;
-      border-radius: 50%;
-      background: white;
-      animation-timing-function: cubic-bezier(0, 1, 1, 0);
-    }
-    
-    .loader-46 div:nth-child(1) {
-      left: 8px;
-      animation: loader-461 0.6s infinite;
-    }
-    
-    .loader-46 div:nth-child(2) {
-      left: 8px;
-      animation: loader-462 0.6s infinite;
-    }
-    
-    .loader-46 div:nth-child(3) {
-      left: 32px;
-      animation: loader-462 0.6s infinite;
-    }
-    
-    .loader-46 div:nth-child(4) {
-      left: 56px;
-      animation: loader-463 0.6s infinite;
-    }
-    
-    @keyframes loader-461 {
+    @keyframes loader-47-rotate {
       0% {
-        transform: scale(0);
+        transform: rotate(0deg);
       }
+    
+      25% {
+        transform: rotate(180deg);
+      }
+    
+      50% {
+        transform: rotate(180deg);
+      }
+    
+      75% {
+        transform: rotate(360deg);
+      }
+    
       100% {
-        transform: scale(1);
+        transform: rotate(360deg);
       }
     }
     
-    @keyframes loader-463 {
+    @keyframes loader-47-fill {
       0% {
-        transform: scale(1);
+        height: 0%;
       }
-      100% {
-        transform: scale(0);
-      }
-    }
     
-    @keyframes loader-462 {
-      0% {
-        transform: translate(0, 0);
+      25% {
+        height: 0%;
       }
+    
+      50% {
+        height: 100%;
+      }
+    
+      75% {
+        height: 100%;
+      }
+    
       100% {
-        transform: translate(24px, 0);
+        height: 0%;
       }
     }
     

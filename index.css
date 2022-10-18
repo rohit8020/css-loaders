@@ -242,7 +242,6 @@ footer .footer {
   color: white;
 }
 
-
 /* ...................Loader-4................... */
 .loader-4 {
   display: flex;
@@ -274,7 +273,6 @@ footer .footer {
 }
 
 @-webkit-keyframes grow {
-
   0%,
   40%,
   100% {
@@ -289,7 +287,6 @@ footer .footer {
 }
 
 @keyframes grow {
-
   0%,
   40%,
   100% {
@@ -349,18 +346,18 @@ footer .footer {
   animation: mesh 3s ease-in-out infinite -1.5s;
 }
 
-.loader-6>div .circle:last-child {
+.loader-6 > div .circle:last-child {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 
-.loader-6>div {
+.loader-6 > div {
   position: absolute;
   top: 50%;
   left: 50%;
 }
 
-.loader-6>div:last-child {
+.loader-6 > div:last-child {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -611,7 +608,8 @@ footer .footer {
   background: linear-gradient(#514b82 0 0) left -40px top 0/40px 100% no-repeat #eee;
   -webkit-mask: linear-gradient(#000 0 0) top / 100% 5px no-repeat,
     linear-gradient(#000 0 0) bottom/100% 5px no-repeat,
-    repeating-linear-gradient(90deg, #000 0 5px, #0000 0 20%) left/calc(100% - 5px) 100%;
+    repeating-linear-gradient(90deg, #000 0 5px, #0000 0 20%)
+      left/calc(100% - 5px) 100%;
   animation: l10 1s infinite linear;
 }
 
@@ -627,7 +625,7 @@ footer .footer {
   transform: translateZ(1px);
 }
 
-.loader-circle>div {
+.loader-circle > div {
   display: inline-block;
   width: 64px;
   height: 64px;
@@ -638,7 +636,6 @@ footer .footer {
 }
 
 @keyframes loader-circle {
-
   0%,
   100% {
     animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
@@ -979,7 +976,7 @@ body {
   max-width: 100%;
 }
 
-.loading>div {
+.loading > div {
   width: 80px;
   height: 80px;
   border-bottom: 5px solid rgba(0, 0, 0, 0.719);
@@ -1157,7 +1154,6 @@ body {
 }
 
 @keyframes size {
-
   0%,
   95%,
   100% {
@@ -1170,7 +1166,6 @@ body {
 }
 
 @keyframes fill-blink {
-
   0%,
   100% {
     opacity: 0;
@@ -1182,7 +1177,6 @@ body {
 }
 
 @keyframes inner-shadow-blink {
-
   0%,
   100% {
     opacity: 0;
@@ -1194,7 +1188,6 @@ body {
 }
 
 @keyframes drop-shadow-blink {
-
   0%,
   90%,
   100% {
@@ -1427,7 +1420,6 @@ body {
 }
 
 @keyframes pulse-25 {
-
   0%,
   60%,
   100% {
@@ -2410,57 +2402,75 @@ body {
 
 @-webkit-keyframes load6 {
   0% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
   }
 
   5%,
   95% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
   }
 
   10%,
   59% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
+      -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
+      -0.297em -0.775em 0 -0.477em;
   }
 
   20% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+      -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+      -0.749em -0.34em 0 -0.477em;
   }
 
   38% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+      -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+      -0.82em -0.09em 0 -0.477em;
   }
 
   100% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
   }
 }
 
 @keyframes load6 {
   0% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
   }
 
   5%,
   95% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
   }
 
   10%,
   59% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em,
+      -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em,
+      -0.297em -0.775em 0 -0.477em;
   }
 
   20% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+      -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+      -0.749em -0.34em 0 -0.477em;
   }
 
   38% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+      -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+      -0.82em -0.09em 0 -0.477em;
   }
 
   100% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
   }
 }
 
@@ -2497,7 +2507,7 @@ body {
   border-top: 5px solid #fff;
   border-bottom: 5px solid #fff;
   position: relative;
-  background: linear-gradient(#FF3D00 30px, transparent 0) no-repeat;
+  background: linear-gradient(#ff3d00 30px, transparent 0) no-repeat;
   background-size: 2px 40px;
   background-position: 50% 0px;
   animation: spinx 5s linear infinite;
@@ -2528,38 +2538,36 @@ body {
 }
 
 @keyframes lqt {
-
   0%,
   100% {
-    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-image: linear-gradient(#ff3d00 40px, transparent 0);
     background-position: 0% 0px;
   }
 
   50% {
-    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-image: linear-gradient(#ff3d00 40px, transparent 0);
     background-position: 0% 40px;
   }
 
   50.1% {
-    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-image: linear-gradient(#ff3d00 40px, transparent 0);
     background-position: 0% -40px;
   }
 }
 
 @keyframes lqb {
   0% {
-    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-image: linear-gradient(#ff3d00 40px, transparent 0);
     background-position: 0 40px;
   }
 
   100% {
-    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-image: linear-gradient(#ff3d00 40px, transparent 0);
     background-position: 0 -40px;
   }
 }
 
 @keyframes spinx {
-
   0%,
   49% {
     transform: rotate(0deg);
@@ -2577,7 +2585,6 @@ body {
     background-position: 50% 36px;
   }
 }
-
 
 /* ------------loader 40th----------*/
 .loader40 {
@@ -2762,7 +2769,7 @@ body {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  background: #FF3D00;
+  background: #ff3d00;
   animation: loading-bounce 0.5s ease-in-out infinite alternate;
 }
 
@@ -2780,38 +2787,33 @@ body {
 
 @keyframes loading-bounce {
   0% {
-    transform: scale(1, 0.7)
+    transform: scale(1, 0.7);
   }
 
   40% {
-    transform: scale(0.8, 1.2)
+    transform: scale(0.8, 1.2);
   }
 
   60% {
-    transform: scale(1, 1)
+    transform: scale(1, 1);
   }
 
   100% {
-    bottom: 100px
+    bottom: 100px;
   }
 }
 
 @keyframes loading-step {
   0% {
-    box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
-      0 10px 0 #fff,
-      -35px 50px 0 #fff,
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0), 0 10px 0 #fff, -35px 50px 0 #fff,
       -70px 90px 0 #fff;
   }
 
   100% {
-    box-shadow: 0 10px 0 #fff,
-      -35px 50px 0 #fff,
-      -70px 90px 0 #fff,
+    box-shadow: 0 10px 0 #fff, -35px 50px 0 #fff, -70px 90px 0 #fff,
       -70px 90px 0 rgba(0, 0, 0, 0);
   }
 }
-
 
 /* .............Loader-43rd............... */
 .loader43 {
@@ -2821,28 +2823,27 @@ body {
   box-shadow: 0 0 60px 15px #24bd54;
   transform: translate(-80px);
   clip-path: inset(0);
-  animation:
-    l43-1 0.5s ease-in-out infinite alternate,
+  animation: l43-1 0.5s ease-in-out infinite alternate,
     l43-2 1s ease-in-out infinite;
 }
 
 @keyframes l43-1 {
   100% {
-    transform: translateX(80px)
+    transform: translateX(80px);
   }
 }
 
 @keyframes l43-2 {
   33% {
-    clip-path: inset(0 0 0 -100px)
+    clip-path: inset(0 0 0 -100px);
   }
 
   50% {
-    clip-path: inset(0 0 0 0)
+    clip-path: inset(0 0 0 0);
   }
 
   83% {
-    clip-path: inset(0 -100px 0 0)
+    clip-path: inset(0 -100px 0 0);
   }
 }
 
@@ -2850,8 +2851,7 @@ body {
 .loader44 {
   width: 120px;
   height: 21px;
-  background:
-    linear-gradient(#000 0 0) left/10px 100% no-repeat #ddd;
+  background: linear-gradient(#000 0 0) left/10px 100% no-repeat #ddd;
   animation: l44 1s infinite cubic-bezier(0, 0.2, 1, 1);
   position: relative;
 }
@@ -2863,8 +2863,7 @@ body {
   left: 0;
   right: 0;
   height: 7px;
-  background:
-    linear-gradient(#000 0 0) left/10px 100% no-repeat #ddd;
+  background: linear-gradient(#000 0 0) left/10px 100% no-repeat #ddd;
   animation: inherit;
 }
 
@@ -2880,17 +2879,15 @@ body {
 
 @keyframes l44 {
   50% {
-    background-position: right
+    background-position: right;
   }
 }
-
 
 /* .............Loader-45th............... */
 :root {
   --bg-45: #e3e4e8;
   --fg-45: #2e3138;
   --primary-45: #25dff4;
-
 }
 
 .loader-45 {
@@ -2906,10 +2903,35 @@ body {
 }
 
 .hourglass2 {
-  --polygonH: polygon(0% 0%, 100% 0%, 100% 5.55%, 95% 5.55%, 95% 28%, 60% 46%, 60% 54%, 95% 72%, 95% 94.45%, 100% 94.45%, 100% 100%, 0% 100%, 0% 94.45%, 5% 94.45%, 5% 72%, 40% 54%, 40% 46%, 5% 28%, 5% 5.55%, 0% 5.55%);
+  --polygonH: polygon(
+    0% 0%,
+    100% 0%,
+    100% 5.55%,
+    95% 5.55%,
+    95% 28%,
+    60% 46%,
+    60% 54%,
+    95% 72%,
+    95% 94.45%,
+    100% 94.45%,
+    100% 100%,
+    0% 100%,
+    0% 94.45%,
+    5% 94.45%,
+    5% 72%,
+    40% 54%,
+    40% 46%,
+    5% 28%,
+    5% 5.55%,
+    0% 5.55%
+  );
   animation-name: flip;
   animation-timing-function: ease-in-out;
-  background-image: linear-gradient(var(--primary-45) 0.5em, #737a8c55 0.5em 8.5em, var(--primary-45) 8.5em);
+  background-image: linear-gradient(
+    var(--primary-45) 0.5em,
+    #737a8c55 0.5em 8.5em,
+    var(--primary-45) 8.5em
+  );
   clip-path: var(--polygonH);
   -webkit-clip-path: var(--polygonH);
   overflow: hidden;
@@ -2928,11 +2950,76 @@ body {
 }
 
 .hourglass2:before {
-  --polygonB1: polygon(0% 0%, 100% 0%, 100% 24%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 0% 24%);
-  --polygonB2: polygon(0% 4%, 100% 4%, 100% 24%, 55% 45%, 55% 100%, 55% 100%, 55% 100%, 45% 100%, 45% 100%, 45% 100%, 45% 45%, 0% 24%);
-  --polygonB3: polygon(0% 24%, 100% 24%, 100% 24%, 55% 45%, 55% 80%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 45% 80%, 45% 45%, 0% 24%);
-  --polygonB4: polygon(45% 45%, 55% 45%, 55% 45%, 55% 45%, 55% 58%, 100% 76%, 100% 100%, 0% 100%, 0% 76%, 45% 58%, 45% 45%, 45% 45%);
-  --polygonB5: polygon(50% 53%, 50% 53%, 50% 53%, 50% 53%, 50% 53%, 100% 76%, 100% 100%, 0% 100%, 0% 76%, 50% 53%, 50% 53%, 50% 53%);
+  --polygonB1: polygon(
+    0% 0%,
+    100% 0%,
+    100% 24%,
+    50% 47%,
+    50% 47%,
+    50% 47%,
+    50% 47%,
+    50% 47%,
+    50% 47%,
+    50% 47%,
+    50% 47%,
+    0% 24%
+  );
+  --polygonB2: polygon(
+    0% 4%,
+    100% 4%,
+    100% 24%,
+    55% 45%,
+    55% 100%,
+    55% 100%,
+    55% 100%,
+    45% 100%,
+    45% 100%,
+    45% 100%,
+    45% 45%,
+    0% 24%
+  );
+  --polygonB3: polygon(
+    0% 24%,
+    100% 24%,
+    100% 24%,
+    55% 45%,
+    55% 80%,
+    100% 100%,
+    100% 100%,
+    0% 100%,
+    0% 100%,
+    45% 80%,
+    45% 45%,
+    0% 24%
+  );
+  --polygonB4: polygon(
+    45% 45%,
+    55% 45%,
+    55% 45%,
+    55% 45%,
+    55% 58%,
+    100% 76%,
+    100% 100%,
+    0% 100%,
+    0% 76%,
+    45% 58%,
+    45% 45%,
+    45% 45%
+  );
+  --polygonB5: polygon(
+    50% 53%,
+    50% 53%,
+    50% 53%,
+    50% 53%,
+    50% 53%,
+    100% 76%,
+    100% 100%,
+    0% 100%,
+    0% 76%,
+    50% 53%,
+    50% 53%,
+    50% 53%
+  );
   animation-name: fill;
   background-color: var(--fg-45);
   background-size: 100% 3.6em;
@@ -2947,10 +3034,39 @@ body {
 
 .hourglass2:after {
   animation-name: glare;
-  background:
-    linear-gradient(90deg, #0000 0.5em, #0003 0.5em 1.5em, #0000 1.5em 3.5em, #fff3 3.5em 4.5em, #fff0 4.5em 6.5em, #0003 6.5em 7.5em, #0000 7.5em) 0 0 / 100% 0.5em,
-    linear-gradient(90deg, #0000 0.75em, #0003 0.75em 1.25em, #0000 1.25em 3.75em, #fff3 3.75em 4.25em, #fff0 4.25em 6.75em, #0003 6.75em 7.25em, #0000 7.25em) 0 0.5em / 100% 8em,
-    linear-gradient(90deg, #0000 0.5em, #0003 0.5em 1.5em, #0000 1.5em 3.5em, #fff3 3.5em 4.5em, #fff0 4.5em 6.5em, #0003 6.5em 7.5em, #0000 7.5em) 0 100% / 100% 0.5em;
+  background: linear-gradient(
+        90deg,
+        #0000 0.5em,
+        #0003 0.5em 1.5em,
+        #0000 1.5em 3.5em,
+        #fff3 3.5em 4.5em,
+        #fff0 4.5em 6.5em,
+        #0003 6.5em 7.5em,
+        #0000 7.5em
+      )
+      0 0 / 100% 0.5em,
+    linear-gradient(
+        90deg,
+        #0000 0.75em,
+        #0003 0.75em 1.25em,
+        #0000 1.25em 3.75em,
+        #fff3 3.75em 4.25em,
+        #fff0 4.25em 6.75em,
+        #0003 6.75em 7.25em,
+        #0000 7.25em
+      )
+      0 0.5em / 100% 8em,
+    linear-gradient(
+        90deg,
+        #0000 0.5em,
+        #0003 0.5em 1.5em,
+        #0000 1.5em 3.5em,
+        #fff3 3.5em 4.5em,
+        #fff0 4.5em 6.5em,
+        #0003 6.5em 7.5em,
+        #0000 7.5em
+      )
+      0 100% / 100% 0.5em;
   background-repeat: repeat-x;
   /* top: 0;
   left: -3em;
@@ -2989,7 +3105,6 @@ body {
 }
 
 @keyframes glare {
-
   from,
   90% {
     transform: translateX(0);
@@ -3001,7 +3116,6 @@ body {
 }
 
 @keyframes flip {
-
   from,
   90% {
     transform: rotate(0);
@@ -3086,6 +3200,65 @@ body {
   }
   100% {
     transform: translate(24px, 0);
+  }
+}
+
+
+/* -----------Loader-47th--------- */
+.loader-47 {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ffffff;
+  animation: loader-47-rotate 2s infinite ease;
+}
+
+.loader-47 div {
+  width: 100%;
+  background-color: #ffffff;
+  animation: loader-47-fill 2s infinite ease-in;
+}
+
+@keyframes loader-47-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-47-fill {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
   }
 }
 
