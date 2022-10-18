@@ -3055,66 +3055,150 @@ const codes = [
 
         <div class="loader-46">
           <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
 
         ##CSS Code
 
+        .loader-46, .loader-46 div {
+          box-sizing: border-box;
+        }
+        
         .loader-46 {
-          width: 50px;
-          height: 50px;
-          border: 5px solid #ffffff;
-          animation: loader-46-rotate 2s infinite ease;
+          display: inline-block;
+          position: relative;
+          width: 80px;
+          height: 80px;
         }
-
+        
         .loader-46 div {
-          width: 100%;
-          background-color: #ffffff;
-          animation: loader-46-fill 2s infinite ease-in;
+          position: absolute;
+          top: 33.33333px;
+          width: 13.33333px;
+          height: 13.33333px;
+          border-radius: 50%;
+          background: white;
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
         }
-
-        @keyframes loader-46-rotate {
+        
+        .loader-46 div:nth-child(1) {
+          left: 8px;
+          animation: loader-461 0.6s infinite;
+        }
+        
+        .loader-46 div:nth-child(2) {
+          left: 8px;
+          animation: loader-462 0.6s infinite;
+        }
+        
+        .loader-46 div:nth-child(3) {
+          left: 32px;
+          animation: loader-462 0.6s infinite;
+        }
+        
+        .loader-46 div:nth-child(4) {
+          left: 56px;
+          animation: loader-463 0.6s infinite;
+        }
+        
+        @keyframes loader-461 {
           0% {
-            transform: rotate(0deg);
+            transform: scale(0);
           }
-
-          25% {
-            transform: rotate(180deg);
-          }
-
-          50% {
-            transform: rotate(180deg);
-          }
-
-          75% {
-            transform: rotate(360deg);
-          }
-
           100% {
-            transform: rotate(360deg);
+            transform: scale(1);
           }
         }
-
-        @keyframes loader-46-fill {
+        
+        @keyframes loader-463 {
           0% {
-            height: 0%;
+            transform: scale(1);
           }
-
-          25% {
-            height: 0%;
-          }
-
-          50% {
-            height: 100%;
-          }
-
-          75% {
-            height: 100%;
-          }
-
           100% {
-            height: 0%;
+            transform: scale(0);
+          }
+        }
+        
+        @keyframes loader-462 {
+          0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(24px, 0);
           }
         }
         `,
   },
+  {
+    id: 47,
+    code: 
+    `
+    #HTML
+
+    <div class="loader-47">
+          <div></div>
+        </div>
+
+    #CSS
+    .loader-47 {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #ffffff;
+      animation: loader-47-rotate 2s infinite ease;
+    }
+    
+    .loader-47 div {
+      width: 100%;
+      background-color: #ffffff;
+      animation: loader-47-fill 2s infinite ease-in;
+    }
+    
+    @keyframes loader-47-rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+    
+      25% {
+        transform: rotate(180deg);
+      }
+    
+      50% {
+        transform: rotate(180deg);
+      }
+    
+      75% {
+        transform: rotate(360deg);
+      }
+    
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes loader-47-fill {
+      0% {
+        height: 0%;
+      }
+    
+      25% {
+        height: 0%;
+      }
+    
+      50% {
+        height: 100%;
+      }
+    
+      75% {
+        height: 100%;
+      }
+    
+      100% {
+        height: 0%;
+      }
+    }
+    
+    `
+  }
 ];
