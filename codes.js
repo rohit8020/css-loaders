@@ -3264,4 +3264,54 @@ const codes = [
 
     `,
   },
+  {
+    id: 49,
+    code: `
+    #HTML
+    <div class="loader-box">
+      <div class="loader-49">
+        <h3 class="loader-49-text" data-text="Loading...">Loading...</h3>
+      </div>
+      <a href="#demo-modal" id="49" class="show-code-btn">Show Code</a>
+    </div>
+      
+    #css
+    .loader-49 {
+      width: 250px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .loader-49-text {
+      position: relative;
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      font-size: 3em;
+      color: #222;
+      border-bottom: 10px solid #222;
+      letter-spacing: 0.05rem;
+    }
+    .loader-49-text::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: #03a9f4;
+      overflow: hidden;
+      border-bottom: 10px solid #03a9f4;
+      animation: loader-49-animate 10s linear infinite;
+    }
+    @keyframes loader-49-animate {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    `,
+  },
 ];
