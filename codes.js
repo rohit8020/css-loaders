@@ -3133,8 +3133,7 @@ const codes = [
   },
   {
     id: 47,
-    code: 
-    `
+    code: `
     #HTML
 
     <div class="loader-47">
@@ -3199,6 +3198,70 @@ const codes = [
       }
     }
     
-    `
-  }
+    `,
+  },
+  {
+    id: 48,
+    code: `
+    #HTML
+      <div class="loader48">
+      </div>
+      
+    #css
+    .loader48 {
+      display:inline-block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+      -webkit-animation:loader48 1.5s linear infinite;
+       animation:loader48 1.5s linear infinite;
+    }
+    .loader48:before,
+    .loader48:after {
+        position: absolute;
+        content: "";
+        left: 30px;
+        top: 0;
+        width: 30px;
+        height: 50px;
+        background: white;
+        -moz-border-radius: 30px 30px 0 0;
+        border-radius: 30px 30px 0 0;
+        -webkit-transform: rotate(-45deg);
+           -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+             -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+           -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+             -o-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+    }
+    .loader48:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+             -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+           -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+             -o-transform-origin: 100% 100%;
+                transform-origin :100% 100%;
+    }
+      
+    @keyframes loader48 {
+       0% {transform: scale(0, 0);opacity:0;}
+       100% {transform: scale(1, 1);opacity:1;}
+    }
+    @-webkit-keyframes loader48 {
+       0% {-webkit-transform: scale(0, 0);opacity:0;}
+       100% {-webkit-transform: scale(1, 1);opacity:1;}
+    }
+    
+
+    `,
+  },
 ];
