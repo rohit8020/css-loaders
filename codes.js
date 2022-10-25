@@ -3265,24 +3265,74 @@ const codes = [
     `,
   },
   {
-    "id": 49,
+    id: 49,
+    code: `
+    #HTML
+    <div class="loader-box">
+      <div class="loader-49">
+        <h3 class="loader-49-text" data-text="Loading...">Loading...</h3>
+      </div>
+      <a href="#demo-modal" id="49" class="show-code-btn">Show Code</a>
+    </div>
+      
+    #css
+    .loader-49 {
+      width: 250px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .loader-49-text {
+      position: relative;
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      font-size: 3em;
+      color: #222;
+      border-bottom: 10px solid #222;
+      letter-spacing: 0.05rem;
+    }
+    .loader-49-text::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: #03a9f4;
+      overflow: hidden;
+      border-bottom: 10px solid #03a9f4;
+      animation: loader-49-animate 10s linear infinite;
+    }
+    @keyframes loader-49-animate {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    `,
+  },
+  {
+    "id": 50,
     code: `
     ##HTML Code
-    <div class="loader-box">
+    
     <div class="loader-49"></div>
-    </div>
+   
 
 
     ##CSS Code
-    .loader-49 {
-      width:90px;
-      height:14px;
-      background: repeating-linear-gradient(90deg, currentColor 0 calc(25% - 5px),#0000 0 25%) left/calc(4*100%/3) 100%;
+    .loader-50 {
+      width:120px;
+      height:20px;
+      background: repeating-linear-gradient(90deg, white 0 calc(25% - 5px),transparent 0 25%) left/calc(4*100%/3) 100%;
       animation:i1 0.5s infinite linear;
     }
     @keyframes i1 {
         100% {background-position: right}
     }
     `
-},
+  }
 ];

@@ -3136,7 +3136,8 @@ body {
 }
 
 /* .............Loader-46th............... */
-.loader-46, .loader-46 div {
+.loader-46,
+.loader-46 div {
   box-sizing: border-box;
 }
 
@@ -3204,7 +3205,6 @@ body {
   }
 }
 
-
 /* -----------Loader-47th--------- */
 .loader-47 {
   width: 50px;
@@ -3266,63 +3266,114 @@ body {
 /* .............Loader-48th............... */
 
 .loader48 {
-  display:inline-block;
-    position: relative;
-    width: 50px;
-    height: 50px;
-  -webkit-animation:loader48 1.5s linear infinite;
-   animation:loader48 1.5s linear infinite;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: loader48 1.5s linear infinite;
+  animation: loader48 1.5s linear infinite;
 }
 .loader48:before,
 .loader48:after {
-    position: absolute;
-    content: "";
-    left: 30px;
-    top: 0;
-    width: 30px;
-    height: 50px;
-    background: white;
-    -moz-border-radius: 30px 30px 0 0;
-    border-radius: 30px 30px 0 0;
-    -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%;
-        -ms-transform-origin: 0 100%;
-         -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
+  position: absolute;
+  content: "";
+  left: 30px;
+  top: 0;
+  width: 30px;
+  height: 50px;
+  background: white;
+  -moz-border-radius: 30px 30px 0 0;
+  border-radius: 30px 30px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
 }
 .loader48:after {
-    left: 0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: 100% 100%;
-       -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-         -o-transform-origin: 100% 100%;
-            transform-origin :100% 100%;
-}
-	
-@keyframes loader48 {
-   0% {transform: scale(0, 0);opacity:0;}
-   100% {transform: scale(1, 1);opacity:1;}
-}
-@-webkit-keyframes loader48 {
-   0% {-webkit-transform: scale(0, 0);opacity:0;}
-   100% {-webkit-transform: scale(1, 1);opacity:1;}
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
 }
 
-/* .............Loader-49th............... */
+@keyframes loader48 {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader48 {
+  0% {
+    -webkit-transform: scale(0, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/* -----------Loader-49th--------- */
+
 .loader-49 {
-  width:90px;
-  height:14px;
-  background: repeating-linear-gradient(90deg, currentColor 0 calc(25% - 5px),#0000 0 25%) left/calc(4*100%/3) 100%;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-49-text {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #222;
+  border-bottom: 10px solid #222;
+  letter-spacing: 0.05rem;
+}
+.loader-49-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #03a9f4;
+  overflow: hidden;
+  border-bottom: 10px solid #03a9f4;
+  animation: loader-49-animate 10s linear infinite;
+}
+@keyframes loader-49-animate {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* .............Loader-50th............... */
+.loader-50 {
+  width:120px;
+  height:20px;
+  background: repeating-linear-gradient(90deg, white 0 calc(25% - 5px),transparent 0 25%) left/calc(4*100%/3) 100%;
   animation:i1 0.5s infinite linear;
 }
 @keyframes i1 {
