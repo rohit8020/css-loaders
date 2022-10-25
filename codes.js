@@ -3318,7 +3318,7 @@ const codes = [
     code: `
     ##HTML Code
     
-    <div class="loader-49"></div>
+    <div class="loader-50"></div>
    
 
 
