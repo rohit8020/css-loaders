@@ -3268,16 +3268,16 @@ const codes = [
     id: 49,
     code: `
     #HTML
-    <div class="loader-box">
+    
       <div class="loader-49">
         <h3 class="loader-49-text" data-text="Loading...">Loading...</h3>
       </div>
       <a href="#demo-modal" id="49" class="show-code-btn">Show Code</a>
-    </div>
+
       
     #css
     .loader-49 {
-      width: 250px;
+      width: 120px;
       height: 100px;
       display: flex;
       justify-content: center;
@@ -3288,7 +3288,6 @@ const codes = [
       position: relative;
       font-family: "Poppins", sans-serif;
       text-transform: uppercase;
-      font-size: 3em;
       color: #222;
       border-bottom: 10px solid #222;
       letter-spacing: 0.05rem;

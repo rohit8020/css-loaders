@@ -3333,7 +3333,7 @@ body {
 /* -----------Loader-49th--------- */
 
 .loader-49 {
-  width: 250px;
+  width: 120px;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -3344,7 +3344,6 @@ body {
   position: relative;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
-  font-size: 3em;
   color: #222;
   border-bottom: 10px solid #222;
   letter-spacing: 0.05rem;
