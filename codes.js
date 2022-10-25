@@ -3314,7 +3314,7 @@ const codes = [
     `,
   },
   {
-    "id": 50,
+    id: 50,
     code: `
     ##HTML Code
     
@@ -3332,6 +3332,164 @@ const codes = [
     @keyframes i1 {
         100% {background-position: right}
     }
-    `
-  }
+    `,
+  },
+  {
+    id: 51,
+    code: `
+    ##HTML Code
+    
+    <div class="loader-51">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+
+    
+   
+    ##CSS Code
+    .loader-51 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      transform-style: preserve-3d;
+      transform: perspective(500px) rotateX(60deg);
+    }
+    .loader-51 > span {
+      position: absolute;
+      display: block;
+      border: 2px solid #fff;
+      box-sizing: border-box;
+      border-radius: 50%;
+      animation: animate-loader-51 3s ease-in-out infinite;
+    }
+    @keyframes animate-loader-51 {
+      0%,
+      100% {
+        transform: translateZ(-50px);
+      }
+      50% {
+        transform: translateZ(50px);
+      }
+    }
+    .loader-51 > span:nth-child(1) {
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      animation-delay: 1.44s;
+    }
+    .loader-51 > span:nth-child(2) {
+      top: 6px;
+      left: 6px;
+      right: 6px;
+      bottom: 6px;
+      animation-delay: 1.3s;
+    }
+    .loader-51 > span:nth-child(3) {
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      animation-delay: 1.2s;
+    }
+    .loader-51 > span:nth-child(4) {
+      top: 18px;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      animation-delay: 1.1s;
+    }
+    .loader-51 > span:nth-child(5) {
+      top: 24px;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      animation-delay: 1s;
+    }
+    .loader-51 > span:nth-child(6) {
+      top: 30px;
+      left: 30px;
+      right: 30px;
+      bottom: 30px;
+      animation-delay: 0.9s;
+    }
+    .loader-51 > span:nth-child(7) {
+      top: 36px;
+      left: 36px;
+      right: 36px;
+      bottom: 36px;
+      animation-delay: 0.8s;
+    }
+    .loader-51 > span:nth-child(8) {
+      top: 42px;
+      left: 42px;
+      right: 42px;
+      bottom: 42px;
+      animation-delay: 0.7s;
+    }
+    .loader-51 > span:nth-child(9) {
+      top: 48px;
+      left: 48px;
+      right: 48px;
+      bottom: 48px;
+      animation-delay: 0.6s;
+    }
+    .loader-51 > span:nth-child(10) {
+      top: 54px;
+      left: 54px;
+      right: 54px;
+      bottom: 54px;
+      animation-delay: 0.5s;
+    }
+    .loader-51 > span:nth-child(11) {
+      top: 60px;
+      left: 60px;
+      right: 60px;
+      bottom: 60px;
+      animation-delay: 0.4s;
+    }
+    .loader-51 > span:nth-child(12) {
+      top: 66px;
+      left: 66px;
+      right: 66px;
+      bottom: 66px;
+      animation-delay: 0.3s;
+    }
+    .loader-51 > span:nth-child(13) {
+      top: 72px;
+      left: 72px;
+      right: 72px;
+      bottom: 72px;
+      animation-delay: 0.2s;
+    }
+    .loader-51 > span:nth-child(14) {
+      top: 78px;
+      left: 78px;
+      right: 78px;
+      bottom: 78px;
+      animation-delay: 0.1s;
+    }
+    .loader-51 > span:nth-child(15) {
+      top: 84px;
+      left: 84px;
+      right: 84px;
+      bottom: 84px;
+      animation-delay: 0s;
+    }
+    `,
+  },
 ];
