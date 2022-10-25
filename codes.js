@@ -3313,4 +3313,25 @@ const codes = [
     }
     `,
   },
+  {
+    "id": 50,
+    code: `
+    ##HTML Code
+    
+    <div class="loader-50"></div>
+   
+
+
+    ##CSS Code
+    .loader-50 {
+      width:120px;
+      height:20px;
+      background: repeating-linear-gradient(90deg, white 0 calc(25% - 5px),transparent 0 25%) left/calc(4*100%/3) 100%;
+      animation:i1 0.5s infinite linear;
+    }
+    @keyframes i1 {
+        100% {background-position: right}
+    }
+    `
+  }
 ];
