@@ -1,0 +1,21 @@
+           #  Web Safe Sans Serif Fonts
+           #  Font Family	Safe Fallback
+           #  Arial	Helvetica, sans-serif
+           #  Helvetica	Arial, sans-serif
+           #  Verdana	Geneva, sans-serif
+           #  Geneva	Verdana, sans-serif
+           #  Tahoma	Arial, sans-serif
+           #  Trebuchet MS	Arial, sans-serif
+           #  Arial is considered the safest sans-serif font on the web. It is installed on all Windows machines (99.8%) and all Mac machines (98.7%).
+
+Helvetica is the preferred fallback because the two fonts are almost identical. Helvetica runs on all Mac machines (100%) but on fewer Windows machines (7.3%).
+
+Using Arial with Helvetica fallback, or Helvetiva with Arial fallback, covers both worlds.
+
+Verdana is also considered to be a web safe sans-serif font. It runs on all Windows machines (99.8%), and all Mac Machines (99.1%).
+
+Geneva is Verdanas preferred fallback, because the two fonts are quite similar, and Geneva runs on all Mac machines (99.6%).
+
+Tahoma was the standard font in Windows 95. It works on 99.9% of all Windows machines, and 91.7% of all Mac machines.
+
+Trebuchet MS has been released with all Windows operating systems (99.7%) since Microsoft Windows 2000. It is also included on Macs machines (97.1%), iOS and Chrome OS.
