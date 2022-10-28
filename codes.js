@@ -3492,4 +3492,295 @@ const codes = [
     }
     `,
   },
+  {
+    id: 52,
+    code: `
+    ##HTML Code
+    <div class="loader-52">
+    <div class="half-circle"></div>
+    <div class="circle1 circles"></div>
+    <div class="circle2 circles"></div>
+    <div class="antena1"></div>
+    <div class="antena2"></div>
+    <div class="middle"></div>
+    <div class="hand"></div>
+    <div class="hand2"></div>
+    <div class="leg"></div>
+    <div class="leg2"></div>
+  </div>
+
+    ##CSS Code
+   
+.loader-52 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-52 > .half-circle,
+.loader-52 > .middle,
+.loader-52 > .antena1,
+.loader-52 > .antena2,
+.loader-52 > .leg,
+.loader-52 > .leg2,
+.loader-52 > .hand,
+.loader-52 > .hand2 {
+  background: #00cc33;
+}
+
+.loader-52 > .half-circle {
+  position: relative;
+  top: 35px;
+  width: 70px;
+  height: 150px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom: 0;
+  animation: half-circle 3s ease-in-out infinite both;
+}
+
+@keyframes half-circle {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+
+  50% {
+    transform: scale(1.3, 1.1) translateY(0px);
+  }
+
+  100% {
+    transform: scale(1) translateY(0px);
+  }
+}
+
+.loader-52 > .circle1 {
+  position: relative;
+  top: 17px;
+  left: 14px;
+  width: 8px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.loader-52 > .circle2 {
+  position: relative;
+  top: 12px;
+  right: 13px;
+  width: 8px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.loader-52 > .circles {
+  animation: eyes 3s ease-in-out infinite both;
+  background-color: white;
+}
+
+@keyframes eyes {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.7, 1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.loader-52 > .antena1,
+.loader-52 > .antena2 {
+  width: 5px;
+  height: 75px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.loader-52 > .antena1 {
+  position: relative;
+  left: 35px;
+  bottom: 13px;
+  background: #00cc33;
+  transform: rotate(20deg);
+  animation: antena1 3s ease-in-out infinite both;
+}
+
+.loader-52 > .antena2 {
+  position: relative;
+  right: 35px;
+  bottom: 28px;
+  background: #00cc33;
+  transform: rotate(-20deg);
+  animation: antena2 3s ease-in-out infinite both;
+}
+
+@keyframes antena1 {
+  0% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(0deg) translateX(-10px) translateY(-1px);
+  }
+
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes antena2 {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(0deg) translateX(10px) translateY(-1px);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+.loader-52 > .middle {
+  position: relative;
+  left: 0px;
+  bottom: 0;
+  width: 70px;
+  height: 205px;
+  background: #00cc33;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  animation: middle 3s ease-in-out infinite both;
+}
+
+@keyframes middle {
+  0% {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(1);
+  }
+
+  50% {
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    transform: scale(1.3, 1.1) translateY(0px);
+  }
+
+  100% {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(1);
+  }
+}
+
+.loader-52 > .hand {
+  position: relative;
+  left: 45px;
+  bottom: 50px;
+
+  width: 10px;
+  height: 125px;
+
+  border-radius: 10px;
+  animation: hand1 3s ease-in-out infinite both;
+}
+
+@keyframes hand1 {
+  0% {
+    transform: rotate(0deg) translateX(0px);
+  }
+
+  50% {
+    transform: rotate(-180deg) translateX(10px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(0px);
+  }
+}
+
+.loader-52 > .hand2 {
+  position: relative;
+  right: 45px;
+  bottom: 75px;
+  width: 10px;
+  height: 125px;
+
+  border-radius: 10px;
+  animation: hand2 3s ease-in-out infinite both;
+}
+
+@keyframes hand2 {
+  0% {
+    transform: rotate(0deg) translateX(0px);
+  }
+
+  50% {
+    transform: rotate(180deg) translateX(-10px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(0px);
+  }
+}
+
+.loader-52 > .leg {
+  position: relative;
+  left: 15px;
+  bottom: 44px;
+  width: 10px;
+  height: 125px;
+
+  border-radius: 10px;
+  transform-origin: top;
+  animation: leg1 3s ease-in-out infinite both;
+}
+
+@keyframes leg1 {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotate(360deg) translateY(-40px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+
+.loader-52 > .leg2 {
+  position: relative;
+  right: 15px;
+  bottom: 68px;
+  width: 10px;
+  height: 125px;
+
+  border-radius: 10px;
+  transform-origin: top;
+  animation: leg2 3s ease-in-out infinite both;
+}
+
+@keyframes leg2 {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+
+  50% {
+    transform: rotate(-360deg) translateY(-40px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+    `,
+  },
 ];
